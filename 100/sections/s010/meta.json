@@ -1,0 +1,1 @@
+{"title":"해주당 연혁 — 라인 드로잉 타임라인","category":"A-SCROLL","tech":["SVG path dash 드로잉","getPointAtLength 헤드 추적","노드 점등 + 리플","카메라 추적 translate"],"desc":"스크롤에 따라 금빛 선이 굽이치며 그려지고, 선이 닿는 순간 연도 노드가 점등되며 사연이 열리는 스티키 연혁","use":"브랜드 히스토리·연혁·로드맵"}

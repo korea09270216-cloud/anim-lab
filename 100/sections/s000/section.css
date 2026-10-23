@@ -1,0 +1,5 @@
+[data-sec="s000"]{min-height:100vh;display:grid;place-items:center;background:#e9e4d8;color:#111;overflow:hidden}
+[data-sec="s000"] .s000__list{display:flex;flex-direction:column;gap:1vw}
+[data-sec="s000"] a{display:block;overflow:hidden;height:1.05em;font-size:clamp(48px,9vw,150px);font-weight:900;line-height:1.05;letter-spacing:-.03em}
+[data-sec="s000"] span{display:block;position:relative}
+[data-sec="s000"] span::after{content:attr(data-t);position:absolute;left:0;top:100%;color:#ff4d2e}

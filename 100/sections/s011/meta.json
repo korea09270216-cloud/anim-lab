@@ -1,0 +1,1 @@
+{"title":"모닝브루: 커서 거리 반응 가변 타이포","category":"B-TYPE","tech":["per-char distance falloff","skew/scaleY/stroke weight emulation","asymmetric attack-release smoothing","ghost cursor idle"],"desc":"커서가 가까운 글자일수록 굵어지고(스트로크) 세로로 늘어나며 커서 반대쪽으로 기울고 색이 달아오른다. 커서가 멈추면 유령 커서가 이어받는다.","use":"브랜드 히어로 헤드라인"}

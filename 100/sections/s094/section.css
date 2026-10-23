@@ -1,0 +1,23 @@
+[data-sec="s094"]{position:relative;height:100vh;min-height:520px;overflow:hidden;background:#15121a;color:#f6ecdf;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s094"] .s094__load{position:absolute;inset:0}
+[data-sec="s094"] .s094__cap{position:absolute;top:34px;font-size:13px;font-weight:700;letter-spacing:.24em}
+[data-sec="s094"] .s094__cap--l{left:4vw}
+[data-sec="s094"] .s094__cap--r{right:4vw;opacity:.6}
+[data-sec="s094"] .s094__bar{position:absolute;left:4vw;right:4vw;bottom:5vh;height:2px;background:#f6ecdf;transform-origin:left;transform:scaleX(0)}
+[data-sec="s094"] .s094__hero{position:absolute;inset:0;clip-path:inset(46% 41% 46% 41% round 6px);will-change:clip-path}
+[data-sec="s094"] .s094__art{position:absolute;inset:0;background:linear-gradient(180deg,#2a1b4d 0%,#7b3f8f 36%,#ff8a5c 70%,#ffd29a 100%);will-change:transform}
+[data-sec="s094"] .s094__sun{position:absolute;left:50%;top:52%;width:30vh;aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:radial-gradient(circle,#fff3c4 0 38%,#ffc36b 60%,#ff8a5c00 72%);box-shadow:0 0 14vh 6vh #ff9a5c66;animation:s094s 4s ease-in-out infinite}
+@keyframes s094s{50%{scale:1.08;box-shadow:0 0 18vh 9vh #ff9a5c80}}
+[data-sec="s094"] .s094__mt{position:absolute;left:0;right:0;bottom:0;width:100%;height:46%}
+[data-sec="s094"] .s094__copy{position:absolute;left:5vw;right:5vw;top:15vh}
+[data-sec="s094"] .s094__top{font-size:14px;font-weight:700;letter-spacing:.24em;margin-bottom:3vh}
+[data-sec="s094"] .s094__h{font-size:clamp(46px,7.6vw,138px);font-weight:900;letter-spacing:-.055em;line-height:1.02}
+[data-sec="s094"] .s094__h .ln{display:block;overflow:hidden;padding-bottom:.08em}
+[data-sec="s094"] .s094__h .ln>span{display:block}
+[data-sec="s094"] .s094__nav{position:absolute;right:5vw;bottom:6vh;display:flex;gap:28px;font-weight:700;font-size:15px}
+[data-sec="s094"] .s094__numw{position:absolute;left:4vw;bottom:4vh;z-index:4;display:flex;align-items:flex-end;overflow:hidden;font-size:min(22vw,34vh);font-weight:900;line-height:.86;letter-spacing:-.06em;mix-blend-mode:difference;color:#fff}
+[data-sec="s094"] .s094__num{display:flex}
+[data-sec="s094"] .s094__dg{height:.86em;overflow:hidden;width:.6em}
+[data-sec="s094"] .s094__st{display:block}
+[data-sec="s094"] .s094__st i{display:block;height:.86em;font-style:normal;text-align:center}
+[data-sec="s094"] .s094__pc{font-size:.32em;line-height:1;margin-left:.1em;margin-bottom:.12em}

@@ -1,0 +1,1 @@
+{"title":"명도 반전 헤더 + 스크롤 진행 원형 버튼","category":"J-UX","tech":["ScrollTrigger","CSS 변수 트윈","SVG stroke 게이지","sticky"],"desc":"밴드 배경이 밝음/어두움/컬러로 바뀌는 지점에서 sticky 헤더와 원형 진행 버튼의 색이 반전되고, 버튼은 퍼센트에서 맨위로 화살표로 롤링.","use":"롱 스크롤 브랜드 페이지의 헤더와 TOP 버튼"}

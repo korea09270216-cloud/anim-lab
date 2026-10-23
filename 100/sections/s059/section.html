@@ -1,0 +1,41 @@
+<section class="sec" data-sec="s059">
+  <div class="s059__stick">
+    <div class="s059__left">
+      <p class="s059__eyebrow">COLD BREW LAB · 추출 일지</p>
+      <h2 class="s059__title">천천히,<br>열두 시간</h2>
+      <p class="s059__lead">찬물이 원두 사이로 한 방울씩 내려앉는 시간. 스크롤을 내려 잔이 차오르는 걸 지켜보세요.</p>
+    </div>
+    <div class="s059__cupwrap">
+      <svg class="s059__svg" viewBox="0 0 400 580" aria-label="콜드브루 추출 진행도">
+        <defs>
+          <clipPath id="s059cup"><path d="M84 76 H316 L290 510 Q289 526 274 526 H126 Q111 526 110 510 Z"/></clipPath>
+          <clipPath id="s059liq"><path class="s059__lclip" d=""/></clipPath>
+          <linearGradient id="s059g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2a84a"/><stop offset=".55" stop-color="#b8631c"/><stop offset="1" stop-color="#5e2a0c"/></linearGradient>
+          <linearGradient id="s059gb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd08a"/><stop offset="1" stop-color="#c47a2c"/></linearGradient>
+        </defs>
+        <!-- 컵 뒷면 -->
+        <path d="M70 60 H330 L300 520 Q298 540 278 540 H122 Q102 540 100 520 Z" fill="#ffffff10"/>
+        <g clip-path="url(#s059cup)">
+          <rect class="s059__stream" x="196" y="0" width="8" height="0" rx="4" fill="#f2a84a"/>
+          <path class="s059__back" d="" fill="url(#s059gb)" opacity=".7"/>
+          <path class="s059__front" d="" fill="url(#s059g)"/>
+          <g class="s059__ice" fill="#ffffff2e" stroke="#ffffff88" stroke-width="2">
+            <rect x="-22" y="-22" width="44" height="44" rx="9"/><rect x="-18" y="-18" width="36" height="36" rx="8"/><rect x="-20" y="-20" width="40" height="40" rx="9"/>
+          </g>
+          <g class="s059__bubbles" fill="#fff" opacity=".45"></g>
+          <text class="s059__num" x="200" y="340" text-anchor="middle" font-size="104" font-weight="900" fill="#e9f5f2" letter-spacing="-5" font-family="Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif">0</text>
+          <g clip-path="url(#s059liq)"><text class="s059__num2" x="200" y="340" text-anchor="middle" font-size="104" font-weight="900" fill="#2a1406" letter-spacing="-5" font-family="Pretendard,Apple SD Gothic Neo,Malgun Gothic,sans-serif">0</text></g>
+        </g>
+        <!-- 컵 유리 테두리 + 하이라이트 -->
+        <path d="M70 60 H330 L300 520 Q298 540 278 540 H122 Q102 540 100 520 Z" fill="none" stroke="#e9f5f2" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M92 110 L112 470" stroke="#fff" stroke-opacity=".35" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <ul class="s059__stats">
+      <li><b class="s059__h">0</b><span>시간 경과 / 12</span></li>
+      <li><b>4°C</b><span>추출 수온</span></li>
+      <li><b>1:8</b><span>원두 대 물 비율</span></li>
+      <li><b>1.2mm</b><span>분쇄 입도</span></li>
+    </ul>
+  </div>
+</section>

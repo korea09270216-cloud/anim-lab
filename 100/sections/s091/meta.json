@@ -1,0 +1,1 @@
+{"title":"원두 산지 풀스크린 스냅 내비","category":"J-UX","tech":["Observer","ScrollTrigger pin","SplitText","clip-path"],"desc":"핀 고정된 풀스크린 슬라이드를 휠/스와이프 한 번에 한 장씩 clip-path 로 덮으며 넘기고 사이드 인덱스 바가 채워짐. 끝에서 스크롤 해제, 방치하면 자동 순환.","use":"브랜드 스토리·산지·메뉴 소개 풀페이지 섹션"}

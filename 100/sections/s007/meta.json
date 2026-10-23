@@ -1,0 +1,1 @@
+{"title":"모리 26SS 룩북 — 분할 역방향 스크롤","category":"A-SCROLL","tech":["양방향 반대 translate","스크롤 속도 기반 skew","중앙 근접 스케일","mix-blend-mode difference"],"desc":"두 컬럼이 스크롤에 맞춰 서로 반대 방향으로 흐르고, 속도에 따라 비틀리며 중앙에서 타일이 커지는 분할 룩북","use":"패션·라이프스타일 룩북, 컬렉션 갤러리"}

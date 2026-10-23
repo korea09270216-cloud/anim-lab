@@ -1,0 +1,10 @@
+[data-sec="s020"]{position:relative;min-height:100vh;background:#04231f;color:#e7fff6;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;padding:clamp(20px,3vw,44px);font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s020"] .s020__top,[data-sec="s020"] .s020__foot{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;font-size:clamp(12px,1vw,15px);flex-wrap:wrap;color:#7fb5a6}
+[data-sec="s020"] .s020__top b{color:#e7fff6;font-weight:800}
+[data-sec="s020"] .s020__foot p{margin:0;line-height:1.6}
+[data-sec="s020"] .s020__foot a{color:#c6ff3d;font-weight:800;text-decoration:none}
+[data-sec="s020"] .s020__title{margin:0;display:flex;flex-direction:column;align-items:center}
+[data-sec="s020"] .s020__line{display:block;white-space:nowrap}
+[data-sec="s020"] .s020__line--a{font-family:'Arial Black','Pretendard',Impact,sans-serif;font-weight:900;font-size:clamp(44px,10.5vw,180px);letter-spacing:-.02em;color:#c6ff3d;line-height:1}
+[data-sec="s020"] .s020__line--b{font-family:Georgia,'Times New Roman','Batang',serif;font-style:italic;font-weight:400;font-size:clamp(90px,23vw,400px);letter-spacing:-.03em;color:#e7fff6;line-height:.9}
+[data-sec="s020"] .s020__ch{display:inline-block;will-change:transform;transform-origin:50% 80%}

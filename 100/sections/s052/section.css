@@ -1,0 +1,22 @@
+[data-sec="s052"]{--fg:#f4ecd8;position:relative;min-height:100vh;display:flex;flex-direction:column;background:#2f6b4f;color:var(--fg);font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:hidden}
+[data-sec="s052"] .s052__top{display:flex;justify-content:space-between;align-items:center;padding:34px 5vw 0;font-weight:800;font-size:18px;letter-spacing:-.02em}
+[data-sec="s052"] .s052__logo i{font-style:normal;font-weight:500;opacity:.7;margin-left:6px}
+[data-sec="s052"] .s052__count{font-size:14px;letter-spacing:.12em;opacity:.8}
+[data-sec="s052"] .s052__count b{font-size:20px}
+[data-sec="s052"] .s052__body{flex:1;display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);align-items:center;padding:0 5vw 5vh;gap:3vw}
+[data-sec="s052"] .s052__eyebrow{font-size:13px;font-weight:800;letter-spacing:.3em;opacity:.7}
+[data-sec="s052"] .s052__wheel{height:clamp(96px,13vw,210px);overflow:hidden;margin:1.4vh 0 2.4vh}
+[data-sec="s052"] .s052__track{will-change:transform}
+[data-sec="s052"] .s052__track h2{height:clamp(96px,13vw,210px);display:flex;align-items:center;font-size:clamp(76px,11.5vw,190px);font-weight:900;letter-spacing:-.06em;line-height:1}
+[data-sec="s052"] .s052__descs{word-break:keep-all;position:relative;height:5.6em;font-size:clamp(15px,1.3vw,21px);line-height:1.6;font-weight:500;max-width:25em}
+[data-sec="s052"] .s052__descs p{position:absolute;inset:0 auto auto 0;opacity:0}
+[data-sec="s052"] .s052__bars{list-style:none;display:flex;gap:10px;margin-top:4vh;max-width:30em}
+[data-sec="s052"] .s052__bars li{flex:1;height:3px;background:#ffffff33;position:relative}
+[data-sec="s052"] .s052__bars i{position:absolute;inset:0;background:currentColor;transform-origin:0 50%;transform:scaleX(0)}
+[data-sec="s052"] .s052__stage{display:grid;place-items:center}
+[data-sec="s052"] .s052__wrap{width:min(40vw,64vh);aspect-ratio:1}
+[data-sec="s052"] .s052__wrap svg{width:100%;height:100%;overflow:visible}
+@media (max-width:760px){
+  [data-sec="s052"] .s052__body{grid-template-columns:1fr;gap:4vh;padding-top:3vh}
+  [data-sec="s052"] .s052__wrap{width:62vw}
+}

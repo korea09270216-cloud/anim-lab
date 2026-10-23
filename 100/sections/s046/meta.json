@@ -1,0 +1,1 @@
+{"title":"탭 크로스 슬라이스 전환","category":"E-TRANSITION","tech":["DOM 슬라이싱(clip-path inset)","교차 방향 stagger","expo.inOut","탭 인디케이터"],"desc":"탭을 바꾸면 패널이 8개 가로 띠로 쪼개져 홀짝 반대 방향으로 밀려나가고 새 패널의 띠가 반대편에서 맞물려 들어온다","use":"제품 라인업/카테고리 탭 콘텐츠 교체"}

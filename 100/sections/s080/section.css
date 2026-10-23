@@ -1,0 +1,20 @@
+[data-sec="s080"]{--pw:min(21vw,300px);position:relative;height:340vh;background:#dfe8d2;color:#16311f;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:clip}
+[data-sec="s080"] .s080__stage{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center}
+[data-sec="s080"] .s080__stage::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 60% at 50% 50%,#f3f7ea 0,transparent 72%),repeating-linear-gradient(0deg,#16311f08 0 2px,transparent 2px 9px)}
+[data-sec="s080"] .s080__eye{position:absolute;top:5vh;left:0;right:0;text-align:center;font-size:13px;letter-spacing:.24em;font-weight:800;color:#b3321d}
+[data-sec="s080"] .s080__scene{position:relative;perspective:2400px;perspective-origin:50% 40%;width:0;height:0}
+[data-sec="s080"] .s080__sheet{position:absolute;left:0;top:0;transform-style:preserve-3d;will-change:transform}
+[data-sec="s080"] .s080__pn{position:absolute;left:0;top:calc(var(--ph)/-2);width:var(--pw);height:var(--ph);transform-origin:0 50%;transform-style:preserve-3d}
+[data-sec="s080"] .s080__sheet{--ph:min(66vh,540px)}
+[data-sec="s080"] .s080__sheet>.s080__pn{left:0}
+[data-sec="s080"] .s080__pn .s080__pn{left:var(--pw);top:0}
+[data-sec="s080"] .s080__face{position:absolute;inset:0;padding:12% 11%;display:flex;flex-direction:column;background:#f8f2e2;overflow:hidden;box-shadow:inset 0 0 0 1px #16311f12}
+[data-sec="s080"] .s080__face::after{content:"";position:absolute;inset:0;background:#0d1d12;opacity:var(--sh,0);pointer-events:none}
+[data-sec="s080"] .s080__f2{background:#f1e9d0}[data-sec="s080"] .s080__f3{background:#f8f2e2}[data-sec="s080"] .s080__f4{background:#f1e9d0}
+[data-sec="s080"] .s080__tit{font-size:calc(var(--pw)*.2);font-weight:900;line-height:1.05;letter-spacing:-.04em;color:#b3321d}
+[data-sec="s080"] .s080__tit{display:block;margin-bottom:auto}
+[data-sec="s080"] .s080__face ul{display:flex;flex-direction:column;gap:12px;margin-top:20%}
+[data-sec="s080"] .s080__face li{display:flex;flex-direction:column;gap:2px;padding-top:12px;border-top:1.5px solid #16311f33}
+[data-sec="s080"] .s080__face li b{font-size:calc(var(--pw)*.072);letter-spacing:-.03em}
+[data-sec="s080"] .s080__face li i{font-style:normal;font-size:calc(var(--pw)*.05);opacity:.65}
+[data-sec="s080"] .s080__hint{position:absolute;bottom:4vh;font-size:11px;letter-spacing:.3em;opacity:.5}

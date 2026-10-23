@@ -1,0 +1,1 @@
+{"title":"오늘반찬 델리: 글자 큐브 플립 슬로건","category":"B-TYPE","tech":["CSS 3D cube per char","expo.inOut stagger","perspective-origin pointer","slogan rotation"],"desc":"글자마다 4면 큐브가 한 칸씩 굴러 슬로건이 통째로 교체되고, 커서에 따라 원근 소실점이 따라온다.","use":"슬로건/가치 제안 롤링 히어로"}

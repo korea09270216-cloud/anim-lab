@@ -1,0 +1,1 @@
+{"title":"퍼센트 롤링 로더 + clip-path 줌인","category":"J-UX","tech":["GSAP timeline","clip-path inset","CustomEase","롤링 숫자"],"desc":"작은 창 속 히어로가 퍼센트가 오르는 동안 서서히 열리고 100%에서 clip-path 로 화면 전체로 확장되며 이미지 줌아웃, 타이틀이 올라오고 다시 닫히며 반복.","use":"사이트 첫 로딩·인트로 연출"}

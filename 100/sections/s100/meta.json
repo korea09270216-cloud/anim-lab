@@ -1,0 +1,1 @@
+{"title":"스크롤 방향 반응 헤더·독 + 읽기 진행","category":"J-UX","tech":["ScrollTrigger direction","CustomEase","ScrambleText 챕터 라벨","sticky 독"],"desc":"내려 읽으면 헤더가 위로 숨고 올리면 헤더와 하단 구독 독이 튀어나옴. 상단 진행바와 챕터 번호가 롤링되고 제목이 스크램블로 교체. 방치하면 자동 읽기 루프.","use":"매거진·블로그·롱폼 아티클 페이지의 헤더/푸터 동작"}

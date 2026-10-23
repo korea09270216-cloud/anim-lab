@@ -1,0 +1,7 @@
+[data-sec="s057"]{position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3.4vh;background:radial-gradient(ellipse at 50% 40%,#17402f 0%,#0d2820 60%,#081a15 100%);color:#f5ecd7;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:hidden;padding:6vh 5vw}
+[data-sec="s057"] .s057__cap{font-size:13px;font-weight:700;letter-spacing:.34em;color:#ffc94a}
+[data-sec="s057"] .s057__logo{width:min(84vw,1120px);height:auto;overflow:visible;cursor:crosshair}
+[data-sec="s057"] .s057__tag{font-size:clamp(18px,1.9vw,30px);font-weight:600;letter-spacing:.02em;opacity:.9}
+[data-sec="s057"] .s057__chips{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;list-style:none}
+[data-sec="s057"] .s057__chips li{padding:9px 18px;border:1px solid #f5ecd744;border-radius:99px;font-size:14px;font-weight:500;color:#f5ecd7cc}
+@media (max-width:760px){[data-sec="s057"] .s057__chips li{font-size:12px;padding:7px 12px}}

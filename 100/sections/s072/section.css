@@ -1,0 +1,14 @@
+[data-sec="s072"]{position:relative;min-height:100vh;background:radial-gradient(80% 70% at 50% 40%,#1b2744 0,#0b0f1d 70%);color:#f4ead8;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:hidden;display:grid;place-items:center;user-select:none;touch-action:pan-y}
+[data-sec="s072"] .s072__top{position:absolute;left:4vw;right:4vw;top:4vh;display:flex;gap:2em;font-size:12px;letter-spacing:.14em;z-index:4}
+[data-sec="s072"] .s072__top span{opacity:.55}[data-sec="s072"] .s072__top em{margin-left:auto;font-style:normal;color:#ffb066}
+[data-sec="s072"] .s072__big{position:absolute;left:0;right:0;top:50%;transform:translateY(-58%);text-align:center;font-size:clamp(90px,17vw,270px);line-height:.86;font-weight:900;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.5px #f4ead844;z-index:1}
+[data-sec="s072"] .s072__scene{position:relative;z-index:2;width:240px;height:330px;perspective:1500px;perspective-origin:50% 38%;margin-top:-4vh;cursor:grab}
+[data-sec="s072"] .s072__scene:active{cursor:grabbing}
+[data-sec="s072"] .s072__ring{position:absolute;inset:0;transform-style:preserve-3d}
+[data-sec="s072"] .s072__card{position:absolute;inset:0;border-radius:4px;padding:10px 10px 38px;background:#f5eddc;box-shadow:0 30px 60px -20px #000a;-webkit-box-reflect:below 14px linear-gradient(transparent 70%,#0004);backface-visibility:visible}
+[data-sec="s072"] .s072__card svg{display:block;width:100%;height:100%;border-radius:2px}
+[data-sec="s072"] .s072__card small{position:absolute;left:12px;right:12px;bottom:11px;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.12em;color:#3b2f22;font-weight:700}
+[data-sec="s072"] .s072__card::after{content:"";position:absolute;inset:0;border-radius:4px;background:#070a14;opacity:var(--d,0);pointer-events:none}
+[data-sec="s072"] .s072__cap{position:absolute;bottom:9vh;z-index:4;display:flex;gap:1em;align-items:baseline;font-size:15px}
+[data-sec="s072"] .s072__no{color:#ffb066;font-weight:800;letter-spacing:.12em}[data-sec="s072"] .s072__name{font-weight:600}
+[data-sec="s072"] .s072__hint{position:absolute;bottom:3.5vh;z-index:4;font-size:11px;letter-spacing:.3em;opacity:.45}

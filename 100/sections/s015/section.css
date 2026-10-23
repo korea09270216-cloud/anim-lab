@@ -1,0 +1,7 @@
+[data-sec="s015"]{position:relative;min-height:100vh;background:#ffd23f;color:#151515;overflow:hidden;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s015"] .s015__top{position:absolute;z-index:1;left:clamp(20px,3vw,44px);right:clamp(20px,3vw,44px);top:clamp(20px,3vw,40px);display:flex;justify-content:space-between;gap:16px;font-size:clamp(12px,1vw,15px);flex-wrap:wrap}
+[data-sec="s015"] .s015__top b{font-weight:800}
+[data-sec="s015"] .s015__head{position:absolute;z-index:0;left:clamp(20px,3vw,44px);top:18vh;margin:0;font-size:clamp(54px,9vw,150px);font-weight:900;line-height:.98;letter-spacing:-.05em}
+[data-sec="s015"] .s015__sub{position:absolute;z-index:0;right:clamp(20px,3vw,44px);top:20vh;margin:0;text-align:right;font-size:clamp(13px,1.2vw,18px);line-height:1.6}
+[data-sec="s015"] .s015__tiles{position:absolute;inset:0;z-index:2;pointer-events:none}
+[data-sec="s015"] .s015__tile{position:absolute;left:0;top:0;display:grid;place-items:center;font-family:'Arial Black','Pretendard','Apple SD Gothic Neo',Impact,sans-serif;font-weight:900;border-radius:22%;will-change:transform;box-shadow:0 .5vw 0 rgba(0,0,0,.18)}

@@ -1,0 +1,1 @@
+{"title":"해풍수산: 곡선 위를 흐르는 글자 리본","category":"B-TYPE","tech":["SVG textPath","Catmull-Rom 실시간 path 재생성","scroll velocity 가속","cursor path deformation"],"desc":"세 줄 글자 리본이 사인파로 출렁이며 흐르고, 스크롤 속도에 가속되며, 커서가 리본을 눌러 곡선 자체가 휘어진다.","use":"브랜드 무드/스토리 인터루드"}

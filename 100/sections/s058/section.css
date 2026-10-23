@@ -1,0 +1,16 @@
+[data-sec="s058"]{position:relative;min-height:100vh;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);align-items:center;gap:2vw;padding:0 6vw;background:radial-gradient(ellipse at 70% 50%,#14214a 0%,#0a1020 62%);color:#e8edff;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:hidden}
+[data-sec="s058"] .s058__eyebrow{font-size:13px;font-weight:800;letter-spacing:.26em;color:#5ef2d5}
+[data-sec="s058"] .s058__title{margin-top:2vh;font-size:clamp(38px,4.8vw,84px);font-weight:900;line-height:1.1;letter-spacing:-.05em}
+[data-sec="s058"] .s058__lead{margin-top:3vh;font-size:clamp(15px,1.2vw,19px);line-height:1.7;color:#e8edffb3;word-break:keep-all}
+[data-sec="s058"] .s058__legend{margin-top:5vh;list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 24px;max-width:28em}
+[data-sec="s058"] .s058__legend li{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;color:#e8edff88;transition:color .4s,background .4s}
+[data-sec="s058"] .s058__legend li i{width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+[data-sec="s058"] .s058__legend li em{margin-left:auto;font-style:normal;font-variant-numeric:tabular-nums;font-size:13px}
+[data-sec="s058"] .s058__legend li.is-on{color:#fff;background:#ffffff14}
+[data-sec="s058"] .s058__stage{display:grid;place-items:center;perspective:1300px}
+[data-sec="s058"] .s058__svg{width:min(92vh,52vw);height:auto;overflow:visible;transform-style:preserve-3d;will-change:transform}
+[data-sec="s058"] .s058__planets text{pointer-events:none}
+@media (max-width:760px){
+  [data-sec="s058"]{grid-template-columns:1fr;padding:6vh 6vw}
+  [data-sec="s058"] .s058__svg{width:90vw}
+}

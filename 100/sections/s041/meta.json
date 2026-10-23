@@ -1,0 +1,1 @@
+{"title":"다단 커튼 페이지 전환","category":"E-TRANSITION","tech":["GSAP timeline","CustomEase","stagger from center/edges","scaleY 커튼"],"desc":"8장의 세로 패널이 중앙에서 솟아 화면을 덮고 가장자리부터 걷히며 페이지가 교체되고 카피가 라인 마스크로 올라온다","use":"브랜드 사이트 서브페이지 간 전환 / 탭형 메인 페이지 이동"}

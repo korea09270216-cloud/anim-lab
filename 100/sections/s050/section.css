@@ -1,0 +1,20 @@
+[data-sec="s050"]{position:relative;height:100vh;min-height:620px;overflow:hidden;background:#efe8da;color:#2a2012;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;padding:6vh 3vw;display:flex;flex-direction:column;gap:4vh}
+[data-sec="s050"] .s050__head{display:flex;justify-content:space-between;align-items:flex-end;gap:4vw}
+[data-sec="s050"] .s050__title{font-size:clamp(34px,4.2vw,68px);font-weight:900;letter-spacing:-.05em;line-height:1.06}
+[data-sec="s050"] .s050__title em{font-style:normal;color:#d9631f}
+[data-sec="s050"] .s050__lead{max-width:22em;font-size:16px;line-height:1.65;opacity:.7}
+[data-sec="s050"] .s050__row{flex:1;min-height:0;display:flex;gap:12px}
+[data-sec="s050"] .s050__p{position:relative;flex:1 1 0;min-width:0;border-radius:28px;overflow:hidden;background:var(--b);color:var(--ink);cursor:pointer}
+[data-sec="s050"] .s050__art{position:absolute;top:0;bottom:0;left:0;width:94vw;background:linear-gradient(170deg,var(--b),var(--a));pointer-events:none}
+[data-sec="s050"] .s050__art i{position:absolute;display:block;border-radius:50%}
+[data-sec="s050"] .s050__art .b1{left:30%;top:52%;width:34vw;aspect-ratio:1;background:radial-gradient(circle at 34% 30%,#fffa 0 7%,var(--a) 8% 60%,color-mix(in srgb,var(--a) 60%,#000) 100%)}
+[data-sec="s050"] .s050__art .b2{left:18%;top:12%;width:9vw;aspect-ratio:1;background:#fff5;border:2px solid #fff8}
+[data-sec="s050"] .s050__art .b3{left:62%;top:16%;width:5vw;aspect-ratio:1;background:var(--ink);opacity:.14}
+[data-sec="s050"] .s050__no{position:absolute;left:24px;top:22px;font-size:15px;font-weight:900;letter-spacing:.1em}
+[data-sec="s050"] .s050__lab{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);writing-mode:vertical-rl;font-size:26px;font-weight:900;letter-spacing:.06em;white-space:nowrap}
+[data-sec="s050"] .s050__body{position:absolute;left:34px;bottom:34px;right:34px;opacity:0;visibility:hidden}
+[data-sec="s050"] .s050__body h3{font-size:clamp(34px,4.4vw,70px);font-weight:900;letter-spacing:-.05em;line-height:1.04;white-space:nowrap}
+[data-sec="s050"] .s050__body p{margin-top:16px;max-width:24em;font-size:17px;line-height:1.6}
+[data-sec="s050"] .s050__body ul{display:flex;gap:10px;margin-top:20px}
+[data-sec="s050"] .s050__body li{padding:8px 16px;border-radius:99px;border:1.5px solid currentColor;font-size:14px;font-weight:800}
+@media (max-width:800px){[data-sec="s050"] .s050__lead{display:none}[data-sec="s050"] .s050__lab{font-size:18px}}

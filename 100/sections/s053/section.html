@@ -1,0 +1,77 @@
+<section class="sec" data-sec="s053">
+  <div class="s053__stick">
+    <svg class="s053__svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <!-- 해 -->
+      <g class="s053__sun" transform="translate(1290 150)">
+        <circle r="46" fill="#ffd23f"/>
+        <g class="s053__rays" stroke="#ffd23f" stroke-width="6" stroke-linecap="round">
+          <path d="M0 -72 V-92 M0 72 V92 M-72 0 H-92 M72 0 H92 M51 -51 L65 -65 M-51 51 L-65 65 M51 51 L65 65 M-51 -51 L-65 -65"/>
+        </g>
+      </g>
+      <!-- 구름 -->
+      <g class="s053__cloud" transform="translate(300 120)" fill="#fff"><path d="M0 40 a26 26 0 0 1 22 -40 a34 34 0 0 1 64 -4 a28 28 0 0 1 20 44 z"/></g>
+      <g class="s053__cloud" transform="translate(760 70)" fill="#fff"><path d="M0 34 a22 22 0 0 1 18 -34 a30 30 0 0 1 54 -4 a24 24 0 0 1 18 38 z"/></g>
+      <g class="s053__cloud" transform="translate(1000 230)" fill="#ffffffcc"><path d="M0 30 a20 20 0 0 1 16 -30 a26 26 0 0 1 48 -4 a22 22 0 0 1 16 34 z"/></g>
+      <!-- 언덕 -->
+      <path d="M-20 900 V640 C 200 560 380 600 560 660 C 760 720 960 600 1180 560 C 1360 530 1500 560 1620 520 V900 Z" fill="#bfe3d3"/>
+      <path d="M-20 900 V800 C 260 740 520 800 800 790 C 1100 780 1360 720 1620 760 V900 Z" fill="#a5d6c1"/>
+      <!-- 도로 -->
+      <path class="s053__road" d="M-40 720 C180 720 220 520 420 520 C620 520 640 760 840 760 C1040 760 1020 400 1220 400 C1420 400 1380 200 1660 200" fill="none" stroke="#123a2c" stroke-width="56" stroke-linecap="round"/>
+      <path class="s053__lane" d="M-40 720 C180 720 220 520 420 520 C620 520 640 760 840 760 C1040 760 1020 400 1220 400 C1420 400 1380 200 1660 200" fill="none" stroke="#dff1ea" stroke-width="3" stroke-dasharray="18 20"/>
+
+      <!-- 랜드마크 4곳 (바닥 y=0) -->
+      <g class="s053__lm" data-i="0">
+        <path d="M-70 0 V-70 L0 -112 L70 -70 V0 Z" fill="#ff6a4d" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-24 0 V-44 H24 V0 M-24 -44 L24 0 M24 -44 L-24 0" fill="#fff" stroke="#123a2c" stroke-width="4"/>
+        <circle cx="-108" cy="-44" r="34" fill="#5aa77f" stroke="#123a2c" stroke-width="5"/><path d="M-108 -10 V0" stroke="#123a2c" stroke-width="6"/>
+        <circle cx="112" cy="-34" r="24" fill="#5aa77f" stroke="#123a2c" stroke-width="5"/><path d="M112 -10 V0" stroke="#123a2c" stroke-width="6"/>
+      </g>
+      <g class="s053__lm" data-i="1">
+        <path d="M-80 0 V-84 H70 V0 Z" fill="#ffd23f" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M30 -84 V-130 H54 V-84" fill="#fff" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path class="s053__smoke" d="M42 -140 C30 -158 58 -166 44 -186" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+        <path d="M-56 -56 h28 v28 h-28 z M-10 -56 h28 v28 h-28 z" fill="#fff" stroke="#123a2c" stroke-width="4"/>
+        <path d="M-40 -84 v-14 M-24 -84 v-22" stroke="#123a2c" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g class="s053__lm" data-i="2">
+        <path d="M-78 0 V-80 H78 V0 Z" fill="#fff" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-90 -80 L-70 -118 H70 L90 -80 Z" fill="#ff6a4d" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-50 -80 L-40 -118 M-10 -80 V-118 M30 -80 L20 -118 M70 -80 L50 -118" stroke="#fff" stroke-width="6"/>
+        <path d="M-52 0 V-46 H-4 V0 M18 -56 H58 V-28 H18 Z" fill="#dff1ea" stroke="#123a2c" stroke-width="4"/>
+        <path d="M-12 -138 q12 -22 24 0 q-12 12 -24 0" fill="#5aa77f" stroke="#123a2c" stroke-width="4" stroke-linejoin="round"/>
+      </g>
+      <g class="s053__lm" data-i="3">
+        <path d="M-64 0 V-66 H64 V0 Z" fill="#fff" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-82 -62 L0 -126 L82 -62 Z" fill="#ffd23f" stroke="#123a2c" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M-14 0 V-40 H14 V0" fill="#ff6a4d" stroke="#123a2c" stroke-width="4"/>
+        <path d="M-46 -52 c-14 -10 2 -26 10 -14 c8 -12 24 4 10 14 l-10 8 z" fill="#ff6a4d" stroke="#123a2c" stroke-width="3" stroke-linejoin="round" transform="translate(6 -4) scale(.9)"/>
+        <rect x="26" y="-52" width="22" height="22" fill="#dff1ea" stroke="#123a2c" stroke-width="4"/>
+      </g>
+
+      <!-- 스쿠터 -->
+      <g class="s053__bike">
+        <g class="s053__bob">
+          <rect x="-66" y="-92" width="44" height="38" rx="7" fill="#ffd23f" stroke="#123a2c" stroke-width="4"/>
+          <path d="M-52 -66 q8 -16 18 -12 q-2 14 -18 12 z" fill="#5aa77f" stroke="#123a2c" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M-48 -28 Q-52 -58 -22 -58 L8 -58 Q16 -58 18 -48 L22 -28 Z" fill="#ff6a4d" stroke="#123a2c" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M26 -30 L40 -80 M32 -80 L50 -86" fill="none" stroke="#123a2c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M-4 -62 L-8 -92 L22 -88" fill="none" stroke="#123a2c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="-2" cy="-106" r="12" fill="#ffd23f" stroke="#123a2c" stroke-width="4"/>
+          <path d="M-14 -106 H10" stroke="#123a2c" stroke-width="3"/>
+        </g>
+        <g class="s053__wh" transform="translate(-34 -15)"><circle r="15" fill="#fff" stroke="#123a2c" stroke-width="5"/><path d="M0 -15 V15 M-15 0 H15" stroke="#123a2c" stroke-width="3"/></g>
+        <g class="s053__wh" transform="translate(36 -15)"><circle r="15" fill="#fff" stroke="#123a2c" stroke-width="5"/><path d="M0 -15 V15 M-15 0 H15" stroke="#123a2c" stroke-width="3"/></g>
+      </g>
+    </svg>
+
+    <div class="s053__head">
+      <p class="s053__eyebrow">초록상회 · 새벽 배송</p>
+      <h2 class="s053__title">밭에서 식탁까지,<br>네 정거장</h2>
+    </div>
+    <div class="s053__card">
+      <p class="s053__km"><b>128</b><span>km 남음</span></p>
+      <p class="s053__place">경남 하동 · 새벽 5시</p>
+      <p class="s053__txt">그날 새벽 수확한 채소를 밭에서 바로 상자에 담습니다.</p>
+    </div>
+  </div>
+</section>

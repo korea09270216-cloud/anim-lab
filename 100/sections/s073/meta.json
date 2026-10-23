@@ -1,0 +1,1 @@
+{"title":"빵 다이어리 책장 넘김","category":"H-3D","tech":["CSS3D page flip","drag + snap","stacking z-order","angle-driven shading"],"desc":"레시피북이 자동으로 한 장씩 넘어가고, 페이지를 끌면 손을 따라 넘어가다 놓으면 가까운 쪽으로 스냅한다","use":"메뉴북/레시피/브랜드 스토리북"}

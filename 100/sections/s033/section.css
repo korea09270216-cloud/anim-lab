@@ -1,0 +1,33 @@
+[data-sec="s033"]{--x:50%;--y:50%;--r:230px;position:relative;min-height:100vh;background:#0a0f24;color:#fff;overflow:hidden;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s033"] .s033__layer{position:absolute;inset:0;padding:5vh 5vw;display:grid;grid-template-rows:auto 1fr auto;gap:3vh}
+[data-sec="s033"] .s033__head{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.3em;font-weight:700}
+[data-sec="s033"] .s033__title{align-self:center;font-size:clamp(70px,13vw,230px);line-height:.88;font-weight:900;letter-spacing:-.06em}
+[data-sec="s033"] .s033__stalls{display:grid;grid-template-columns:repeat(4,1fr);gap:2vw;position:relative;z-index:2}
+[data-sec="s033"] .s033__stalls li{display:grid;grid-template-columns:auto 1fr auto;gap:4px 14px;padding-top:16px;border-top:2px solid currentColor;align-items:baseline}
+[data-sec="s033"] .s033__stalls i{width:14px;height:14px;border-radius:50%;background:currentColor;align-self:center}
+[data-sec="s033"] .s033__stalls b{font-size:clamp(18px,1.8vw,28px);font-weight:800}
+[data-sec="s033"] .s033__stalls u{text-decoration:none;font-weight:800}
+[data-sec="s033"] .s033__stalls p{grid-column:2/4;font-size:14px;opacity:.85}
+[data-sec="s033"] .s033__lamps{position:absolute;right:6vw;top:0;display:flex;gap:2.6vw;align-items:flex-start}
+[data-sec="s033"] .s033__lamps s{display:block;width:3px;background:currentColor;height:calc(40px + var(--n,0)*34px);position:relative;transform-origin:top center;animation:s033sway 4.5s ease-in-out infinite alternate}
+[data-sec="s033"] .s033__lamps s::after{content:"";position:absolute;left:50%;bottom:-14px;width:26px;height:34px;margin-left:-13px;border-radius:50% 50% 45% 45%;background:currentColor}
+[data-sec="s033"] .s033__lamps s:nth-child(2){--n:2;animation-delay:-1s}[data-sec="s033"] .s033__lamps s:nth-child(3){--n:1;animation-delay:-2s}[data-sec="s033"] .s033__lamps s:nth-child(4){--n:3;animation-delay:-.5s}[data-sec="s033"] .s033__lamps s:nth-child(5){--n:1;animation-delay:-3s}[data-sec="s033"] .s033__lamps s:nth-child(6){--n:2;animation-delay:-1.6s}[data-sec="s033"] .s033__lamps s:nth-child(7){--n:0;animation-delay:-2.4s}
+@keyframes s033sway{from{transform:rotate(-5deg)}to{transform:rotate(5deg)}}
+/* 꺼진 층 */
+[data-sec="s033"] .s033__base{color:#1b2650}
+[data-sec="s033"] .s033__base .s033__title{color:#141d42}
+/* 켜진 층: 손전등 마스크 */
+[data-sec="s033"] .s033__lit{color:#ffb84d;-webkit-mask-image:radial-gradient(circle var(--r) at var(--x) var(--y),#000 0,#000 52%,transparent 100%);mask-image:radial-gradient(circle var(--r) at var(--x) var(--y),#000 0,#000 52%,transparent 100%);background:radial-gradient(circle calc(var(--r)*1.25) at var(--x) var(--y),#2a1c3f 0,#111634 70%)}
+[data-sec="s033"] .s033__lit .s033__title{color:#ff4fa3;text-shadow:0 0 28px #ff4fa3aa,0 0 80px #ff4fa366}
+[data-sec="s033"] .s033__lit .s033__stalls li:nth-child(2n){color:#5ff0d0}
+[data-sec="s033"] .s033__lit .s033__stalls li:nth-child(3n){color:#8fb2ff}
+[data-sec="s033"] .s033__lit .s033__lamps s{color:#ff8a3d;filter:drop-shadow(0 0 10px #ff8a3d)}
+[data-sec="s033"] .s033__lit .s033__lamps s:nth-child(2n){color:#ff4fa3;filter:drop-shadow(0 0 10px #ff4fa3)}
+[data-sec="s033"] .s033__halo{position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle calc(var(--r)*1.1) at var(--x) var(--y),#ffe2a822 0,transparent 100%);mix-blend-mode:screen}
+@media (max-width:800px){[data-sec="s033"] .s033__stalls{grid-template-columns:1fr 1fr}}
+[data-sec="s033"] .s033__title br{display:none}
+[data-sec="s033"] .s033__title{font-size:clamp(60px,11.4vw,210px);white-space:nowrap;position:relative;z-index:2}
+[data-sec="s033"] .s033__layer::before{content:"";position:absolute;right:8vw;top:24%;width:30vw;height:30vw;border-radius:50%;background:currentColor;opacity:.5}
+[data-sec="s033"] .s033__lit::before{background:radial-gradient(circle at 35% 30%,#ffd27a,#ff5a8a 62%,#7b2cff);opacity:1;box-shadow:0 0 120px #ff5a8a88}
+[data-sec="s033"] .s033__base::before{background:#10173a;opacity:1}
+[data-sec="s033"] .s033__base{z-index:1}[data-sec="s033"] .s033__lit{z-index:2}[data-sec="s033"] .s033__halo{z-index:3}

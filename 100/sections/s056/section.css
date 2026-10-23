@@ -1,0 +1,25 @@
+[data-sec="s056"]{position:relative;height:380vh;background:#f4ecda;color:#1d2a2f;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;overflow:clip}
+[data-sec="s056"] .s056__stick{position:sticky;top:0;height:100vh;overflow:hidden}
+[data-sec="s056"] .s056__svg{position:absolute;inset:0;width:100%;height:100%}
+[data-sec="s056"] .s056__flow{animation:s056flow 1.1s linear infinite}
+[data-sec="s056"] .s056__shine{animation:s056shine 6s linear infinite}
+[data-sec="s056"] .s056__shine--b{animation-duration:9s;animation-direction:reverse}
+@keyframes s056flow{to{stroke-dashoffset:-16}}
+@keyframes s056shine{to{stroke-dashoffset:-96}}
+[data-sec="s056"] .s056__card{position:absolute;left:4vw;top:7vh;width:min(23em,34vw);padding:26px 26px 22px;background:#fffdf6;border:3px solid #1d2a2f;border-radius:20px;box-shadow:8px 8px 0 #1d2a2f}
+[data-sec="s056"] .s056__eyebrow{font-size:12px;font-weight:800;letter-spacing:.2em;color:#ec4a2e}
+[data-sec="s056"] .s056__title{margin-top:8px;font-size:clamp(26px,2.6vw,42px);font-weight:900;letter-spacing:-.05em}
+[data-sec="s056"] .s056__list{margin-top:16px;list-style:none;display:grid;gap:4px}
+[data-sec="s056"] .s056__list li{display:flex;align-items:center;gap:12px;padding:7px 8px;border-radius:10px;font-size:15px;font-weight:600;opacity:.4;transition:opacity .5s cubic-bezier(.16,1,.3,1),background .5s,transform .5s cubic-bezier(.16,1,.3,1)}
+[data-sec="s056"] .s056__list li i{flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#1d2a2f;color:#fff;font-size:12px;font-style:normal;font-weight:800}
+[data-sec="s056"] .s056__list li em{margin-left:auto;font-style:normal;font-size:13px;font-variant-numeric:tabular-nums}
+[data-sec="s056"] .s056__list li.is-on{opacity:1;background:#ffe9e2;transform:translateX(6px)}
+[data-sec="s056"] .s056__list li.is-on i{background:#ec4a2e}
+[data-sec="s056"] .s056__list li.is-done{opacity:.75}
+[data-sec="s056"] .s056__now{position:absolute;right:4vw;bottom:7vh;display:flex;align-items:baseline;gap:14px}
+[data-sec="s056"] .s056__now span{font-size:13px;font-weight:800;letter-spacing:.24em;color:#ec4a2e}
+[data-sec="s056"] .s056__now b{font-size:clamp(30px,3.6vw,60px);font-weight:900;letter-spacing:-.05em}
+@media (max-width:760px){
+  [data-sec="s056"] .s056__card{width:60vw;padding:16px}
+  [data-sec="s056"] .s056__list li{font-size:12px}
+}

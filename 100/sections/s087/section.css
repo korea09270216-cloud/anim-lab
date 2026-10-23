@@ -1,0 +1,8 @@
+[data-sec="s087"]{position:relative;height:320vh;background:#ffd23f;color:#1d1a14;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s087"] .s087__stage{position:sticky;top:0;height:100vh;overflow:hidden}
+[data-sec="s087"] canvas{position:absolute;inset:0;width:100%;height:100%;display:block;z-index:2;pointer-events:none}
+[data-sec="s087"] .s087__copy{position:absolute;z-index:1;left:6vw;top:13vh}
+[data-sec="s087"] .s087__tag{font-size:13px;font-weight:800;letter-spacing:.16em;margin-bottom:22px}
+[data-sec="s087"] h2{font-size:clamp(46px,7.4vw,120px);line-height:1.03;font-weight:900;letter-spacing:-.055em;margin:0 0 26px}
+[data-sec="s087"] .s087__count{font-size:clamp(16px,1.6vw,24px);font-weight:700}
+[data-sec="s087"] .s087__count b{display:inline-block;min-width:2ch;font-size:2.2em;line-height:1;color:#e63b1f;letter-spacing:-.04em;font-variant-numeric:tabular-nums}

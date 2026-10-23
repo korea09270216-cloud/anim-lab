@@ -1,0 +1,1 @@
+{"title":"파도커피: 커서 궤적을 따르는 글자 파동","category":"B-TYPE","tech":["1D coupled spring chain","displacement injected by cursor trajectory","wave propagation via neighbor coupling","ghost cursor idle"],"desc":"커서가 지나간 높이만큼 글자가 끌려 올라가고 이웃 글자로 파동이 번지며 스프링으로 출렁이다 가라앉는다.","use":"서핑/바다/음료 브랜드 히어로"}

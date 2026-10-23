@@ -1,0 +1,1 @@
+{"title":"3D 코버플로우 드래그 관성 슬라이더","category":"E-TRANSITION","tech":["Draggable + InertiaPlugin","CSS 3D perspective","연속 위치 기반 transform","스냅 관성"],"desc":"포스터 카드가 중앙 기준 거리에 따라 회전·후퇴하는 연속 코버플로우이며, 드래그 후 관성으로 굴러가 가장 가까운 카드에 스냅하고 방치하면 자동으로 넘어간다","use":"시즌 메뉴/컬렉션 쇼케이스 슬라이더"}

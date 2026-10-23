@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Animation Lab — 홈페이지 적용 애니메이션 12선</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+<div class="progress" aria-hidden="true"><i></i></div>
+
+<header class="nav">
+  <a href="#hero" class="nav__logo">ANIM<b>/</b>LAB</a>
+  <nav class="nav__list">
+    <a href="#s-fill">01–03</a><a href="#s-hscroll">04–06</a><a href="#s-list">07–09</a><a href="#s-gl">10–12</a><a href="./100/">100 SECTIONS →</a>
+  </nav>
+</header>
+
+<!-- 01 HERO : SplitText 마스크 리빌 + 마그네틱 버튼 + 커서 -->
+<section class="hero" id="hero">
+  <canvas class="hero__bg" id="heroBg"></canvas>
+  <p class="tag">01 · Char Mask Reveal · Magnetic · Custom Cursor</p>
+  <h1 class="hero__title" data-split="chars">미친 애니메이션<br>12선 쇼케이스</h1>
+  <p class="hero__sub" data-split="lines">스크롤하면서 하나씩 체험하세요.<br>전부 GSAP + Lenis + 순수 WebGL 로 구현했습니다.</p>
+  <a href="#s-fill" class="magnetic btn" data-cursor="SCROLL"><span>Start ↓</span></a>
+</section>
+
+<!-- 02 SCROLL FILL TEXT -->
+<section class="fill" id="s-fill">
+  <p class="tag">02 · Scroll-scrubbed Word Fill</p>
+  <p class="fill__text" id="fillText">좋은 홈페이지는 스크롤하는 순간 브랜드의 이야기가 읽히고, 한 단어 한 단어가 시선을 따라 점등됩니다. 움직임은 장식이 아니라 문장의 호흡입니다.</p>
+</section>
+
+<!-- 03 MARQUEE VELOCITY SKEW -->
+<section class="marquee" aria-label="marquee">
+  <p class="tag tag--pad">03 · Velocity Skew Marquee (스크롤 속도에 반응)</p>
+  <div class="marquee__row" data-dir="-1"><div class="marquee__track"><span>CREATIVE DEVELOPMENT ✦ MOTION DESIGN ✦ WEBGL ✦ </span><span>CREATIVE DEVELOPMENT ✦ MOTION DESIGN ✦ WEBGL ✦ </span></div></div>
+  <div class="marquee__row marquee__row--outline" data-dir="1"><div class="marquee__track"><span>SCROLL FASTER ✦ SEE THE SKEW ✦ SCROLL FASTER ✦ </span><span>SCROLL FASTER ✦ SEE THE SKEW ✦ SCROLL FASTER ✦ </span></div></div>
+</section>
+
+<!-- 04 HORIZONTAL SCROLL -->
+<section class="hscroll" id="s-hscroll">
+  <div class="hscroll__pin">
+    <p class="tag tag--abs">04 · Pinned Horizontal Scroll + Parallax Inner</p>
+    <div class="hscroll__track">
+      <article class="hcard" style="--h:260"><div class="hcard__img"><em>01</em></div><h3>Brand Story</h3></article>
+      <article class="hcard" style="--h:20"><div class="hcard__img"><em>02</em></div><h3>Signature Menu</h3></article>
+      <article class="hcard" style="--h:160"><div class="hcard__img"><em>03</em></div><h3>Franchise</h3></article>
+      <article class="hcard" style="--h:320"><div class="hcard__img"><em>04</em></div><h3>Store Map</h3></article>
+      <article class="hcard" style="--h:200"><div class="hcard__img"><em>05</em></div><h3>Contact</h3></article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 CLIP-PATH CIRCLE EXPAND -->
+<section class="circle" id="s-circle">
+  <div class="circle__pin">
+    <p class="tag tag--abs">05 · Pinned Clip-path Circle Expand (섹션 전환)</p>
+    <div class="circle__a"><h2>BEFORE</h2></div>
+    <div class="circle__b"><h2>AFTER</h2><p>원이 커지며 다음 섹션이 열린다</p></div>
+  </div>
+</section>
+
+<!-- 06 STACKING CARDS -->
+<section class="stack" id="s-stack">
+  <p class="tag tag--pad">06 · Sticky Stacking Cards (깊이 + 스케일 다운)</p>
+  <div class="stack__list">
+    <article class="scard" style="--c:#ff4d2e"><h3>Plan</h3><p>기획 — 쌓이는 카드 1</p></article>
+    <article class="scard" style="--c:#7c5cff"><h3>Design</h3><p>디자인 — 쌓이는 카드 2</p></article>
+    <article class="scard" style="--c:#00c2a8"><h3>Develop</h3><p>개발 — 쌓이는 카드 3</p></article>
+    <article class="scard" style="--c:#ffc52e;color:#111"><h3>Launch</h3><p>런칭 — 쌓이는 카드 4</p></article>
+  </div>
+</section>
+
+<!-- 07 HOVER IMAGE LIST -->
+<section class="list" id="s-list">
+  <p class="tag tag--pad">07 · Hover Reveal List (커서 따라다니는 프리뷰)</p>
+  <ul class="list__ul">
+    <li data-h="12" data-label="2026"><span>Brand Film</span><i>→</i></li>
+    <li data-h="200" data-label="2025"><span>Pop-up Store</span><i>→</i></li>
+    <li data-h="280" data-label="2025"><span>Menu Renewal</span><i>→</i></li>
+    <li data-h="150" data-label="2024"><span>Franchise Site</span><i>→</i></li>
+  </ul>
+  <div class="list__preview"><div></div></div>
+</section>
+
+<!-- 08 TILT CARDS -->
+<section class="tilt" id="s-tilt">
+  <p class="tag tag--pad">08 · 3D Tilt + Glare Cards</p>
+  <div class="tilt__grid">
+    <div class="tcard" style="--a:#ff4d2e;--b:#ffb199"><h3>Spicy</h3><span>HOVER ME</span></div>
+    <div class="tcard" style="--a:#7c5cff;--b:#b9a8ff"><h3>Cool</h3><span>HOVER ME</span></div>
+    <div class="tcard" style="--a:#00c2a8;--b:#9af0e0"><h3>Fresh</h3><span>HOVER ME</span></div>
+  </div>
+</section>
+
+<!-- 09 COUNTER + SVG DRAW -->
+<section class="stats" id="s-stats">
+  <p class="tag tag--pad">09 · Counter + SVG Path Draw</p>
+  <svg class="stats__svg" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+    <path id="drawPath" d="M0 180 C 150 20, 300 20, 450 120 S 750 220, 900 90 S 1100 10, 1200 80" fill="none" stroke="currentColor" stroke-width="3"/>
+  </svg>
+  <div class="stats__row">
+    <div><b data-count="320">0</b><span>+ 전국 매장</span></div>
+    <div><b data-count="98">0</b><span>% 재방문율</span></div>
+    <div><b data-count="1500">0</b><span>만 누적 판매</span></div>
+  </div>
+</section>
+
+<!-- 10 TEXT SCRAMBLE -->
+<section class="scramble" id="s-scr">
+  <p class="tag tag--pad">10 · Text Scramble on Enter / Hover</p>
+  <h2 class="scramble__t" data-scramble="WE BUILD MEMORABLE DIGITAL EXPERIENCES">WE BUILD MEMORABLE DIGITAL EXPERIENCES</h2>
+</section>
+
+<!-- 11 + 12 WEBGL -->
+<section class="gl" id="s-gl">
+  <canvas id="glCanvas"></canvas>
+  <div class="gl__ui">
+    <p class="tag">11 · WebGL Liquid Gradient · 12 · Mouse Ripple Distortion</p>
+    <h2 data-split="words">마우스를 움직여 보세요</h2>
+    <p>순수 WebGL 프래그먼트 셰이더 — 노이즈 기반 액체 그라디언트 + 마우스 파동</p>
+  </div>
+</section>
+
+<footer class="foot"><p>ANIM/LAB © 2026 — Demo only</p></footer>
+
+<script src="./vendor/gsap.min.js"></script>
+<script src="./vendor/ScrollTrigger.min.js"></script>
+<script src="./vendor/SplitText.min.js"></script>
+<script src="./vendor/lenis.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

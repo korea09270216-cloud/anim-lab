@@ -1,0 +1,34 @@
+[data-sec="s008"]{position:relative;height:440vh;background:#1f5d46;color:#1f1a14;overflow:clip;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s008"] .s008__stage{position:sticky;top:0;height:100vh;overflow:hidden}
+[data-sec="s008"] .s008__layer{position:absolute;inset:0;overflow:hidden}
+[data-sec="s008"] .s008__sl{position:absolute;top:0;height:100%;overflow:hidden;will-change:transform}
+[data-sec="s008"] .s008__in{position:absolute;top:0;height:100%;will-change:transform}
+[data-sec="s008"] .s008__art{position:absolute;inset:0;overflow:hidden}
+[data-sec="s008"] .s008__eb{position:absolute;left:4vw;top:4.4vh;font-size:13px;font-weight:800;letter-spacing:.3em}
+/* A 핑크 */
+[data-sec="s008"] .s008__art--a{background:#f6bdd0;color:#8f1d4a}
+[data-sec="s008"] .s008__at{position:absolute;left:3vw;bottom:-6vh;font-size:40vw;font-weight:900;letter-spacing:-.09em;line-height:1;color:#e0457b}
+[data-sec="s008"] .s008__as{position:absolute;right:5vw;top:15vh;text-align:right;font-size:3.1vw;font-weight:900;line-height:1.25;letter-spacing:-.05em;color:#5a0f2e}
+[data-sec="s008"] .s008__ring{position:absolute;right:8vw;bottom:10vh;width:30vw;aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,#ffd7a8 0 2.2vw,#f6bdd0 2.2vw 3vw);animation:s008spin 40s linear infinite}
+[data-sec="s008"] .s008__logo{position:absolute;right:4vw;top:4vh;font-size:15px;font-weight:900;letter-spacing:.4em}
+/* B 머스타드 */
+[data-sec="s008"] .s008__art--b{background:repeating-linear-gradient(-45deg,#f2b632 0 4vw,#eba91c 4vw 8vw);color:#2a1a05}
+[data-sec="s008"] .s008__bt{position:absolute;left:0;right:0;top:18vh;text-align:center;font-size:34vw;font-weight:900;letter-spacing:-.1em;line-height:1;color:#2a1a05}
+[data-sec="s008"] .s008__bs{position:absolute;left:0;right:0;bottom:12vh;text-align:center;font-size:2vw;font-weight:800;letter-spacing:-.02em}
+[data-sec="s008"] .s008__times{position:absolute;left:4vw;bottom:4vh;display:flex;gap:1vw;font-size:14px;font-weight:800;letter-spacing:.14em}
+[data-sec="s008"] .s008__times li{padding:9px 18px;border-radius:99px;border:2px solid #2a1a05}
+[data-sec="s008"] .s008__badge{position:absolute;right:5vw;top:9vh;width:12vw;aspect-ratio:1;border-radius:50%;background:#2a1a05;color:#f2b632;animation:s008spin 14s linear infinite}
+[data-sec="s008"] .s008__badge svg{display:block;width:100%;height:100%;font-size:9px;font-weight:700;letter-spacing:.1em;fill:currentColor}
+/* C 그린 */
+[data-sec="s008"] .s008__art--c{background:#1f5d46;color:#fff3dc}
+[data-sec="s008"] .s008__c1{position:absolute;left:5vw;top:18vh;font-size:11.5vw;font-weight:900;letter-spacing:-.07em;line-height:1}
+[data-sec="s008"] .s008__c1 span{display:block;overflow:hidden;padding-bottom:.06em}
+[data-sec="s008"] .s008__c1 i{display:block;font-style:normal}
+[data-sec="s008"] .s008__c2{position:absolute;left:5vw;bottom:19vh;width:34vw;font-size:17px;line-height:1.75;opacity:.85;word-break:keep-all}
+[data-sec="s008"] .s008__cta{position:absolute;left:5vw;bottom:7vh;display:inline-flex;gap:14px;padding:16px 30px;border-radius:99px;background:#f6bdd0;color:#5a0f2e;font-weight:900;font-size:16px}
+[data-sec="s008"] .s008__sun{position:absolute;right:-6vw;top:50%;width:48vw;aspect-ratio:1;margin-top:-24vw;border-radius:50%;background:radial-gradient(circle,#ffe7a8 0 30%,#f2b632 31% 55%,#e8913a 56% 74%,#c8561f 75%);animation:s008breathe 6s ease-in-out infinite alternate}
+@keyframes s008spin{to{transform:rotate(360deg)}}
+@keyframes s008breathe{to{transform:scale(1.07) translateX(-1vw)}}
+[data-sec="s008"] .s008__dots{list-style:none;position:absolute;right:2vw;top:50%;transform:translateY(-50%);z-index:20;display:flex;flex-direction:column;gap:14px;font-size:11px;font-weight:800;letter-spacing:.1em;mix-blend-mode:difference;color:#fff}
+[data-sec="s008"] .s008__dots li{opacity:.35;transition:opacity .4s}
+[data-sec="s008"] .s008__dots li.on{opacity:1}

@@ -1,0 +1,38 @@
+<section class="sec" data-sec="s055">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="s055goo" x="-10%" y="-60%" width="120%" height="260%" color-interpolation-filters="sRGB">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="13" result="b"/>
+        <feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="g"/>
+        <feComposite in="SourceGraphic" in2="g" operator="atop"/>
+      </filter>
+      <filter id="s055warp" x="-5%" y="-20%" width="110%" height="140%">
+        <feTurbulence class="s055__wturb" type="fractalNoise" baseFrequency="0.012 0.05" numOctaves="1" seed="4" result="n"/>
+        <feDisplacementMap class="s055__wdisp" in="SourceGraphic" in2="n" scale="0" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <header class="s055__top">
+    <span class="s055__brand">MOMO GELATO</span>
+    <span class="s055__hint">오늘의 한 스쿱을 골라보세요</span>
+  </header>
+  <div class="s055__mid">
+    <h2 class="s055__big">피스타치오</h2>
+    <p class="s055__desc">시칠리아산 브론테 피스타치오를 껍질째 갈아 넣은 진득한 초록.</p>
+    <p class="s055__price"><b>5,800</b>원 / 싱글컵</p>
+  </div>
+  <nav class="s055__goo" aria-label="오늘의 맛">
+    <div class="s055__shapes" aria-hidden="true">
+      <i class="s055__track"></i>
+      <i class="s055__drip" style="left:12%"></i><i class="s055__drip" style="left:31%"></i><i class="s055__drip" style="left:49%"></i><i class="s055__drip" style="left:68%"></i><i class="s055__drip" style="left:86%"></i>
+      <i class="s055__blob s055__bB"></i><i class="s055__blob s055__bA"></i><i class="s055__blob s055__bC"></i>
+    </div>
+    <ul class="s055__items">
+      <li><button type="button" class="s055__it is-on">피스타치오</button></li>
+      <li><button type="button" class="s055__it">솔티카라멜</button></li>
+      <li><button type="button" class="s055__it">블러드오렌지</button></li>
+      <li><button type="button" class="s055__it">흑임자</button></li>
+      <li><button type="button" class="s055__it">요거베리</button></li>
+    </ul>
+  </nav>
+</section>

@@ -1,0 +1,1 @@
+{"title":"달달상회: 떨어져 쌓이는 글자 타일","category":"B-TYPE","tech":["Matter.js rigid bodies","cursor repulsion force field","periodic shake impulse","DOM transform sync"],"desc":"글자 타일이 위에서 떨어져 바닥에 쌓이고, 커서가 근처 타일을 힘장으로 밀어내며 주기적으로 한 번씩 튀어오른다.","use":"브랜드 선언문/오픈 안내 히어로"}

@@ -1,0 +1,1 @@
+{"title":"카드→상세 풀스크린 확장 전환","category":"E-TRANSITION","tech":["GSAP Flip","borderRadius morph","detail stagger reveal","auto demo loop"],"desc":"디저트 카드가 그리드 자리에서 그대로 섹션 전체로 팽창하며 상세 화면이 되고, 닫으면 같은 자리로 되돌아간다","use":"상품/메뉴 카드 클릭 시 상세 진입 전환"}

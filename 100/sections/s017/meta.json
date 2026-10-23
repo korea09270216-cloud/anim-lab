@@ -1,0 +1,1 @@
+{"title":"심야라멘: 스크램블 + RGB 글리치","category":"B-TYPE","tech":["ScrambleTextPlugin","RGB channel split (screen blend)","clip-path slice glitch bursts","pointer velocity split"],"desc":"헤드라인이 깨진 문자로 스크램블되며 다음 문구로 바뀌고, 무작위로 R/C 채널이 가로 조각으로 어긋나는 글리치가 터진다.","use":"야간 영업/이벤트 티저 히어로"}
