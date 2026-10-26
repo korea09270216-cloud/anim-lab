@@ -1,0 +1,1 @@
+{"title":"영수증 프린트 견적서","category":"K-CALC","tech":["clip-path steps 프린트","ScrambleText 금액 찍기","zigzag mask","도장 슬램"],"desc":"점포 형태·옵션을 고르면 영수증이 프린터에서 계단식으로 출력되며 항목 금액이 찍히고 합계에 도장이 찍힘","use":"창업문의 페이지 비용표(F4)","fran":{"stage":"F4","fit":3,"note":"선택한 점포 형태·옵션으로 가맹 예상 견적서를 즉석 출력해 비용 구조를 보여줌","pt":"landing"}}

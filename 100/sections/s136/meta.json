@@ -1,0 +1,1 @@
+{"title":"하루솥 메뉴 라인업 — JS 0줄 캐러셀","category":"O-CSS","tech":["::scroll-marker","::scroll-button()","scroll-state(snapped)","scroll-snap"],"desc":"가로 스냅 스트립에서 가운데 솥만 커지고 펼쳐지며, 점·화살표까지 브라우저 네이티브 캐러셀 프리미티브로 구성(데모 자동 넘김만 JS)","use":"프랜차이즈 메뉴 라인업/시그니처 메뉴 소개","fran":{"stage":"F3","fit":2,"note":"창업문의 페이지에서 대표 메뉴 7종을 스냅 캐러셀로 보여주며 메뉴 경쟁력을 전달","ind":["한식"],"pt":"both"}}

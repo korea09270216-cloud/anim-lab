@@ -1,0 +1,1 @@
+{"title":"sticky 가로 연대기 + 독립 진행바","category":"O-CSS","tech":["view-timeline-name","timeline-scope","animation-range: contain","@property 연도 카운터"],"desc":"세로 스크롤이 sticky 가로 연혁으로 바뀌고, 형제 위치의 진행바·연도 카운터가 같은 이름 있는 타임라인을 공유해 함께 움직인다","use":"브랜드 연혁·히스토리 섹션","fran":{"stage":"F2","fit":2,"note":"브랜드 연혁을 가로 연대기로 보여주고 상단 진행바로 현재 시점을 알려 신뢰를 쌓음","ind":["한식"],"pt":"both"}}

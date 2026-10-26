@@ -1,0 +1,1 @@
+{"title":"스프링 바운스 메뉴 보드","category":"O-CSS","tech":["CSS linear() 스프링","sibling-index() 스태거","개별 transform 속성","순수 CSS 키프레임"],"desc":"메뉴 카드가 위에서 떨어져 세 번 튕기며 안착하고, 호버하면 스프링으로 튀어 오르는 순수 CSS 모션","use":"프랜차이즈 시그니처 메뉴 소개 섹션","fran":{"stage":"F3","fit":2,"note":"시그니처 메뉴 4종을 낙하·바운스로 각인시키는 메뉴 경쟁력 섹션","ind":["양식"],"pt":"both"}}

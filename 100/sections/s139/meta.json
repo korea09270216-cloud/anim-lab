@@ -1,0 +1,1 @@
+{"title":"마루 베이커리 엘라스틱 진열대","category":"P-EXP","tech":["gsap.quickTo","열별 lag 차등","Lenis scroll delta","CSS float"],"desc":"스크롤하면 가운데 열은 곧바로, 바깥 열일수록 한 박자 늦게 따라와 그리드가 고무줄처럼 늘어났다 복귀한다(ScrollSmoother 없이 구현)","use":"메뉴·제품 갤러리, 매장 인테리어 그리드","fran":{"stage":"F3","fit":2,"note":"창업문의 페이지의 메뉴 라인업을 탄성감 있는 그리드로 보여 상품 풍성함을 전달","ind":["디저트","카페"],"pt":"both"}}

@@ -1,0 +1,1 @@
+{"title":"점포 매출 TOP 8 랭킹 레이스","category":"M-PROOF","tech":["GSAP Flip","scaleX bar race","count tween","ScrollTrigger"],"desc":"카드가 스태거로 입장하고 막대·숫자가 순위순으로 차오른 뒤, 분기가 바뀔 때마다 Flip 으로 순위가 교체되는 매출 랭킹","use":"창업문의 페이지의 성공 증거(점포별 월매출 TOP N)","fran":{"stage":"F5","fit":3,"note":"점포별 월평균 매출 TOP 랭킹으로 가맹 문의 전 신뢰를 만드는 증거 섹션","pt":"both"}}

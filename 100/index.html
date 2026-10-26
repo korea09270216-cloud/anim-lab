@@ -45,7 +45,7 @@ h1 b{color:#ff4d2e}
 </style>
 </head>
 <body>
-<h1>100 <b>SECTIONS</b></h1>
+<h1><span id="n">150</span> <b>SECTIONS</b></h1>
 <p class="sub" id="sub"></p>
 <div class="modes" id="modes"></div>
 <div class="bar" id="bar"></div>
@@ -57,6 +57,7 @@ const stars=n=>'★'.repeat(n);
 fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
   const list=M.list, fran=list.filter(s=>s.fran);
   const st={mode:location.hash==='#franchise'?'fran':'all',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
+  $('n').textContent=list.length; document.title=list.length+' Sections — Animation Lab';
   $('sub').textContent=`${list.length}개 섹션 · 클릭하면 단독 뷰어로 열려요 (스크롤·마우스 인터랙션 그대로)`;
   const chip=(on,attr,label,extra='')=>`<button class="chip${on?' on':''}" ${attr}>${label}${extra}</button>`;
   const cnt=f=>fran.filter(f).length;
@@ -93,7 +94,7 @@ fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
     }
     grid.innerHTML=html||'<p class="empty">조건에 맞는 섹션이 없어요</p>';
   }
-  $('modes').innerHTML=`<button data-m="all">100 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button>`;
+  $('modes').innerHTML=`<button data-m="all">${list.length} 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button>`;
   document.addEventListener('click',e=>{
     const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min]'); if(!t) return;
     const d=t.dataset;

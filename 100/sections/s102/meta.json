@@ -1,0 +1,1 @@
+{"title":"투자회수 누적곡선 — 손익분기 교차 핀","category":"K-CALC","tech":["DrawSVGPlugin","Catmull-Rom path","clipPath reveal","pulse pin"],"desc":"월 순이익 슬라이더에 따라 누적곡선이 그려지며 투자금선과 만나는 지점에 핀이 맥동하고 회수 개월 수가 계산됨","use":"창업문의 페이지 투자회수 안내(F4)","fran":{"stage":"F4","fit":3,"note":"월 순이익 가정에 따라 투자금 회수 시점을 보여주는 손익분기 그래프","pt":"landing"}}

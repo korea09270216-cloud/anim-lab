@@ -1,0 +1,1 @@
+{"title":"창업비용 시뮬레이터 — 스택바 + 오도미터","category":"K-CALC","tech":["GSAP tween","flex-grow stack bar","odometer strips","range slider"],"desc":"평수·인테리어 등급 슬라이더를 움직이면 항목별 비용 막대가 늘고 줄며 총액이 자릿수 오도미터로 롤링","use":"창업문의 페이지 비용 안내(F4)","fran":{"stage":"F4","fit":3,"note":"평수·등급 입력으로 총 창업비용을 즉석 계산해 보여주는 비용 안내 시뮬레이터","pt":"landing"}}

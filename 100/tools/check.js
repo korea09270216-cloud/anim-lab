@@ -20,6 +20,7 @@ async function wheelTo(p, y) {
 async function one(browser, id) {
   const out = { id, ok: true, errors: [], warn: [] };
   const p = await browser.newPage({ viewport: { width: 1440, height: 810 } });
+  p.setDefaultTimeout(120000);
   p.on('console', m => { if (m.type() === 'error') out.errors.push(m.text().slice(0, 200)); });
   p.on('pageerror', e => out.errors.push('PAGEERR ' + e.message.slice(0, 200)));
   try {
@@ -65,8 +66,8 @@ async function acquire() {
   for (;;) {
     try { fs.mkdirSync(LOCK); return; } catch (e) {
       if (e.code !== 'EEXIST') throw e;
-      try { if (Date.now() - fs.statSync(LOCK).mtimeMs > 120000) fs.rmdirSync(LOCK); } catch {}
-      if (Date.now() - t0 > 900000) throw new Error('락 대기 15분 초과');
+      try { if (Date.now() - fs.statSync(LOCK).mtimeMs > 300000) fs.rmdirSync(LOCK); } catch {}
+      if (Date.now() - t0 > 2400000) throw new Error('락 대기 40분 초과');
       await sleep(1500 + Math.random() * 1500);
     }
   }

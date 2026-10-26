@@ -1,0 +1,53 @@
+<section class="sec" data-sec="s104">
+  <div class="s104__wrap">
+    <div class="s104__left">
+      <p class="s104__eyebrow">NURUNG COFFEE · 대출 상환 계산기</p>
+      <h2 class="s104__title">자기자본과 대출을<br>나눠 보면<br>월 부담이 보입니다</h2>
+
+      <div class="s104__fund">
+        <div class="s104__flab"><span>총 창업비용</span><b>9,000만원</b></div>
+        <div class="s104__bar" data-bar>
+          <div class="s104__seg s104__seg--a" data-sa><span>자기자본</span><b data-ta>4,000</b></div>
+          <div class="s104__seg s104__seg--b" data-sb><span>대출</span><b data-tb>3,500</b></div>
+          <div class="s104__seg s104__seg--c" data-sc><span>기타 조달</span><b data-tc>1,500</b></div>
+          <button type="button" class="s104__h" data-h="a" role="slider" aria-label="자기자본 금액" aria-valuemin="0" aria-valuemax="9000"></button>
+          <button type="button" class="s104__h" data-h="b" role="slider" aria-label="대출 상한" aria-valuemin="0" aria-valuemax="9000"></button>
+        </div>
+        <p class="s104__fhint">두 개의 핸들을 끌어 자기자본·대출 비중을 나눕니다 (100만원 단위)</p>
+      </div>
+
+      <div class="s104__row">
+        <label class="s104__ctl">
+          <span class="s104__lab">연 금리 <b data-rate>5.2%</b></span>
+          <input type="range" min="3" max="10" step="0.1" value="5.2" data-in="rate" aria-label="연 금리">
+        </label>
+        <div class="s104__ctl">
+          <span class="s104__lab">상환 기간</span>
+          <div class="s104__chips" data-chips>
+            <button type="button" data-y="1">1년</button><button type="button" data-y="3">3년</button><button type="button" class="is-on" data-y="5">5년</button><button type="button" data-y="7">7년</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="s104__card">
+      <svg viewBox="0 0 400 250" data-svg role="img" aria-label="월 상환 부담 게이지">
+        <path class="s104__track" d="M50 210A150 150 0 0 1 350 210"/>
+        <path class="s104__arc" data-arc d="M50 210A150 150 0 0 1 350 210"/>
+        <g class="s104__ticks"><text x="50" y="238" text-anchor="middle">0%</text><text x="200" y="40" text-anchor="middle">25%</text><text x="350" y="238" text-anchor="middle">50%+</text></g>
+        <g data-needle><line x1="200" y1="210" x2="200" y2="92"/><circle cx="200" cy="210" r="12"/></g>
+      </svg>
+      <div class="s104__out">
+        <span class="s104__ol">월 상환액</span>
+        <div class="s104__num"><div class="s104__odo" data-odo></div><span class="s104__unit">만원</span></div>
+        <p class="s104__burden" data-burden>월 순이익(가정 600만원) 대비 0%</p>
+      </div>
+      <dl class="s104__stats">
+        <div><dt>대출 원금</dt><dd data-sl>0만원</dd></div>
+        <div><dt>총 이자</dt><dd data-si>0만원</dd></div>
+        <div><dt>총 상환액</dt><dd data-st>0만원</dd></div>
+      </dl>
+    </div>
+    <p class="s104__foot">※ 예시 시뮬레이션이며 수익을 보장하지 않습니다. 원리금균등 상환 가정이며 실제 금리·한도는 금융기관 심사에 따라 달라집니다.</p>
+  </div>
+</section>

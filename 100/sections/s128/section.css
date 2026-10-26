@@ -1,0 +1,60 @@
+[data-sec="s128"] {
+  --butter: #ffe27a; --ink: #2b1b12;
+  position: relative; min-height: 100vh; display: grid; align-items: center; background: var(--butter); color: var(--ink);
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif; overflow-x: clip; padding: 56px 0;
+}
+[data-sec="s128"] ul { list-style: none; margin: 0; padding: 0; }
+[data-sec="s128"] .s128__wrap { width: min(1280px, 90vw); margin: 0 auto; display: flex; flex-direction: column; gap: 34px; }
+[data-sec="s128"] .s128__head { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 6px 30px; }
+[data-sec="s128"] .s128__eyebrow { grid-column: 1 / -1; margin: 0; font-size: 13px; font-weight: 800; letter-spacing: .3em; color: #8a4b12; }
+[data-sec="s128"] .s128__h { margin: 0; font-size: clamp(32px, 4vw, 60px); font-weight: 900; letter-spacing: -.045em; line-height: 1.12; }
+[data-sec="s128"] .s128__hint { margin: 0; font-size: 14px; font-weight: 700; padding: 10px 18px; border-radius: 99px; background: var(--ink); color: var(--butter); }
+
+/* 스테이지: 그리드와 상세가 같은 자리를 쓴다 */
+[data-sec="s128"] .s128__stage { position: relative; min-height: min(56vh, 520px); }
+[data-sec="s128"] .s128__stage[data-view="detail"] .s128__grid { visibility: hidden; }
+[data-sec="s128"] .s128__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+[data-sec="s128"] .s128__card { all: unset; box-sizing: border-box; width: 100%; height: 100%; min-height: min(56vh, 520px); cursor: pointer; display: flex; flex-direction: column; padding: 22px; gap: 14px; border-radius: 30px; background: var(--c1); color: var(--c3); transition: translate .5s cubic-bezier(.2, .8, .2, 1); }
+[data-sec="s128"] .s128__card:hover { translate: 0 -8px; }
+[data-sec="s128"] .s128__card:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+[data-sec="s128"] .s128__vis { flex: 1; display: grid; place-items: center; border-radius: 20px; background: var(--c2); min-height: 0; }
+[data-sec="s128"] .s128__art { display: block; width: 62%; aspect-ratio: 1; border-radius: 50%; background:
+    radial-gradient(circle at 50% 50%, var(--c1) 0 7%, var(--c3) 7.5% 13%, var(--c1) 13.5% 19%, var(--c3) 19.5% 26%, var(--c1) 26.5% 33%, var(--c3) 33.5% 41%, var(--c1) 41.5% 49%, var(--c3) 49.5% 100%);
+  box-shadow: 0 0 0 10px var(--c3), 0 0 0 12px var(--c1); animation: s128-spin 26s linear infinite; }
+[data-sec="s128"] .s128__ttl { font-size: clamp(19px, 1.7vw, 26px); font-weight: 900; letter-spacing: -.03em; line-height: 1.2; }
+[data-sec="s128"] .s128__meta { display: flex; justify-content: space-between; font-size: 14px; font-weight: 700; opacity: .85; }
+[data-sec="s128"] .s128__meta b { letter-spacing: .12em; font-size: 12px; align-self: center; }
+
+[data-sec="s128"] .s128__detail { position: absolute; inset: 0; }
+[data-sec="s128"] .s128__detail[hidden] { display: none; }
+[data-sec="s128"] .s128__dshell { height: 100%; display: grid; grid-template-columns: 5fr 6fr; gap: 28px; padding: 22px; border-radius: 30px; background: var(--c1); color: var(--c3); }
+[data-sec="s128"] .s128__dvis { display: grid; place-items: center; border-radius: 20px; background: var(--c2); }
+[data-sec="s128"] .s128__dvis .s128__art { width: min(62%, 340px); }
+[data-sec="s128"] .s128__dbody { display: flex; flex-direction: column; justify-content: center; gap: 16px; padding: 10px 30px 10px 14px; }
+[data-sec="s128"] .s128__dno { margin: 0; font-size: 13px; font-weight: 800; letter-spacing: .3em; opacity: .8; }
+[data-sec="s128"] .s128__dttl { margin: 0; font-size: clamp(30px, 3.6vw, 54px); font-weight: 900; letter-spacing: -.045em; line-height: 1.1; }
+[data-sec="s128"] .s128__ddesc { margin: 0; font-size: 17px; line-height: 1.7; opacity: .88; }
+[data-sec="s128"] .s128__stats { margin: 6px 0 0; display: flex; gap: 14px; }
+[data-sec="s128"] .s128__stats div { flex: 1; padding: 14px 16px; border-radius: 16px; background: #ffffff1f; }
+[data-sec="s128"] .s128__stats dt { font-size: 12px; opacity: .75; }
+[data-sec="s128"] .s128__stats dd { margin: 4px 0 0; font-size: clamp(24px, 2.4vw, 36px); font-weight: 900; letter-spacing: -.03em; }
+[data-sec="s128"] .s128__close { all: unset; cursor: pointer; align-self: flex-start; margin-top: 4px; padding: 11px 20px; border-radius: 99px; background: var(--c3); color: var(--c1); font-size: 14px; font-weight: 800; }
+
+/* View Transition: 같은 이름이 새/옛 요소를 이어 준다. 클래스로 역할별 곡선을 나눔 */
+[data-sec="s128"] .s128__card, [data-sec="s128"] .s128__dshell { view-transition-class: s128-shell; }
+[data-sec="s128"] .s128__vis, [data-sec="s128"] .s128__dvis { view-transition-class: s128-vis; }
+[data-sec="s128"] .s128__ttl, [data-sec="s128"] .s128__dttl { view-transition-class: s128-ttl; }
+
+::view-transition-group(.s128-shell) { animation-duration: .95s; animation-timing-function: linear(0, .06 4%, .25 9%, .55 15%, .83 22%, .98 30%, 1.035 38%, 1.04 45%, 1.01 54%, .997 64%, 1); }
+::view-transition-group(.s128-vis) { animation-duration: .95s; animation-delay: .04s; animation-timing-function: linear(0, .06 4%, .25 9%, .55 15%, .83 22%, .98 30%, 1.035 38%, 1.04 45%, 1.01 54%, .997 64%, 1); }
+::view-transition-group(.s128-ttl) { animation-duration: .8s; animation-delay: .08s; animation-timing-function: cubic-bezier(.16, 1, .3, 1); }
+::view-transition-old(.s128-shell), ::view-transition-new(.s128-shell),
+::view-transition-old(.s128-vis), ::view-transition-new(.s128-vis) { animation-duration: .5s; height: 100%; }
+
+@keyframes s128-spin { to { rotate: 360deg; } }
+
+@media (max-width: 760px) {
+  [data-sec="s128"] .s128__grid { grid-template-columns: repeat(2, 1fr); }
+  [data-sec="s128"] .s128__dshell { grid-template-columns: 1fr; overflow: auto; }
+  [data-sec="s128"] .s128__stage { min-height: 720px; }
+}

@@ -1,0 +1,71 @@
+<section class="sec" data-sec="s110">
+  <div class="s110__wrap">
+    <div class="s110__main">
+      <header class="s110__top">
+        <div class="s110__step"><span class="s110__step-lab">Step</span><span class="s110__step-no"><b>1</b></span><span class="s110__step-of">/ 5</span></div>
+        <div class="s110__segs"><i></i><i></i><i></i><i></i><i></i></div>
+        <p class="s110__saved"><em></em><span>임시저장됨</span></p>
+      </header>
+
+      <div class="s110__stage">
+        <div class="s110__panel" data-p="0">
+          <p class="s110__hint">STEP 01 · 점포 형태</p>
+          <h2 class="s110__q">어떤 규모의 매장을<br>열고 싶으세요?</h2>
+          <div class="s110__opts" data-k="size"></div>
+        </div>
+        <div class="s110__panel" data-p="1">
+          <p class="s110__hint">STEP 02 · 인테리어</p>
+          <h2 class="s110__q">매장 분위기는<br>어느 등급으로 할까요?</h2>
+          <div class="s110__opts" data-k="int"></div>
+        </div>
+        <div class="s110__panel" data-p="2">
+          <p class="s110__hint">STEP 03 · 주방·장비</p>
+          <h2 class="s110__q">장비 구성을<br>선택해 주세요</h2>
+          <div class="s110__opts" data-k="eq"></div>
+          <p class="s110__filt">선택하신 점포 규모에 맞지 않는 구성은 자동으로 제외했어요.</p>
+        </div>
+        <div class="s110__panel" data-p="3">
+          <p class="s110__hint">STEP 04 · 추가 옵션 (복수 선택)</p>
+          <h2 class="s110__q">필요한 옵션을<br>골라 주세요</h2>
+          <div class="s110__opts s110__opts--chips" data-k="opt"></div>
+          <p class="s110__filt">앞 선택과 맞지 않는 옵션은 숨겼어요.</p>
+          <button type="button" class="s110__next">선택 완료, 다음 단계 →</button>
+        </div>
+        <div class="s110__panel" data-p="4">
+          <p class="s110__hint">STEP 05 · 연락처</p>
+          <h2 class="s110__q">견적서를 어디로<br>보내드릴까요?</h2>
+          <form class="s110__form" onsubmit="return false">
+            <label><span>성함</span><input class="s110__in-name" type="text" placeholder="홍길동" autocomplete="off"></label>
+            <label><span>연락처</span><input class="s110__in-tel" type="tel" placeholder="010-0000-0000" autocomplete="off" inputmode="numeric"></label>
+            <div class="s110__when"><span>오픈 희망 시기</span><button type="button" data-w="0">즉시</button><button type="button" data-w="1">3개월 내</button><button type="button" data-w="2">6개월 내</button></div>
+            <button type="button" class="s110__submit">상세 견적서 받기</button>
+          </form>
+        </div>
+        <div class="s110__panel s110__panel--done" data-p="5">
+          <svg class="s110__check" viewBox="0 0 80 80"><circle cx="40" cy="40" r="34" fill="none" stroke="currentColor" stroke-width="5"/><path d="M24 41l11 11 21-24" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h2 class="s110__q">접수가 완료되었어요</h2>
+          <p class="s110__sub">담당 슈퍼바이저가 1영업일 안에 상세 견적서와 함께 연락드립니다.</p>
+          <button type="button" class="s110__again">처음부터 다시 견적 내기</button>
+        </div>
+      </div>
+
+      <footer class="s110__foot">
+        <button type="button" class="s110__back" disabled>← 이전 단계</button>
+        <p class="s110__toast"></p>
+      </footer>
+    </div>
+
+    <aside class="s110__est">
+      <p class="s110__est-lab">예상 견적 범위 <i>예시</i></p>
+      <div class="s110__range"><b class="s110__lo">0</b><span>~</span><b class="s110__hi">0</b><u>만원</u></div>
+      <ul class="s110__bd">
+        <li data-b="fee"><span>가맹·교육비</span><em>0</em><i><b></b></i></li>
+        <li data-b="build"><span>점포 공사</span><em>0</em><i><b></b></i></li>
+        <li data-b="eq"><span>장비</span><em>0</em><i><b></b></i></li>
+        <li data-b="opt"><span>추가 옵션</span><em>0</em><i><b></b></i></li>
+      </ul>
+      <div class="s110__sum"></div>
+      <p class="s110__est-note">* 가상 브랜드의 예시 견적이며 실제 계약 금액과 다를 수 있습니다. 수익을 보장하지 않습니다.</p>
+    </aside>
+  </div>
+</section>

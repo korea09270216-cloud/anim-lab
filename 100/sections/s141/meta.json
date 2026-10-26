@@ -1,0 +1,1 @@
+{"title":"밀도 베이커리 · 듀얼 웨이브 메뉴","category":"P-EXP","tech":["GSAP quickTo","ScrollTrigger scrub","반대 위상 sin 파동","sticky 핀"],"desc":"좌우 두 열 텍스트가 스크롤 포커스 기준으로 반대 위상 파도처럼 일렁이고 중앙 오브젝트가 quickTo 로 파동을 추종하며 색·라벨이 바뀐다","use":"메뉴 라인업 소개 / 시그니처 메뉴 스크롤 쇼케이스","fran":{"stage":"F1","fit":2,"note":"창업문의 랜딩 첫 화면 아래, 대표 메뉴 라인업을 리듬감 있게 훑어주는 쇼케이스","ind":["카페","디저트"],"pt":"both"}}

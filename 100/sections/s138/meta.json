@@ -1,0 +1,1 @@
+{"title":"번개통닭 배달 경로 — 스크롤 주행 지도","category":"O-CSS","tech":["offset-path: path()","animation-timeline: view()","@property 카운터","SVG stroke 트레일"],"desc":"스크롤하면 배달 스쿠터가 곡선 도로를 따라 방향을 틀며 달리고, 붉은 트레일·정차 핀·배달 분 카운터가 같은 타임라인에 맞춰 채워진다","use":"배달 가맹/창업 절차 안내(접수→조리→출발→도착)","fran":{"stage":"F4","fit":1,"note":"창업 절차·운영 흐름(접수→조리→배달)을 지도 위 주행 스토리로 설명","ind":["요식업"],"pt":"landing"}}

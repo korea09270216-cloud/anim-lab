@@ -1,0 +1,1 @@
+{"title":"스크롤 구동 진행 도넛 + 카드 리빌","category":"O-CSS","tech":["animation-timeline: view()","named view-timeline","animation-range","@property"],"desc":"스크롤만으로 도넛 게이지·챕터 라벨·카드 클립 리빌·숫자 카운트가 순수 CSS 타임라인으로 구동된다","use":"브랜드 신뢰 지표(가맹점 수·재방문율) 섹션","fran":{"stage":"F2","fit":2,"note":"가맹점 수·재방문율 등 신뢰 지표를 스크롤 진행 도넛과 함께 차례로 증명","ind":["한식","주점"],"pt":"both"}}

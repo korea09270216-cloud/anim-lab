@@ -1,0 +1,43 @@
+<section class="sec" data-sec="s102">
+  <div class="s102__wrap">
+    <div class="s102__side">
+      <p class="s102__eyebrow">DAMBAEK GOMTANG · 투자회수 시뮬레이터</p>
+      <h2 class="s102__title">투자금은<br>몇 개월 만에<br>돌아올까요</h2>
+      <div class="s102__big"><span class="s102__months" data-months>0</span><span class="s102__mu" data-mu>개월</span></div>
+      <p class="s102__sub" data-sub>월 순이익을 입력해 보세요</p>
+      <label class="s102__ctl">
+        <span class="s102__lab">예상 월 순이익 <b data-net>520만원</b></span>
+        <input type="range" min="200" max="1000" step="10" value="520" data-in aria-label="월 순이익">
+        <span class="s102__ticks"><i>200</i><i>600</i><i>1,000만원</i></span>
+      </label>
+      <dl class="s102__stats">
+        <div><dt>총 투자금</dt><dd>9,000만원</dd></div>
+        <div><dt>12개월 누적</dt><dd data-c12>0만원</dd></div>
+        <div><dt>36개월 누적</dt><dd data-c36>0만원</dd></div>
+      </dl>
+    </div>
+    <div class="s102__chart">
+      <svg viewBox="0 0 880 440" data-svg role="img" aria-label="누적 순이익과 투자금 교차 그래프">
+        <defs>
+          <linearGradient id="s102g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c6ff3d" stop-opacity=".34"/><stop offset="1" stop-color="#c6ff3d" stop-opacity="0"/></linearGradient>
+          <clipPath id="s102plot"><rect x="60" y="24" width="790" height="366"/></clipPath>
+          <clipPath id="s102reveal"><rect data-reveal x="60" y="0" width="0" height="440"/></clipPath>
+        </defs>
+        <g data-grid></g>
+        <g clip-path="url(#s102plot)">
+          <g clip-path="url(#s102reveal)"><path data-area fill="url(#s102g)" d=""/></g>
+          <path data-invest class="s102__invest" d=""/>
+          <path data-line class="s102__line" d=""/>
+        </g>
+        <text class="s102__il" data-il x="846" text-anchor="end">투자금 9,000만원</text>
+        <g data-pin opacity="0">
+          <line data-drop class="s102__drop" x1="0" y1="0" x2="0" y2="0"/>
+          <circle class="s102__ring" data-r1 r="8"/><circle class="s102__ring" data-r2 r="8"/>
+          <circle class="s102__core" r="9"/>
+          <g data-tag transform="translate(0,-44)"><rect x="-54" y="-20" width="108" height="36" rx="18" class="s102__tag"/><text data-tagt text-anchor="middle" y="4">14개월</text></g>
+        </g>
+      </svg>
+    </div>
+    <p class="s102__foot">※ 예시 시뮬레이션이며 수익을 보장하지 않습니다. 오픈 초기 4개월은 매출 성장 구간으로 가정한 가상 수치입니다.</p>
+  </div>
+</section>

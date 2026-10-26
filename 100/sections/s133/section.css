@@ -1,0 +1,85 @@
+/* CSS Anchor Positioning: 활성 탭이 anchor-name 을 물려받고 인디케이터는 그 앵커의 left/right 를 따라 미끄러진다.
+   툴팁은 position-area + position-try-fallbacks 로 맵 경계를 넘으면 자동 뒤집힘 + anchored 컨테이너 쿼리로 화살표 방향 전환 */
+[data-sec="s133"]{
+  --bg:#dfe9ff; --ink:#0e1a3a; --hot:#ff4d2e; --paper:#f7f9ff; --muted:#4d5d88;
+  --ease:cubic-bezier(.2,.9,.2,1);
+  position:relative;min-height:100vh;box-sizing:border-box;padding:clamp(48px,9vh,100px) clamp(20px,6vw,100px);
+  display:grid;place-items:center;background:var(--bg);color:var(--ink);overflow:hidden;
+  font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+}
+[data-sec="s133"] .s133__wrap{width:100%;max-width:1280px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,64px);align-items:center}
+[data-sec="s133"] .s133__radio{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+[data-sec="s133"] .s133__eyebrow{margin:0 0 16px;font-size:13px;font-weight:800;letter-spacing:.22em;color:var(--hot)}
+[data-sec="s133"] .s133__title{margin:0 0 clamp(22px,4vh,40px);font-size:clamp(36px,4.8vw,80px);line-height:1.06;font-weight:900;letter-spacing:-.05em;word-break:keep-all}
+
+[data-sec="s133"] .s133__tabs{position:relative;display:inline-flex;padding:6px;border-radius:99px;background:var(--paper);border:2px solid var(--ink)}
+[data-sec="s133"] .s133__tab{position:relative;z-index:1;padding:clamp(10px,1.1vw,14px) clamp(14px,1.6vw,24px);border-radius:99px;font-size:clamp(13px,1.1vw,16px);font-weight:800;color:var(--muted);cursor:pointer;white-space:nowrap;transition:color .35s}
+[data-sec="s133"] .s133__tab:hover{color:var(--ink)}
+/* 활성 탭만 앵커 */
+[data-sec="s133"] .s133__ui:has(#s133-t1:checked) [for="s133-t1"],
+[data-sec="s133"] .s133__ui:has(#s133-t2:checked) [for="s133-t2"],
+[data-sec="s133"] .s133__ui:has(#s133-t3:checked) [for="s133-t3"],
+[data-sec="s133"] .s133__ui:has(#s133-t4:checked) [for="s133-t4"]{anchor-name:--s133-tab;color:#fff}
+[data-sec="s133"] .s133__tabs::before{
+  content:"";position:absolute;z-index:0;border-radius:99px;background:var(--ink);
+  position-anchor:--s133-tab;left:anchor(left);right:anchor(right);top:anchor(top);bottom:anchor(bottom);
+  transition:left .55s var(--ease),right .42s var(--ease);
+}
+[data-sec="s133"] .s133__tabs::before{box-shadow:0 0 0 0 transparent}
+
+[data-sec="s133"] .s133__panels{display:grid;margin-top:clamp(22px,4vh,38px);min-height:clamp(190px,28vh,260px)}
+[data-sec="s133"] .s133__panel{grid-area:1/1;opacity:0;visibility:hidden;translate:0 14px;transition:opacity .4s,translate .6s var(--ease),visibility 0s .4s}
+[data-sec="s133"] .s133__panel h3{margin:0;font-size:clamp(20px,2vw,30px);font-weight:900;letter-spacing:-.03em}
+[data-sec="s133"] .s133__panel p{margin:12px 0 0;font-size:clamp(14px,1.1vw,16px);line-height:1.7;color:var(--muted);word-break:keep-all}
+[data-sec="s133"] .s133__panel ul{list-style:none;margin:22px 0 0;padding:0;display:flex;gap:clamp(18px,3vw,44px)}
+[data-sec="s133"] .s133__panel li{display:flex;flex-direction:column;gap:2px}
+[data-sec="s133"] .s133__panel b{font-size:clamp(24px,2.6vw,40px);font-weight:900;letter-spacing:-.04em;color:var(--hot)}
+[data-sec="s133"] .s133__panel span{font-size:12px;color:var(--muted)}
+[data-sec="s133"] .s133__ui:has(#s133-t1:checked) .s133__panel--1,
+[data-sec="s133"] .s133__ui:has(#s133-t2:checked) .s133__panel--2,
+[data-sec="s133"] .s133__ui:has(#s133-t3:checked) .s133__panel--3,
+[data-sec="s133"] .s133__ui:has(#s133-t4:checked) .s133__panel--4{opacity:1;visibility:visible;translate:0 0;transition-delay:.12s,.12s,0s}
+
+/* 지도 */
+[data-sec="s133"] .s133__map{
+  position:relative;height:clamp(340px,52vh,470px);border-radius:30px;border:2px solid var(--ink);overflow:visible;
+  background:
+    linear-gradient(115deg,transparent 0 31%,#fff 31.2% 32.4%,transparent 32.6% 100%),
+    linear-gradient(28deg,transparent 0 55%,#fff 55.2% 56.4%,transparent 56.6% 100%),
+    linear-gradient(90deg,transparent 0 71%,#cfe0ff 71.2% 76%,transparent 76.2% 100%),
+    repeating-linear-gradient(0deg,transparent 0 46px,rgba(14,26,58,.06) 46px 47px),
+    repeating-linear-gradient(90deg,transparent 0 46px,rgba(14,26,58,.06) 46px 47px),
+    #eef3ff;
+}
+[data-sec="s133"] .s133__maptitle{position:absolute;left:22px;bottom:18px;margin:0;font-size:13px;font-weight:800;color:var(--muted)}
+[data-sec="s133"] .s133__pin{
+  position:absolute;left:var(--x);top:var(--y);translate:-50% -50%;width:22px;height:22px;padding:0;border-radius:50%;
+  background:var(--hot);border:3px solid #fff;box-shadow:0 0 0 2px var(--ink);cursor:pointer;
+}
+[data-sec="s133"] .s133__pin::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid var(--hot);animation:s133-ping 2.2s ease-out infinite;animation-delay:calc(var(--i) * -.55s)}
+@keyframes s133-ping{0%{scale:.6;opacity:.9}100%{scale:2.6;opacity:0}}
+[data-sec="s133"] .s133__tip{
+  position:absolute;z-index:5;position-area:top;position-try-fallbacks:flip-block;margin:14px 0;
+  container-type:anchored;
+  width:max-content;max-width:210px;box-sizing:border-box;padding:12px 16px;border-radius:14px;background:var(--ink);color:#fff;
+  display:flex;flex-direction:column;gap:3px;pointer-events:none;
+  opacity:0;scale:.86;transition:opacity .3s,scale .45s var(--ease);
+  animation:s133-tip 12s linear infinite both;animation-delay:calc(var(--i) * -3s);
+}
+[data-sec="s133"] .s133__tip b{font-size:15px;font-weight:900}
+[data-sec="s133"] .s133__tip span{font-size:12px;line-height:1.45;color:#b9c6ee}
+[data-sec="s133"] .s133__arrow{position:absolute;left:50%;width:12px;height:12px;background:var(--ink);rotate:45deg;translate:-50% 0;bottom:-6px}
+@container anchored(fallback:flip-block){
+  [data-sec="s133"] .s133__arrow{bottom:auto;top:-6px}
+}
+@keyframes s133-tip{
+  0%{opacity:1;scale:1;animation-timing-function:step-end}
+  25%,100%{opacity:0;scale:.86}
+}
+[data-sec="s133"] .s133__pin:hover + .s133__tip,
+[data-sec="s133"] .s133__pin:focus-visible + .s133__tip{animation:none;opacity:1;scale:1}
+
+@media (max-width:900px){
+  [data-sec="s133"] .s133__wrap{grid-template-columns:1fr}
+  [data-sec="s133"] .s133__tabs{display:flex;overflow-x:auto}
+}

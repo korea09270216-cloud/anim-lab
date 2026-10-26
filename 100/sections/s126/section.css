@@ -1,0 +1,95 @@
+@property --s126-p { syntax: '<number>'; inherits: false; initial-value: 100; }
+@property --s126-pi { syntax: '<integer>'; inherits: false; initial-value: 100; }
+@property --s126-n { syntax: '<integer>'; inherits: false; initial-value: 0; }
+
+[data-sec="s126"] {
+  --ink: #1d1611; --paper: #efe6d4; --card: #fbf6ea; --ember: #e8461e; --gold: #f1b13c; --coal: #231a14;
+  position: relative; background: var(--paper); color: var(--ink);
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  overflow-x: clip; padding: 0 0 56px;
+}
+[data-sec="s126"] ol { list-style: none; margin: 0; padding: 0; }
+[data-sec="s126"] .s126__stage { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 4vw; padding: 0 5vw; view-timeline: --s126-trk block; }
+
+/* 좌측 고정 영역 */
+[data-sec="s126"] .s126__pin { position: sticky; top: 0; align-self: start; height: 100vh; min-height: 560px; display: flex; flex-direction: column; justify-content: center; gap: 18px; }
+[data-sec="s126"] .s126__dial { position: relative; width: clamp(240px, 25vw, 380px); aspect-ratio: 1; flex: none; }
+[data-sec="s126"] .s126__dial > * { position: absolute; inset: 0; border-radius: 50%; }
+[data-sec="s126"] .s126__well { background: #00000010; mask: radial-gradient(farthest-side, #0000 calc(100% - 26px), #000 calc(100% - 25px)); }
+[data-sec="s126"] .s126__ring {
+  --s126-p: 100;
+  background: conic-gradient(from 0deg, var(--gold), var(--ember) calc(var(--s126-p) * 1%), #0000 calc(var(--s126-p) * 1%));
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 26px), #000 calc(100% - 25px));
+}
+[data-sec="s126"] .s126__orbit { rotate: 360deg; }
+[data-sec="s126"] .s126__orbit i { position: absolute; left: 50%; top: 0; width: 26px; height: 26px; margin-left: -13px; border-radius: 50%; background: var(--coal); box-shadow: 0 0 0 5px var(--paper), 0 0 0 7px var(--ember); }
+[data-sec="s126"] .s126__spin { inset: 38px; border: 2px dashed #1d161135; animation: s126-spin 40s linear infinite; }
+[data-sec="s126"] .s126__core { inset: 0; display: grid; place-items: center; align-content: center; text-align: center; }
+[data-sec="s126"] .s126__pct { --s126-pi: 100; counter-reset: s126pc var(--s126-pi); font-size: clamp(54px, 6.2vw, 96px); font-weight: 900; letter-spacing: -.05em; line-height: 1; font-variant-numeric: tabular-nums; margin-top: -26px; }
+[data-sec="s126"] .s126__pct::after { content: counter(s126pc) '%'; }
+[data-sec="s126"] .s126__chap { position: absolute; left: 0; right: 0; top: 60%; height: 40px; }
+[data-sec="s126"] .s126__chap li { position: absolute; inset: 0; display: grid; place-items: center; font-size: 17px; font-weight: 800; letter-spacing: .12em; color: var(--ember); opacity: 0; }
+[data-sec="s126"] .s126__chap li:last-child { opacity: 1; }
+[data-sec="s126"] .s126__eyebrow { font-size: 13px; font-weight: 800; letter-spacing: .3em; color: var(--ember); }
+[data-sec="s126"] .s126__h { font-size: clamp(34px, 3.9vw, 62px); line-height: 1.12; font-weight: 900; letter-spacing: -.04em; text-wrap: balance; }
+[data-sec="s126"] .s126__lead { font-size: 16px; line-height: 1.6; color: #5b4c40; max-width: 30em; }
+
+/* 카드 */
+[data-sec="s126"] .s126__cards { display: flex; flex-direction: column; gap: 16vh; padding: 28vh 0 22vh; }
+[data-sec="s126"] .s126__card { position: relative; min-height: 58vh; border-radius: 28px; padding: 36px 40px; display: flex; flex-direction: column; gap: 14px; background: var(--card); box-shadow: 0 1px 0 #fff inset, 0 0 0 1px #1d161114; }
+[data-sec="s126"] .s126__card--b { background: var(--coal); color: #f6ecdc; box-shadow: none; }
+[data-sec="s126"] .s126__card--c { background: var(--ember); color: #fff3e6; box-shadow: none; }
+[data-sec="s126"] .s126__no { font-size: 15px; font-weight: 800; letter-spacing: .24em; opacity: .55; }
+[data-sec="s126"] .s126__t { font-size: clamp(26px, 2.5vw, 40px); font-weight: 900; letter-spacing: -.035em; line-height: 1.2; }
+[data-sec="s126"] .s126__p { font-size: 16px; line-height: 1.65; max-width: 30em; opacity: .78; }
+[data-sec="s126"] .s126__big { margin-top: auto; display: flex; align-items: baseline; gap: 8px; line-height: .9; }
+[data-sec="s126"] .s126__num { --s126-n: var(--to); counter-reset: s126n var(--s126-n); font-size: clamp(88px, 10vw, 160px); font-weight: 900; letter-spacing: -.06em; font-variant-numeric: tabular-nums; }
+[data-sec="s126"] .s126__num::after { content: counter(s126n); }
+[data-sec="s126"] .s126__big em { font-style: normal; font-size: clamp(22px, 2.2vw, 34px); font-weight: 800; }
+[data-sec="s126"] .s126__bar { display: block; height: 8px; border-radius: 8px; background: #8a7a6a30; overflow: clip; }
+[data-sec="s126"] .s126__bar i { display: block; height: 100%; width: 100%; transform-origin: 0 50%; scale: var(--w) 1; opacity: .9; }
+[data-sec="s126"] .s126__card--a .s126__bar i { background: var(--ember); }
+[data-sec="s126"] .s126__card--b .s126__bar i { background: var(--gold); }
+[data-sec="s126"] .s126__card--c .s126__bar i { background: #fff3e6; }
+[data-sec="s126"] .s126__note { margin: 0; padding: 0 5vw; font-size: 12px; color: #7a6a5c; }
+
+@keyframes s126-spin { to { rotate: 360deg; } }
+
+/* 스크롤 구동 (미지원이면 위의 정적 완성 상태가 그대로 보인다) */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    @keyframes s126-fill { from { --s126-p: 0; } to { --s126-p: 100; } }
+    @keyframes s126-pct { from { --s126-pi: 0; } to { --s126-pi: 100; } }
+    @keyframes s126-orbit { from { rotate: 0deg; } to { rotate: 360deg; } }
+    @keyframes s126-chap { 0% { opacity: 0; translate: 0 18px; } 18%, 82% { opacity: 1; translate: 0 0; } 100% { opacity: 0; translate: 0 -18px; } }
+    @keyframes s126-chap-first { 0%, 82% { opacity: 1; translate: 0 0; } 100% { opacity: 0; translate: 0 -18px; } }
+    @keyframes s126-chap-last { 0% { opacity: 0; translate: 0 18px; } 18%, 100% { opacity: 1; translate: 0 0; } }
+    @keyframes s126-reveal {
+      from { clip-path: inset(22% 14% 30% 14% round 48px); opacity: 0; translate: 0 90px; scale: .9; rotate: 2.5deg; }
+      60% { opacity: 1; }
+      to { clip-path: inset(0% 0% 0% 0% round 28px); opacity: 1; translate: 0 0; scale: 1; rotate: 0deg; }
+    }
+    @keyframes s126-count { from { --s126-n: 0; } to { --s126-n: var(--to); } }
+    @keyframes s126-bar { from { scale: 0 1; } to { scale: var(--w) 1; } }
+
+    [data-sec="s126"] .s126__ring { animation: s126-fill linear both; animation-timeline: --s126-trk; animation-range: contain; }
+    [data-sec="s126"] .s126__pct { animation: s126-pct linear both; animation-timeline: --s126-trk; animation-range: contain; }
+    [data-sec="s126"] .s126__orbit { animation: s126-orbit linear both; animation-timeline: --s126-trk; animation-range: contain; }
+    [data-sec="s126"] .s126__chap li { animation: s126-chap linear both; animation-timeline: --s126-trk; }
+    [data-sec="s126"] .s126__chap li:first-child { animation-name: s126-chap-first; animation-range: contain 0% contain 20%; }
+    [data-sec="s126"] .s126__chap li:nth-child(2) { animation-range: contain 20% contain 40%; }
+    [data-sec="s126"] .s126__chap li:nth-child(3) { animation-range: contain 40% contain 60%; }
+    [data-sec="s126"] .s126__chap li:nth-child(4) { animation-range: contain 60% contain 80%; }
+    [data-sec="s126"] .s126__chap li:last-child { animation-name: s126-chap-last; animation-range: contain 80% contain 100%; }
+
+    [data-sec="s126"] .s126__card { animation: s126-reveal cubic-bezier(.2, .7, .2, 1) both; animation-timeline: view(); animation-range: entry 0% entry 85%; }
+    [data-sec="s126"] .s126__num { animation: s126-count linear both; animation-timeline: view(); animation-range: entry 30% cover 38%; }
+    [data-sec="s126"] .s126__bar i { animation: s126-bar linear both; animation-timeline: view(); animation-range: entry 50% cover 42%; }
+  }
+}
+
+@media (max-width: 760px) {
+  [data-sec="s126"] .s126__stage { grid-template-columns: 1fr; }
+  [data-sec="s126"] .s126__pin { height: auto; min-height: 0; position: relative; padding: 48px 0 0; }
+  [data-sec="s126"] .s126__cards { padding: 24px 0 40px; gap: 32px; }
+}

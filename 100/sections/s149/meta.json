@@ -1,0 +1,1 @@
+{"title":"모아식탁: 3D 웨이브 경로 카드 스크롤","category":"P-EXP","tech":["CSS 3D transform","사인 웨이브 경로 배치","스크롤 속도 연동 tilt/blur/saturate","ScrollTrigger pin"],"desc":"카드 9장이 웨이브 경로를 따라 3D로 배치되어 순환하고, 스크롤 속도에 따라 기울기·가장자리 블러·채도가 변한다. 가만히 있어도 천천히 흐른다.","use":"가맹점 후기/오픈 매장 갤러리","fran":{"stage":"F5","fit":1,"note":"창업문의 페이지의 전국 오픈 매장 카드 갤러리(성공 증거)","ind":["요식업"],"pt":"brand"}}

@@ -1,0 +1,77 @@
+/* sibling-index()/sibling-count() 로 각도·색·딜레이를 전부 계산 — 항목 수가 바뀌어도 CSS 는 그대로 */
+@property --k{syntax:'<number>';inherits:false;initial-value:0}
+@property --spin{syntax:'<angle>';inherits:true;initial-value:0deg}
+
+[data-sec="s134"]{
+  --bg:#ff5a2c; --ink:#2a120b; --cream:#fff1de;
+  --spring:cubic-bezier(.3,1.4,.5,1);
+  position:relative;min-height:100vh;box-sizing:border-box;padding:clamp(40px,7vh,84px) clamp(20px,5vw,90px) clamp(36px,6vh,70px);
+  display:flex;flex-direction:column;align-items:center;gap:clamp(16px,3vh,32px);
+  background:var(--bg);color:var(--cream);overflow:hidden;
+  font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+}
+@supports (transition-timing-function:linear(0,1)){
+  [data-sec="s134"]{--spring:linear(0, 0.21, 0.58, 0.97, 1.25, 1.36, 1.33, 1.2, 1.07, 0.97, 0.92, 0.91, 0.93, 0.96, 0.99, 1.01, 1.02, 1.01, 1)}
+}
+[data-sec="s134"] .s134__head{text-align:center}
+[data-sec="s134"] .s134__eyebrow{margin:0 0 12px;font-size:13px;font-weight:800;letter-spacing:.22em;color:var(--ink)}
+[data-sec="s134"] .s134__title{margin:0;font-size:clamp(34px,4.4vw,72px);line-height:1.08;font-weight:900;letter-spacing:-.05em;word-break:keep-all}
+[data-sec="s134"] .s134__lead{margin:14px auto 0;font-size:clamp(14px,1.15vw,17px);line-height:1.6;color:#ffe0c4;word-break:keep-all}
+
+[data-sec="s134"] .s134__stages{display:flex;justify-content:center;gap:clamp(24px,8vw,160px);width:100%}
+[data-sec="s134"] .s134__stage{position:relative;width:calc(var(--r) * 2 + var(--d));aspect-ratio:1;flex:none;margin-bottom:44px;animation:s134-orbit 40s linear infinite}
+[data-sec="s134"] .s134__stage--b{animation-direction:reverse}
+@keyframes s134-orbit{to{--spin:360deg}}
+[data-sec="s134"] .s134__ring{list-style:none;margin:0;padding:0;position:absolute;inset:0;rotate:var(--spin)}
+[data-sec="s134"] .s134__ring li{
+  --ang:calc(360deg / sibling-count() * (sibling-index() - 1) - 90deg);
+  --hue:calc(30 + 330 / sibling-count() * sibling-index());
+  position:absolute;left:50%;top:50%;width:var(--d);aspect-ratio:1;margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);
+  translate:calc(cos(var(--ang)) * var(--r) * var(--k)) calc(sin(var(--ang)) * var(--r) * var(--k));
+  scale:calc(.25 + var(--k) * .75);opacity:min(1,calc(var(--k) * 2.5));
+  animation:s134-open 7s linear infinite both;
+  animation-delay:calc(sibling-index() * .09s);
+}
+[data-sec="s134"] .s134__ring li span{
+  display:grid;place-items:center;width:100%;height:100%;border-radius:50%;text-align:center;rotate:calc(var(--spin) * -1);
+  background:oklch(.94 .07 var(--hue));color:var(--ink);font-size:clamp(11px,1.05vw,15px);font-weight:900;line-height:1.2;letter-spacing:-.03em;
+  box-shadow:0 4px 0 var(--ink);transition:scale .6s var(--spring),box-shadow .3s;cursor:pointer;
+}
+[data-sec="s134"] .s134__ring li:hover span{scale:1.18;box-shadow:0 8px 0 var(--ink)}
+@keyframes s134-open{
+  0%,6%{--k:0;animation-timing-function:var(--spring)}
+  30%{--k:1}
+  74%{--k:1;animation-timing-function:cubic-bezier(.6,0,.4,1)}
+  90%,100%{--k:0}
+}
+[data-sec="s134"] .s134__core{
+  position:absolute;left:50%;top:50%;translate:-50% -50%;width:calc(var(--d) * 1.15);aspect-ratio:1;border-radius:50%;
+  display:grid;place-items:center;text-align:center;background:var(--ink);color:var(--cream);font-size:clamp(12px,1.1vw,16px);font-weight:900;line-height:1.25;
+  animation:s134-core 7s linear infinite;
+}
+@keyframes s134-core{
+  0%{rotate:0deg;scale:1}
+  6%{scale:.88;animation-timing-function:var(--spring)}
+  30%{rotate:360deg;scale:1}
+  74%{rotate:360deg;scale:1}
+  90%,100%{rotate:720deg;scale:1}
+}
+[data-sec="s134"] .s134__cap{position:absolute;left:0;right:0;bottom:calc(var(--d) * -.7);margin:0;text-align:center;font-size:13px;font-weight:700;color:var(--ink)}
+[data-sec="s134"] .s134__cap b{font-size:20px;font-weight:900;margin-right:2px}
+
+/* 중앙에서 바깥으로 퍼지는 스태거: abs(내 순번 - 중앙) */
+[data-sec="s134"] .s134__chips{list-style:none;margin:clamp(16px,3vh,32px) 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+[data-sec="s134"] .s134__chips li{
+  padding:11px 20px;border-radius:99px;background:var(--cream);color:var(--ink);font-size:14px;font-weight:800;
+  animation:s134-rise 7s linear infinite both;
+  animation-delay:calc(abs(sibling-index() - (sibling-count() + 1) / 2) * .12s);
+}
+@keyframes s134-rise{
+  0%,4%{translate:0 36px;opacity:0;animation-timing-function:var(--spring)}
+  20%{translate:0 0;opacity:1}
+  78%{translate:0 0;opacity:1;animation-timing-function:ease-in}
+  92%,100%{translate:0 -24px;opacity:0}
+}
+@media (max-width:900px){
+  [data-sec="s134"] .s134__stages{flex-direction:column;align-items:center;gap:56px}
+}

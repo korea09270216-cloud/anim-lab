@@ -1,0 +1,1 @@
+{"title":"화목 리퀴드 디바이더 — 출렁이는 섹션 경계","category":"O-CSS","tech":["clip-path: shape()","CSS sin()","@property","animation-timeline: view()"],"desc":"스크롤로 불꽃색 액체가 차오르며 섹션 경계선이 물결치고, 마지막엔 블롭 마스크 안의 화덕 피자가 드러난다(전부 CSS 계산)","use":"섹션 전환부(히어로→브랜드 철학→창업 CTA) 구분선","fran":{"stage":"F8","fit":1,"note":"창업문의 랜딩의 섹션 전환을 액체 경계로 이어 스크롤 몰입감을 높이는 공통 구분 UI","ind":["양식"],"pt":"landing"}}

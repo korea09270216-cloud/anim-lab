@@ -12,9 +12,9 @@ for (const d of fs.readdirSync(dir).filter(d => /^s\d{3}$/.test(d)).sort()) {
   if (d === 's000') continue; // 계약 샘플은 갤러리에서 제외
   const id = d.slice(1);
   const m = JSON.parse(fs.readFileSync(mp, 'utf8'));
-  const f = fr.items[id];
+  const f = fr.items[id] || m.fran; // 라운드2 섹션은 meta.json 의 fran 필드를 직접 쓴다
   list.push({ id, title: m.title, category: m.category, tech: m.tech || [], desc: m.desc || '', use: m.use || '',
-    fran: f ? { ...f, ind: fr.ind[id] || ['전업종'], pt: fr.pt[id] || 'both' } : null,
+    fran: f ? { ...f, ind: fr.ind[id] || f.ind || ['전업종'], pt: fr.pt[id] || f.pt || 'both' } : null,
     thumb: fs.existsSync(path.join(root, 'shots', d + '_a.jpg')) });
 }
 fs.writeFileSync(path.join(root, 'manifest.json'),
