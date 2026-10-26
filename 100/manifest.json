@@ -1,1400 +1,2090 @@
-[
- {
-  "id": "001",
-  "title": "결 텀블러 — 회전 프레임 시퀀스",
-  "category": "A-SCROLL",
-  "tech": [
-   "canvas 프로시저럴 렌더",
-   "프레임 시퀀스 스크러빙",
-   "ScrollTrigger",
-   "ImageData"
-  ],
-  "desc": "72프레임을 픽셀 셰이딩으로 미리 구워 스크롤에 맞춰 텀블러를 360도 회전시키는 Apple식 오브젝트 시퀀스",
-  "use": "제품 상세/신제품 런칭 히어로",
-  "thumb": true
- },
- {
-  "id": "002",
-  "title": "오롯 로스터스 — 글자 구멍 줌 마스크",
-  "category": "A-SCROLL",
-  "tech": [
-   "SVG mask",
-   "거리변환 기반 줌 원점 계산",
-   "ScrollTrigger scrub",
-   "로그 스케일 줌"
-  ],
-  "desc": "주황 면에 뚫린 '오롯' 글자 모양 구멍이 스크롤로 로그 스케일 확대되며 구멍 속 로스터리 장면이 전체 화면이 됨",
-  "use": "브랜드 인트로/히어로에서 본문으로 넘어가는 전환",
-  "thumb": true
- },
- {
-  "id": "003",
-  "title": "제철식탁 — 무한 스케일 줌 터널",
-  "category": "A-SCROLL",
-  "tech": [
-   "로그 스케일 순환 줌",
-   "clip-path evenodd 프레임",
-   "ScrollTrigger",
-   "ctx.tick 감쇠"
-  ],
-  "desc": "구멍 뚫린 계절 포스터 프레임 7장이 끝없이 빨려 들어오는 무한 줌 터널. 스크롤은 속도, 마우스는 소실점을 흔듦",
-  "use": "시즌 메뉴·캠페인 소개 섹션",
-  "thumb": true
- },
- {
-  "id": "004",
-  "title": "마루국수 가맹 로드맵 — 가로에서 세로로 꺾이는 핀",
-  "category": "A-SCROLL",
-  "tech": [
-   "sticky 핀",
-   "트랙 90도 회전 + 카드 역회전",
-   "ScrollTrigger",
-   "단일 진행값 구간 분할"
-  ],
-  "desc": "가로로 흐르던 8장의 카드 트랙이 스크롤 중간에 90도 회전하며 세로 스크롤로 전환되는 핀 시퀀스",
-  "use": "가맹 절차·연혁·단계형 소개 섹션",
-  "thumb": true
- },
- {
-  "id": "005",
-  "title": "밤도깨비 야시장 — Z축 카드 터널",
-  "category": "A-SCROLL",
-  "tech": [
-   "CSS 3D perspective",
-   "Z축 무한 순환 카메라",
-   "스크롤 속도 연동 스트릭",
-   "마우스 소실점 이동"
-  ],
-  "desc": "나선형으로 배치된 야시장 메뉴 카드 사이를 카메라가 Z축으로 관통하며 날아가는 3D 터널. 스크롤이 속도, 마우스가 시점",
-  "use": "이벤트·페스티벌·메뉴 라인업 소개",
-  "thumb": true
- },
- {
-  "id": "006",
-  "title": "숲의 방 — CSS3D 룸 카메라 무빙",
-  "category": "A-SCROLL",
-  "tech": [
-   "CSS 3D 룸",
-   "gsap 타임라인 스크럽 카메라",
-   "yaw/dolly 경로",
-   "핸드헬드 idle 흔들림"
-  ],
-  "desc": "스크롤이 곧 카메라. 편집숍 복도를 걸어 들어가며 좌우 벽을 돌아보고 창가 끝까지 이동하는 3D 룸 투어",
-  "use": "오프라인 매장·쇼룸·공간 브랜드 소개",
-  "thumb": true
- },
- {
-  "id": "007",
-  "title": "모리 26SS 룩북 — 분할 역방향 스크롤",
-  "category": "A-SCROLL",
-  "tech": [
-   "양방향 반대 translate",
-   "스크롤 속도 기반 skew",
-   "중앙 근접 스케일",
-   "mix-blend-mode difference"
-  ],
-  "desc": "두 컬럼이 스크롤에 맞춰 서로 반대 방향으로 흐르고, 속도에 따라 비틀리며 중앙에서 타일이 커지는 분할 룩북",
-  "use": "패션·라이프스타일 룩북, 컬렉션 갤러리",
-  "thumb": true
- },
- {
-  "id": "008",
-  "title": "아뜰리에 봉봉 — 스크롤 슬라이스 셔터",
-  "category": "A-SCROLL",
-  "tech": [
-   "N분할 클론 슬라이스",
-   "교대 방향 스태거",
-   "내부 역패럴랙스",
-   "ScrollTrigger scrub"
-  ],
-  "desc": "한 화면이 9개 세로 조각으로 쪼개져 교대로 위아래로 빠지며 다음 장면을 드러내는 셔터식 씬 전환 3연속",
-  "use": "브랜드 스토리·캠페인 챕터 전환",
-  "thumb": true
- },
- {
-  "id": "009",
-  "title": "한 롤의 여름 — 폴라로이드 던져 쌓기",
-  "category": "A-SCROLL",
-  "tech": [
-   "스크롤 구간별 투척 궤적",
-   "높이 연동 그림자",
-   "마우스 3D 틸트",
-   "프로시저럴 사진"
-  ],
-  "desc": "스크롤할 때마다 폴라로이드 12장이 화면 밖에서 회전하며 날아와 책상 위에 무심하게 쌓이는 투척 시퀀스",
-  "use": "여행·후기·갤러리·UGC 월 소개",
-  "thumb": true
- },
- {
-  "id": "010",
-  "title": "해주당 연혁 — 라인 드로잉 타임라인",
-  "category": "A-SCROLL",
-  "tech": [
-   "SVG path dash 드로잉",
-   "getPointAtLength 헤드 추적",
-   "노드 점등 + 리플",
-   "카메라 추적 translate"
-  ],
-  "desc": "스크롤에 따라 금빛 선이 굽이치며 그려지고, 선이 닿는 순간 연도 노드가 점등되며 사연이 열리는 스티키 연혁",
-  "use": "브랜드 히스토리·연혁·로드맵",
-  "thumb": true
- },
- {
-  "id": "011",
-  "title": "모닝브루: 커서 거리 반응 가변 타이포",
-  "category": "B-TYPE",
-  "tech": [
-   "per-char distance falloff",
-   "skew/scaleY/stroke weight emulation",
-   "asymmetric attack-release smoothing",
-   "ghost cursor idle"
-  ],
-  "desc": "커서가 가까운 글자일수록 굵어지고(스트로크) 세로로 늘어나며 커서 반대쪽으로 기울고 색이 달아오른다. 커서가 멈추면 유령 커서가 이어받는다.",
-  "use": "브랜드 히어로 헤드라인",
-  "thumb": true
- },
- {
-  "id": "012",
-  "title": "오늘반찬 델리: 글자 큐브 플립 슬로건",
-  "category": "B-TYPE",
-  "tech": [
-   "CSS 3D cube per char",
-   "expo.inOut stagger",
-   "perspective-origin pointer",
-   "slogan rotation"
-  ],
-  "desc": "글자마다 4면 큐브가 한 칸씩 굴러 슬로건이 통째로 교체되고, 커서에 따라 원근 소실점이 따라온다.",
-  "use": "슬로건/가치 제안 롤링 히어로",
-  "thumb": true
- },
- {
-  "id": "013",
-  "title": "해풍수산: 곡선 위를 흐르는 글자 리본",
-  "category": "B-TYPE",
-  "tech": [
-   "SVG textPath",
-   "Catmull-Rom 실시간 path 재생성",
-   "scroll velocity 가속",
-   "cursor path deformation"
-  ],
-  "desc": "세 줄 글자 리본이 사인파로 출렁이며 흐르고, 스크롤 속도에 가속되며, 커서가 리본을 눌러 곡선 자체가 휘어진다.",
-  "use": "브랜드 무드/스토리 인터루드",
-  "thumb": true
- },
- {
-  "id": "014",
-  "title": "탕탕 육개장: 롤링 풀스크린 메뉴",
-  "category": "B-TYPE",
-  "tech": [
-   "clip-path circle wash from pointer entry",
-   "per-char roll stagger",
-   "expo.out",
-   "idle auto-cycle"
-  ],
-  "desc": "메뉴 항목에 닿는 순간 진입 지점에서 컬러 원이 번지며 화면 전체가 물들고, 글자가 한 자씩 위로 굴러 교체된다.",
-  "use": "풀스크린 내비게이션/메뉴 인덱스",
-  "thumb": true
- },
- {
-  "id": "015",
-  "title": "달달상회: 떨어져 쌓이는 글자 타일",
-  "category": "B-TYPE",
-  "tech": [
-   "Matter.js rigid bodies",
-   "cursor repulsion force field",
-   "periodic shake impulse",
-   "DOM transform sync"
-  ],
-  "desc": "글자 타일이 위에서 떨어져 바닥에 쌓이고, 커서가 근처 타일을 힘장으로 밀어내며 주기적으로 한 번씩 튀어오른다.",
-  "use": "브랜드 선언문/오픈 안내 히어로",
-  "thumb": true
- },
- {
-  "id": "016",
-  "title": "삼년장 면옥: 흩어졌다 복귀하는 글자",
-  "category": "B-TYPE",
-  "tech": [
-   "per-char spring physics",
-   "radial repulsion field",
-   "rotation impulse",
-   "ghost cursor idle"
-  ],
-  "desc": "커서가 닿은 글자가 밀려 흩어지고 회전하며 달아오른 색을 띠다가 스프링으로 제자리에 복귀한다.",
-  "use": "브랜드 선언문/소개 문단",
-  "thumb": true
- },
- {
-  "id": "017",
-  "title": "심야라멘: 스크램블 + RGB 글리치",
-  "category": "B-TYPE",
-  "tech": [
-   "ScrambleTextPlugin",
-   "RGB channel split (screen blend)",
-   "clip-path slice glitch bursts",
-   "pointer velocity split"
-  ],
-  "desc": "헤드라인이 깨진 문자로 스크램블되며 다음 문구로 바뀌고, 무작위로 R/C 채널이 가로 조각으로 어긋나는 글리치가 터진다.",
-  "use": "야간 영업/이벤트 티저 히어로",
-  "thumb": true
- },
- {
-  "id": "018",
-  "title": "하루한끼 농장: 라인 마스크 + 형광펜 드로잉",
-  "category": "B-TYPE",
-  "tech": [
-   "SplitText mask lines",
-   "CSS var scrubbed marker",
-   "expo.out/expo.in line wipe",
-   "looping master timeline"
-  ],
-  "desc": "문단이 줄 단위 마스크에서 솟아오른 뒤 핵심 구절 위로 형광펜이 비스듬히 그어지고, 잠시 후 거꾸로 닫히며 반복된다.",
-  "use": "브랜드 스토리 문단 / 핵심 메시지 강조",
-  "thumb": true
- },
- {
-  "id": "019",
-  "title": "밀밭제과: 아웃라인에서 채움으로 스크롤 와이프",
-  "category": "B-TYPE",
-  "tech": [
-   "sticky scroll scrub",
-   "skewed clip-path wipe edge",
-   "inertial progress smoothing",
-   "rotating text badge"
-  ],
-  "desc": "거대한 아웃라인 글자가 스크롤에 따라 줄마다 비스듬한 경계로 색이 채워지고, 원형 텍스트 배지가 계속 돈다.",
-  "use": "브랜드 선언 / 스크롤 스토리 핀 섹션",
-  "thumb": true
- },
- {
-  "id": "020",
-  "title": "파도커피: 커서 궤적을 따르는 글자 파동",
-  "category": "B-TYPE",
-  "tech": [
-   "1D coupled spring chain",
-   "displacement injected by cursor trajectory",
-   "wave propagation via neighbor coupling",
-   "ghost cursor idle"
-  ],
-  "desc": "커서가 지나간 높이만큼 글자가 끌려 올라가고 이웃 글자로 파동이 번지며 스프링으로 출렁이다 가라앉는다.",
-  "use": "서핑/바다/음료 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "021",
-  "title": "대리석 결 위의 액체 파문",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL",
-   "GLSL fbm",
-   "리플 굴절",
-   "도메인 워핑"
-  ],
-  "desc": "셰이더로 그린 대리석 결 위에 커서가 닿는 곳마다 굴절하는 액체 파문이 일어나고, 가만히 두면 스스로 물방울이 떨어진다.",
-  "use": "카페·라운지·럭셔리 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "022",
-  "title": "스크롤 속도로 휘는 간판",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL",
-   "텍스처 왜곡",
-   "RGB 채널 분리",
-   "스크롤 속도"
-  ],
-  "desc": "거대한 타이포 간판이 스크롤 속도에 비례해 커튼처럼 휘고 RGB 가 갈라진다. 멈추면 관성으로 제자리에 돌아온다.",
-  "use": "브랜드 스토리·캠페인 스크롤 섹션",
-  "thumb": true
- },
- {
-  "id": "023",
-  "title": "일곱 천 알갱이의 글자 집결",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL gl.POINTS",
-   "버텍스 셰이더 모핑",
-   "픽셀 샘플링 타깃",
-   "커서 반발"
-  ],
-  "desc": "7천 개 입자가 흩어졌다가 BREW·보리·홉·건배 글자 모양으로 차례로 집결한다. 커서는 입자를 밀어내고 클릭하면 다음 모양으로 넘어간다.",
-  "use": "브랜드 인트로·키워드 전환 히어로",
-  "thumb": true
- },
- {
-  "id": "024",
-  "title": "먹이 번지는 커서 트레일",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL 핑퐁 FBO",
-   "커얼 노이즈 이류",
-   "잉크 번짐 셰이더",
-   "캡슐 스플랫"
-  ],
-  "desc": "커서가 지나간 자리에 먹이 번졌다가 컬 노이즈 흐름을 따라 천천히 퍼지고 마른다. 가만히 두면 보이지 않는 붓이 스스로 획을 긋는다.",
-  "use": "전통 차·공방·갤러리 인터랙티브 배경",
-  "thumb": true
- },
- {
-  "id": "025",
-  "title": "젤라또 메타볼 블롭",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL 필드 합성",
-   "메타볼 셰이더",
-   "스프링 커서",
-   "그래디언트 노말 셰이딩"
-  ],
-  "desc": "다섯 빛깔의 젤라또 방울이 서로 궤도를 돌다 닿는 순간 끈적하게 하나로 이어지고, 커서 방울이 스프링으로 끌려다니며 맛을 섞는다.",
-  "use": "디저트·F&B 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "026",
-  "title": "점토 SDF 레이마칭 변형",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL 레이마칭",
-   "SDF smooth-min",
-   "도메인 트위스트",
-   "소프트 섀도"
-  ],
-  "desc": "레이마칭으로 그린 점토 덩어리가 구→상자→고리로 끈적하게 변하며 위성 방울을 삼키고, 커서로 카메라가 궤도를 돈다.",
-  "use": "가구·오브제·제품 스튜디오 쇼케이스",
-  "thumb": true
- },
- {
-  "id": "027",
-  "title": "VHS 브라운관 글리치",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL 포스트프로세스",
-   "배럴 왜곡",
-   "색수차",
-   "스캔라인·그레인"
-  ],
-  "desc": "캔버스로 그린 레트로 비디오 화면에 브라운관 곡률·색수차·스캔라인·필름 그레인·롤링 노이즈 밴드를 입히고, 커서를 흔들면 트래킹이 무너진다.",
-  "use": "레트로·뮤직·게임·이벤트 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "028",
-  "title": "커서에 솟는 와이어 구체",
-  "category": "C-WEBGL",
-  "tech": [
-   "three.js",
-   "버텍스 변위 셰이더",
-   "와이어프레임",
-   "커서 벌지"
-  ],
-  "desc": "노이즈로 숨 쉬는 이코사헤드론 와이어 구체가 커서 방향으로 부풀어 오르고, 가만히 두면 스스로 호흡하며 천천히 회전한다.",
-  "use": "스포츠·테크·크루 브랜드 히어로 오브젝트",
-  "thumb": true
- },
- {
-  "id": "029",
-  "title": "스크롤 워프 스타필드",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL gl.LINES",
-   "스크롤 속도 이류",
-   "원근 투영 셰이더",
-   "ScrollTrigger"
-  ],
-  "desc": "2600개의 별이 스크롤 속도에 비례해 빛줄기로 늘어나며 워프하고, 멈추면 관성으로 점으로 되돌아온다. 속도 계기와 카피가 구간별로 바뀐다.",
-  "use": "여행·우주·테크 스토리텔링 스크롤 섹션",
-  "thumb": true
- },
- {
-  "id": "030",
-  "title": "도트 디더링 현상 리빌",
-  "category": "C-WEBGL",
-  "tech": [
-   "WebGL 픽셀화 셰이더",
-   "Bayer 디더링",
-   "컬러 양자화",
-   "커서 현상 버블"
-  ],
-  "desc": "석양 사진이 소수 색 디더링의 굵은 도트에서 블록 크기와 계조가 단계적으로 풀리며 선명해지고, 커서가 닿는 곳은 먼저 현상된다.",
-  "use": "사진관·스튜디오·이미지 리빌 포트폴리오",
-  "thumb": true
- },
- {
-  "id": "031",
-  "title": "온기제과 · 커서에 밀려나는 점 격자",
-  "category": "D-CURSOR",
-  "tech": [
-   "Canvas 스프링 물리",
-   "포인터 반발력",
-   "idle 고스트 포인터",
-   "GSAP ticker"
-  ],
-  "desc": "점 격자가 커서에 밀려났다 스프링으로 복귀하며 온기색으로 달아오른다. 입력이 없으면 리사주 궤적의 고스트가 대신 헤집는다",
-  "use": "브랜드 히어로 / 인트로 배경",
-  "thumb": true
- },
- {
-  "id": "032",
-  "title": "마그넷 로스터스 · 커서에 끌리는 칩 군집",
-  "category": "D-CURSOR",
-  "tech": [
-   "거리 기반 마그네틱 스프링",
-   "GSAP ticker",
-   "idle 고스트 커서",
-   "CSS 부유 루프"
-  ],
-  "desc": "여러 메뉴 칩이 커서 반경 안에서 서로 다른 질량으로 끌려오며 커지고 기운다. 입력이 없으면 고스트 커서가 군집을 휘젓는다",
-  "use": "카페/F&B 히어로, 메뉴 카테고리 인트로",
-  "thumb": true
- },
- {
-  "id": "033",
-  "title": "밤도깨비 야시장 · 어둠 속 손전등 리빌",
-  "category": "D-CURSOR",
-  "tech": [
-   "CSS mask radial-gradient",
-   "CSS 변수 구동",
-   "속도 연동 빔 반경",
-   "idle 순회 궤적"
-  ],
-  "desc": "꺼진 야시장 위를 손전등이 훑으면 네온 간판과 메뉴가 켜진다. 빠르게 움직일수록 빔이 퍼지고 입력이 없으면 스스로 야시장을 순찰한다",
-  "use": "이벤트·팝업스토어·야간 프로모션 랜딩",
-  "thumb": true
- },
- {
-  "id": "034",
-  "title": "카카오 아틀리에 · 커서 돋보기 렌즈",
-  "category": "D-CURSOR",
-  "tech": [
-   "clip-path circle 렌즈",
-   "역보정 transform 확대",
-   "스프링 추종 + 속도 반응 크기",
-   "idle 순회 궤적"
-  ],
-  "desc": "흐릿하게 번진 포스터 위로 돋보기를 대면 2배로 확대된 선명한 어두운 레이어가 렌즈 안에만 드러난다. 입력이 없으면 렌즈가 스스로 문서를 훑는다",
-  "use": "상품 상세/성분·원산지 스토리텔링, 프리미엄 브랜드 소개",
-  "thumb": true
- },
- {
-  "id": "035",
-  "title": "결 · 호버 대상별로 모프하는 커서 시스템",
-  "category": "D-CURSOR",
-  "tech": [
-   "커서 상태 머신 (원/라벨/화살표/드래그/텍스트바)",
-   "gsap.quickTo 추종",
-   "Draggable + Inertia 스트립",
-   "idle 고스트 투어"
-  ],
-  "desc": "커서가 올라간 요소의 data-cur 에 따라 점→라벨 원→화살표→DRAG 원→I빔 으로 크기·색·형태가 모프한다. 입력이 없으면 고스트 커서가 각 영역을 순회하고 스트립을 밀어 보인다",
-  "use": "가구/라이프스타일 브랜드 메인, 포트폴리오형 사이트",
-  "thumb": true
- },
- {
-  "id": "036",
-  "title": "스낵몬 · 3D 틸트 홀로그램 포일 카드",
-  "category": "D-CURSOR",
-  "tech": [
-   "CSS 3D rotateX/Y + perspective",
-   "color-dodge 포일 그라디언트",
-   "포인터 좌표 → CSS 변수",
-   "idle 자동 틸트"
-  ],
-  "desc": "카드 3장이 커서를 따라 기울고, 포인터 위치에 따라 레인보우 포일 무늬와 광택이 흐른다. 커서가 없으면 카드가 스스로 천천히 기울며 포일이 반짝인다",
-  "use": "멤버십/한정판 굿즈/이벤트 카드 소개",
-  "thumb": true
- },
- {
-  "id": "037",
-  "title": "눈꽃연구소 · 체크 패턴 마스크 호버 리빌",
-  "category": "D-CURSOR",
-  "tech": [
-   "Canvas destination-out 셀 마스크",
-   "체커 패리티 지연",
-   "셀별 expo 성장 / 지연 복구",
-   "idle 고스트 붓"
-  ],
-  "desc": "하얀 눈꽃 커버를 커서가 지나간 자리에 체커보드 셀이 엇갈려 열리며 붉은 딸기 시즌 메뉴가 드러나고, 잠시 뒤 셀이 닫혀 원상복구된다. 입력이 없으면 고스트 붓이 대신 긋는다",
-  "use": "시즌 메뉴/비포-애프터 히어로, 커버→상세 전환",
-  "thumb": true
- },
- {
-  "id": "038",
-  "title": "바삭당 · 진입 방향을 읽는 리스트 호버 와이프",
-  "category": "D-CURSOR",
-  "tech": [
-   "진입 방향 감지 clip-path inset 와이프",
-   "커서 추종 프리뷰 + 속도 기울기",
-   "위치 기반 히트테스트",
-   "idle 자동 순회"
-  ],
-  "desc": "메뉴 행에 위에서 들어가면 프리뷰가 아래로, 아래서 들어가면 위로 클립 와이프되며 이미지가 교체되고 다른 행은 가라앉는다. 입력이 없으면 가상 커서가 행을 순회한다",
-  "use": "메뉴 리스트, 포트폴리오/작업물 인덱스, 사이트맵",
-  "thumb": true
- },
- {
-  "id": "039",
-  "title": "가맹 상담 CTA · 진입 방향·속도 인식 액체 필 버튼",
-  "category": "D-CURSOR",
-  "tech": [
-   "SVG goo 필터 물방울 분리",
-   "진입/이탈 지점 기반 fill 원점",
-   "속도 비례 skewX + 자석 오프셋",
-   "idle 가상 커서 순회"
-  ],
-  "desc": "버튼에 들어온 지점에서 액체가 번져 채워지고(물방울이 따라붙음) 나간 지점으로 빨려 나간다. 이동 속도만큼 버튼이 기울어지며 입력이 없으면 가상 커서가 버튼을 차례로 훑는다",
-  "use": "가맹/상담/주문 CTA 블록, 푸터 상단 전환 버튼",
-  "thumb": true
- },
- {
-  "id": "040",
-  "title": "꾸덕젤리연구소 · 던지면 벽에 튕기는 관성 오브젝트",
-  "category": "D-CURSOR",
-  "tech": [
-   "Draggable + InertiaPlugin 속도 추적",
-   "원-원 탄성 충돌 + 벽 반사",
-   "충돌 스쿼시",
-   "idle 영구 표류"
-  ],
-  "desc": "식감 볼 9개를 집어 던지면 던진 속도 그대로 날아가 벽과 서로 튕기며 찌그러진다. 아무도 건드리지 않아도 에너지 하한으로 계속 표류한다",
-  "use": "이벤트/굿즈 소개, 장난기 있는 브랜드 인트로",
-  "thumb": true
- },
- {
-  "id": "041",
-  "title": "다단 커튼 페이지 전환",
-  "category": "E-TRANSITION",
-  "tech": [
-   "GSAP timeline",
-   "CustomEase",
-   "stagger from center/edges",
-   "scaleY 커튼"
-  ],
-  "desc": "8장의 세로 패널이 중앙에서 솟아 화면을 덮고 가장자리부터 걷히며 페이지가 교체되고 카피가 라인 마스크로 올라온다",
-  "use": "브랜드 사이트 서브페이지 간 전환 / 탭형 메인 페이지 이동",
-  "thumb": true
- },
- {
-  "id": "042",
-  "title": "플립 그리드↔리스트 모프",
-  "category": "E-TRANSITION",
-  "tech": [
-   "GSAP Flip",
-   "state diff",
-   "stagger",
-   "text re-reveal"
-  ],
-  "desc": "브런치 메뉴 8장이 4열 카드에서 1열 리스트로 하나의 연속된 박스로 변형되고 텍스트가 뒤따라 재등장한다(자동 반복 + 토글)",
-  "use": "메뉴/상품 목록 보기 방식 전환(그리드·리스트)",
-  "thumb": true
- },
- {
-  "id": "043",
-  "title": "카드→상세 풀스크린 확장 전환",
-  "category": "E-TRANSITION",
-  "tech": [
-   "GSAP Flip",
-   "borderRadius morph",
-   "detail stagger reveal",
-   "auto demo loop"
-  ],
-  "desc": "디저트 카드가 그리드 자리에서 그대로 섹션 전체로 팽창하며 상세 화면이 되고, 닫으면 같은 자리로 되돌아간다",
-  "use": "상품/메뉴 카드 클릭 시 상세 진입 전환",
-  "thumb": true
- },
- {
-  "id": "044",
-  "title": "사선 폴리곤 와이프 전환",
-  "category": "E-TRANSITION",
-  "tech": [
-   "clip-path polygon 트윈",
-   "accent 스트라이프 리드",
-   "onUpdate 좌표 계산",
-   "라인 마스크 리빌"
-  ],
-  "desc": "사선 경계의 폴리곤이 액센트 띠를 앞세워 화면을 쓸고 지나가며 슬라이드가 교체되고 헤드라인이 가로로 따라 들어온다",
-  "use": "팝업스토어/캠페인 히어로 슬라이드 전환",
-  "thumb": true
- },
- {
-  "id": "045",
-  "title": "SVG 모프 블롭 오버레이 전환",
-  "category": "E-TRANSITION",
-  "tech": [
-   "MorphSVGPlugin",
-   "절차적 블롭 패스",
-   "evenodd 구멍 리빌",
-   "액센트 링 레이어"
-  ],
-  "desc": "버튼 위치에서 번진 잉크 블롭이 화면 전체를 덮고, 같은 지점에서 구멍이 열리며 새 페이지가 드러난다",
-  "use": "티하우스/카페 브랜드 사이트의 카테고리 페이지 전환",
-  "thumb": true
- },
- {
-  "id": "046",
-  "title": "탭 크로스 슬라이스 전환",
-  "category": "E-TRANSITION",
-  "tech": [
-   "DOM 슬라이싱(clip-path inset)",
-   "교차 방향 stagger",
-   "expo.inOut",
-   "탭 인디케이터"
-  ],
-  "desc": "탭을 바꾸면 패널이 8개 가로 띠로 쪼개져 홀짝 반대 방향으로 밀려나가고 새 패널의 띠가 반대편에서 맞물려 들어온다",
-  "use": "제품 라인업/카테고리 탭 콘텐츠 교체",
-  "thumb": true
- },
- {
-  "id": "047",
-  "title": "풀스크린 메뉴 분할 리빌",
-  "category": "E-TRANSITION",
-  "tech": [
-   "GSAP timeline",
-   "상하 분할 패널",
-   "라인 마스크 스태거",
-   "링크 포커스 디밍"
-  ],
-  "desc": "메뉴 버튼을 누르면 좌우 패널이 위·아래에서 맞물려 내려오고 링크가 마스크 아래에서 차례로 솟으며 링크 호버에 따라 우측 비주얼이 교체된다",
-  "use": "브랜드 사이트 글로벌 네비게이션 오버레이",
-  "thumb": true
- },
- {
-  "id": "048",
-  "title": "로더→히어로 인트로 시퀀스",
-  "category": "E-TRANSITION",
-  "tech": [
-   "슬롯 롤링 카운터",
-   "진행률 연동 clip-path 창",
-   "GSAP master timeline",
-   "문자 스태거"
-  ],
-  "desc": "롤링 숫자 카운터가 오르는 동안 중앙 창이 진행률만큼 열리고 100%에서 전체 화면으로 팽창해 히어로가 안착한다(반복 재생)",
-  "use": "사이트 첫 진입 로딩 → 메인 히어로 인트로",
-  "thumb": true
- },
- {
-  "id": "049",
-  "title": "3D 코버플로우 드래그 관성 슬라이더",
-  "category": "E-TRANSITION",
-  "tech": [
-   "Draggable + InertiaPlugin",
-   "CSS 3D perspective",
-   "연속 위치 기반 transform",
-   "스냅 관성"
-  ],
-  "desc": "포스터 카드가 중앙 기준 거리에 따라 회전·후퇴하는 연속 코버플로우이며, 드래그 후 관성으로 굴러가 가장 가까운 카드에 스냅하고 방치하면 자동으로 넘어간다",
-  "use": "시즌 메뉴/컬렉션 쇼케이스 슬라이더",
-  "thumb": true
- },
- {
-  "id": "050",
-  "title": "가로 확장 윈도우 패널 갤러리",
-  "category": "E-TRANSITION",
-  "tech": [
-   "flex-grow 트윈",
-   "창문 시차(패널 위치 기반 art offset)",
-   "vertical label→콘텐츠 리빌",
-   "자동 순환"
-  ],
-  "desc": "다섯 패널 중 하나가 flex로 넓게 확장되며 각 패널의 비주얼이 고정된 창문처럼 위치에 따라 미끄러지고, 접힌 패널은 세로 라벨로 접힌다",
-  "use": "라인업/지점/컬렉션 소개 갤러리",
-  "thumb": true
- },
- {
-  "id": "051",
-  "title": "한 그릇의 열네 시간 — 라인아트 드로잉",
-  "category": "F-SVG",
-  "tech": [
-   "DrawSVG",
-   "ScrollTrigger scrub",
-   "sticky pin",
-   "SVG textPath"
-  ],
-  "desc": "스크롤할수록 라멘 한 그릇의 라인아트가 순서대로 그려지고 마지막에 색이 차오른다",
-  "use": "브랜드 스토리 / 메뉴 소개 섹션",
-  "thumb": true
- },
- {
-  "id": "052",
-  "title": "체리에서 한 잔까지 — 모핑 아이콘 시퀀스",
-  "category": "F-SVG",
-  "tech": [
-   "MorphSVG",
-   "GSAP timeline",
-   "컬러 전환",
-   "word wheel"
-  ],
-  "desc": "하나의 도형이 잎→원두→불꽃→물방울→컵으로 변형되며 배경색·카피 휠이 함께 전환된다",
-  "use": "브랜드 프로세스 / 제조 공정 소개",
-  "thumb": true
- },
- {
-  "id": "053",
-  "title": "밭에서 식탁까지 — 새벽 배송 스토리",
-  "category": "F-SVG",
-  "tech": [
-   "MotionPath",
-   "autoRotate",
-   "ScrollTrigger scrub",
-   "SVG 일러스트"
-  ],
-  "desc": "스크롤에 맞춰 배달 스쿠터가 굽이진 도로를 따라 달리며 네 정거장의 랜드마크가 차례로 솟아난다",
-  "use": "배송/프로세스 스토리텔링 섹션",
-  "thumb": true
- },
- {
-  "id": "054",
-  "title": "손으로 쓴 약속 — 낙서 어노테이션",
-  "category": "F-SVG",
-  "tech": [
-   "DrawSVG",
-   "ScrollTrigger scrub",
-   "feTurbulence line-boil",
-   "SVG 손그림 path"
-  ],
-  "desc": "카피 위에 취소선·동그라미·밑줄·형광펜·화살표가 스크롤 순서대로 손으로 그어지고 선이 미세하게 떨린다",
-  "use": "브랜드 철학/약속 문구 섹션",
-  "thumb": true
- },
- {
-  "id": "055",
-  "title": "녹아내리는 젤라또 메뉴 — Gooey + 왜곡",
-  "category": "F-SVG",
-  "tech": [
-   "SVG feGaussianBlur goo",
-   "feTurbulence displacement",
-   "blob lag stretch",
-   "커서 메타볼"
-  ],
-  "desc": "메뉴 선택 블롭이 끈적하게 늘어나며 이동하고 방울이 흘러내리며, 맛이 바뀔 때 헤드라인이 액체처럼 일렁였다 가라앉는다",
-  "use": "메뉴/플레이버 셀렉터, 호버 인터랙션 내비게이션",
-  "thumb": true
- },
- {
-  "id": "056",
-  "title": "하루 여섯 정류장 — 푸드트럭 노선도",
-  "category": "F-SVG",
-  "tech": [
-   "DrawSVG + mask",
-   "MotionPath",
-   "CSS dash flow",
-   "핀 드롭 + 리플"
-  ],
-  "desc": "스크롤하면 점선 노선이 도시 지도 위에 이어지고 트럭이 달리며 핀이 하나씩 꽂히고 현재 정류장에 파동이 번진다",
-  "use": "매장 위치/투어 일정/배송 노선 소개",
-  "thumb": true
- },
- {
-  "id": "057",
-  "title": "HANA 로고 리빌 — 스트로크에서 채움으로",
-  "category": "F-SVG",
-  "tech": [
-   "DrawSVG",
-   "clipPath 사선 와이프",
-   "radialGradient 커서 스포트",
-   "timeline 루프"
-  ],
-  "desc": "밀 이삭 엠블럼과 워드마크가 윤곽선으로 그려진 뒤 사선 와이프로 면이 채워지고 커서를 따라 황금빛 광원이 흐른다",
-  "use": "브랜드 인트로/로고 리빌 섹션",
-  "thumb": true
- },
- {
-  "id": "058",
-  "title": "하루 영양의 궤도 — 오비탈 인포그래픽",
-  "category": "F-SVG",
-  "tech": [
-   "ticker 기반 궤도 시뮬레이션",
-   "커서 중력",
-   "3D 틸트",
-   "SVG 혜성 꼬리"
-  ],
-  "desc": "여섯 개의 영양소 별이 세 겹 궤도를 돌고, 커서가 가까워지면 끌려오며 느려지고 중앙 수치가 바뀌며 전체가 3D로 기운다",
-  "use": "영양/성분/수치 인포그래픽, 서비스 특징 소개",
-  "thumb": true
- },
- {
-  "id": "059",
-  "title": "천천히, 열두 시간 — 액체 게이지",
-  "category": "F-SVG",
-  "tech": [
-   "프레임별 SVG 파형 생성",
-   "스크롤 진행도 → 수위",
-   "Lenis 속도 → 파고",
-   "clipPath 이중 숫자"
-  ],
-  "desc": "스크롤에 따라 잔에 액체가 차오르고 스크롤 속도에 따라 파도가 커지며 숫자가 액체 안에서 색이 반전된다",
-  "use": "진행률/숙성 시간/영양 수치 등 게이지형 스토리 섹션",
-  "thumb": true
- },
- {
-  "id": "060",
-  "title": "눈 마주친 푸딩들 — 시선 추적 캐릭터",
-  "category": "F-SVG",
-  "tech": [
-   "DrawSVG 인트로",
-   "MorphSVG 입 모양",
-   "커서 시선 추적",
-   "자율 두리번 idle"
-  ],
-  "desc": "라인아트 푸딩 캐릭터 네 마리의 눈동자가 커서를 끝까지 따라가고 가까워지면 입이 놀란 모양으로 바뀌며 커서가 멈추면 스스로 두리번거린다",
-  "use": "메뉴/캐릭터 소개, 마스코트 섹션",
-  "thumb": true
- },
- {
-  "id": "061",
-  "title": "모닝브루 숫자로 보는 브랜드 — 오도미터 롤러",
-  "category": "G-STORY",
-  "tech": [
-   "GSAP",
-   "odometer 릴(자릿수별 회전)",
-   "ScrollTrigger",
-   "라이브 카운트"
-  ],
-  "desc": "자릿수마다 0~9 릴이 오른쪽부터 더 많이 회전하며 안착하고, 이후에도 실시간 누적 잔 수가 슬롯머신처럼 굴러간다",
-  "use": "브랜드 소개 / 회사 개요의 핵심 수치 섹션",
-  "thumb": true
- },
- {
-  "id": "062",
-  "title": "숲의 연대기 — 관성 드래그 타임라인",
-  "category": "G-STORY",
-  "tech": [
-   "Draggable + InertiaPlugin",
-   "연도 스냅",
-   "거대 연도 패럴랙스",
-   "자동 진행"
-  ],
-  "desc": "가로 타임라인을 던지듯 드래그하면 관성으로 미끄러지다 가장 가까운 연도에 스냅되고, 배경 거대 연도와 카드 스케일이 거리에 따라 연동된다",
-  "use": "브랜드 히스토리 / 연혁 섹션",
-  "thumb": true
- },
- {
-  "id": "063",
-  "title": "한결 베이커리 — 스티키 3막 스토리",
-  "category": "G-STORY",
-  "tech": [
-   "ScrollTrigger scrub 타임라인",
-   "position:sticky 핀",
-   "clip-path 이미지 스왑",
-   "SVG 일러스트 모션"
-  ],
-  "desc": "스크롤하면 반죽→굽기→식탁 3막이 이어지며 일러스트가 아래서 와이프로 교체되고, 텍스트 단계·진행바·배경색이 하나의 타임라인으로 연동된다",
-  "use": "브랜드 스토리 / 제조 공정 소개",
-  "thumb": true
- },
- {
-  "id": "064",
-  "title": "리뉴얼 전·후 비교 슬라이더",
-  "category": "G-STORY",
-  "tech": [
-   "clip-path 마스크 와이프",
-   "Draggable + quickTo 감쇠 추종",
-   "슬라이더 위치 연동 수치 보간",
-   "사인파 자동 스윕"
-  ],
-  "desc": "전/후 매장 일러스트를 손잡이로 가르는 비교 슬라이더. 드래그 시 감쇠로 따라오고, 방치하면 스스로 쓸고 가며, 성과 수치가 마스크 위치에 맞춰 연속 보간된다",
-  "use": "가맹점 리뉴얼 사례 / 인테리어 전후 비교",
-  "thumb": true
- },
- {
-  "id": "065",
-  "title": "창업 패키지 3D 플립 카드",
-  "category": "G-STORY",
-  "tech": [
-   "3D rotationY 플립",
-   "CustomBounce 착지",
-   "포인터 틸트 quickTo",
-   "순차 자동 플립 루프"
-  ],
-  "desc": "창업 패키지 3종 카드가 들려 올라 3D로 뒤집히며 상세 조건을 보여주고 바운스로 착지한다. 방치하면 카드가 차례로 스스로 뒤집힌다",
-  "use": "가맹 안내 / 창업 비용 패키지 비교",
-  "thumb": true
- },
- {
-  "id": "066",
-  "title": "시그니처 음료 메뉴 보드",
-  "category": "G-STORY",
-  "tech": [
-   "clip-path 원형 확산(포인터 기점)",
-   "SVG 음료 프로시저럴 일러스트",
-   "메뉴 호버 연동 전체 테마 전환",
-   "자동 순환"
-  ],
-  "desc": "메뉴 리스트에 호버하면 커서 위치에서 원형으로 배경색이 번지며 섹션 전체 컬러·메인 음료 비주얼·설명이 한 번에 교체된다. 방치 시 자동 순환",
-  "use": "시그니처 메뉴 소개 / 메뉴 보드",
-  "thumb": true
- },
- {
-  "id": "067",
-  "title": "가마치킨 고객 리뷰 월",
-  "category": "G-STORY",
-  "tech": [
-   "3열 역방향 무한 세로 스크롤(ticker 래핑)",
-   "호버 감속 정지",
-   "Lenis 스크롤 속도 연동",
-   "기울어진 월 마스크"
-  ],
-  "desc": "리뷰 카드 3열이 서로 반대 방향으로 끝없이 흐르고, 마우스를 올리면 부드럽게 감속해 멈추며 페이지 스크롤 속도에 따라 가속된다",
-  "use": "고객 후기 / SNS·배달앱 리뷰 모음",
-  "thumb": true
- },
- {
-  "id": "068",
-  "title": "전국 매장 지도 — 핀 드롭",
-  "category": "G-STORY",
-  "tech": [
-   "SVG 지도 DrawSVG 윤곽",
-   "CustomBounce 핀 드롭",
-   "리플 무한 확산",
-   "도시 자동 순환 툴팁"
-  ],
-  "desc": "한국 지도 윤곽이 그려진 뒤 매장 핀이 하늘에서 떨어져 바운스로 착지하고 리플이 번진다. 도시가 자동 순환 하이라이트되고 핀 호버 시 매장 수 툴팁",
-  "use": "매장 찾기 / 전국 가맹점 현황",
-  "thumb": true
- },
- {
-  "id": "069",
-  "title": "가맹 FAQ 몰핑 아코디언",
-  "category": "G-STORY",
-  "tech": [
-   "MorphSVG 아이콘(+→−)",
-   "높이 elastic 스프링",
-   "border-radius 알약↔카드 변형",
-   "블롭 몰핑 루프"
-  ],
-  "desc": "질문 알약이 열리며 카드로 변형되고 +가 −로 모핑, 답변 높이는 스프링으로 튀어 오른다. 방치하면 질문이 차례로 자동 개폐되고 옆 블롭이 계속 몰핑한다",
-  "use": "가맹 문의 / 자주 묻는 질문",
-  "thumb": true
- },
- {
-  "id": "070",
-  "title": "모닝브루 사람들 — 부채꼴 팀 카드",
-  "category": "G-STORY",
-  "tech": [
-   "부채꼴 피벗 회전 레이아웃",
-   "포인터 자석(독 확대 + 이웃 밀어내기)",
-   "스크롤 스프레드 연동",
-   "lerp ticker + idle 웨이브"
-  ],
-  "desc": "스택된 팀 카드가 스크롤에 따라 부채꼴로 펼쳐지고, 마우스가 가까워지면 해당 카드가 들려 커지며 이웃이 부드럽게 밀려난다. 방치하면 포커스가 파도처럼 흘러간다",
-  "use": "팀 소개 / 바리스타·점주 인터뷰 카드",
-  "thumb": true
- },
- {
-  "id": "071",
-  "title": "로스터리 큐브 스크롤 회전",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D prism",
-   "ScrollTrigger scrub",
-   "dwell easing",
-   "face shading"
-  ],
-  "desc": "스크롤하면 거대한 4면 프리즘이 X축으로 굴러 면마다 다른 콘텐츠가 정면에 오고, 전환 중 뒤로 물러나며 면 음영이 바뀐다",
-  "use": "브랜드 스토리/메뉴 소개 챕터 전환",
-  "thumb": true
- },
- {
-  "id": "072",
-  "title": "하루사진관 3D 포토 링",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D ring",
-   "pointer inertia",
-   "scroll velocity coupling",
-   "depth shading"
-  ],
-  "desc": "12장의 인화 카드가 원통 링을 이루며 자동 회전하고, 드래그하면 관성으로 돌며 스크롤 속도에도 링이 반응한다",
-  "use": "갤러리/포트폴리오/후기 컬렉션",
-  "thumb": true
- },
- {
-  "id": "073",
-  "title": "빵 다이어리 책장 넘김",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D page flip",
-   "drag + snap",
-   "stacking z-order",
-   "angle-driven shading"
-  ],
-  "desc": "레시피북이 자동으로 한 장씩 넘어가고, 페이지를 끌면 손을 따라 넘어가다 놓으면 가까운 쪽으로 스냅한다",
-  "use": "메뉴북/레시피/브랜드 스토리북",
-  "thumb": true
- },
- {
-  "id": "074",
-  "title": "버거랩 아이소 레이어 스택",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D isometric",
-   "volumetric slices",
-   "mouse-driven tilt",
-   "explode/focus lift"
-  ],
-  "desc": "슬라이스를 쌓아 부피를 만든 버거 재료 7층이 아이소메트릭으로 떠 있고, 마우스에 따라 기울며 층이 번갈아 솟아올라 분해된다",
-  "use": "제품 구성/원재료 소개",
-  "thumb": true
- },
- {
-  "id": "075",
-  "title": "멘데이 라멘클럽 웨이브 플립",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D card flip",
-   "GSAP grid stagger",
-   "sliced background mosaic",
-   "pointer-origin wave"
-  ],
-  "desc": "50장의 카드가 한 장의 그림을 나눠 갖고 있다가, 마우스가 닿은 칸을 진원지로 파동처럼 뒤집히며 다른 그림으로 바뀐다(자동 반복)",
-  "use": "이벤트 전환/브랜드 메시지 리빌",
-  "thumb": true
- },
- {
-  "id": "076",
-  "title": "콜드브루 캔 3D 뷰어",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D cylinder",
-   "36 strip label wrap",
-   "drag inertia",
-   "per-frame lighting"
-  ],
-  "desc": "36조각 스트립으로 만든 원통 캔이 둥둥 떠 자동 회전하고, 드래그하면 관성으로 돌며 회전각에 따라 면마다 조명이 달라진다",
-  "use": "제품 상세/신제품 런칭",
-  "thumb": true
- },
- {
-  "id": "077",
-  "title": "프레시 입체 타이포 익스트루드",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D layer extrude",
-   "scroll-driven depth",
-   "mouse tilt",
-   "color-ramped slices"
-  ],
-  "desc": "한 단어를 44겹 레이어로 쌓아 두께를 만들고, 스크롤에 따라 두께가 자라며 글자가 굴러가고 마우스에 따라 기울어 옆면 색이 흐른다",
-  "use": "히어로/캠페인 슬로건 섹션",
-  "thumb": true
- },
- {
-  "id": "078",
-  "title": "오로라항공 Z축 비행",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D camera dolly",
-   "scroll-driven Z travel",
-   "depth fade",
-   "star field wrap"
-  ],
-  "desc": "스크롤하는 만큼 카메라가 Z축으로 전진해 목적지 도시 타이포·고리·행성이 차례로 다가와 스쳐 지나가고 마지막 CTA 카드에 도착한다",
-  "use": "여행/항공/캠페인 내러티브 스크롤",
-  "thumb": true
- },
- {
-  "id": "079",
-  "title": "서울 와인 페스타 틸트 포스터",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D layered poster",
-   "pointer/gyro tilt",
-   "spring damping",
-   "moving glare"
-  ],
-  "desc": "여섯 겹으로 깊이를 나눈 입체 포스터가 마우스(모바일은 자이로)를 따라 기울고, 입력이 없으면 스스로 원을 그리며 눈부심 하이라이트가 표면을 훑는다",
-  "use": "이벤트/페스티벌 포스터, 티켓, 캠페인 키비주얼",
-  "thumb": true
- },
- {
-  "id": "080",
-  "title": "여름밥상 종이 접힘 메뉴",
-  "category": "H-3D",
-  "tech": [
-   "CSS3D accordion fold",
-   "nested hinge panels",
-   "ScrollTrigger scrub",
-   "angle-based paper shading"
-  ],
-  "desc": "지그재그로 접혀 있던 네 칸짜리 종이 메뉴판이 스크롤에 맞춰 힌지마다 펼쳐지며 한 장의 큰 메뉴로 열리고, 접힘 각도에 따라 면마다 음영이 달라진다",
-  "use": "메뉴판/브로셔/섹션 오프닝 리빌",
-  "thumb": true
- },
- {
-  "id": "081",
-  "title": "쏟아지는 메뉴 뱃지 파일",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Matter.js",
-   "Canvas2D",
-   "커서 반발력"
-  ],
-  "desc": "메뉴 이름 뱃지가 위에서 쏟아져 바닥에 쌓이고, 커서가 지나가면 밀려 흩어진다(오래된 것부터 순환)",
-  "use": "베이커리·카페 메인 히어로/메뉴 소개",
-  "thumb": true
- },
- {
-  "id": "082",
-  "title": "감귤밭 새떼 보이드",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Boids 군집",
-   "Canvas2D",
-   "커서 반발",
-   "궤적 트레일"
-  ],
-  "desc": "분리·정렬·응집 규칙의 새떼가 하늘을 가르고 커서가 닿으면 갈라져 흩어졌다 다시 모인다",
-  "use": "농장·로컬푸드·여행 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "083",
-  "title": "결: 찻잎이 흐르는 플로우필드",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Perlin 플로우필드",
-   "Canvas2D",
-   "커서 소용돌이",
-   "트레일 페이드"
-  ],
-  "desc": "노이즈 벡터장을 따라 수천 개의 잎맥 라인이 흐르며 커서 주변에 소용돌이가 생긴다",
-  "use": "티·웰니스·프리미엄 브랜드의 브랜드 스토리",
-  "thumb": true
- },
- {
-  "id": "084",
-  "title": "묵향: 번지는 먹",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Canvas 메타볼 블러+컨트라스트",
-   "잉크 블롭 성장·감쇠",
-   "자동 붓질"
-  ],
-  "desc": "커서를 따라 먹물이 번지며 퍼지고 서서히 마르고, 손을 떼면 붓이 스스로 곡선을 그린다",
-  "use": "전통차·전시·서예 클래스·프리미엄 브랜드 인트로",
-  "thumb": true
- },
- {
-  "id": "085",
-  "title": "별헤는 밤: 별자리 네트워크",
-  "category": "I-PHYSICS",
-  "tech": [
-   "파티클 네트워크",
-   "거리 기반 링크",
-   "Canvas2D",
-   "커서 노드"
-  ],
-  "desc": "떠다니는 별들이 가까워지면 선으로 이어지고 커서가 하나의 밝은 별이 되어 주변 별을 끌어당겨 별자리를 만든다",
-  "use": "루프탑 바·천문대·야간 이벤트 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "086",
-  "title": "말랑 젤리: 베를레 소프트바디",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Verlet 소프트바디",
-   "스프링 제약",
-   "드래그 그랩",
-   "Canvas2D"
-  ],
-  "desc": "스프링으로 엮인 젤리들이 바닥에서 출렁이며 서로 부딪히고, 잡아 늘려 던지면 말랑하게 복원된다",
-  "use": "디저트·젤리·캐릭터 굿즈 브랜드 히어로",
-  "thumb": true
- },
- {
-  "id": "087",
-  "title": "한 상 차림: 스크롤로 쌓이는 반찬",
-  "category": "I-PHYSICS",
-  "tech": [
-   "Matter.js",
-   "ScrollTrigger 진행도",
-   "스티키 스테이지",
-   "물리 적재"
-  ],
-  "desc": "스크롤을 내릴수록 반찬 토큰이 하나씩 떨어져 바닥에 수북이 쌓이고, 올리면 하나씩 걷힌다",
-  "use": "한식당·밀키트 브랜드의 메뉴 구성 소개",
-  "thumb": true
- },
- {
-  "id": "088",
-  "title": "중력의 중심: 왜곡 그리드",
-  "category": "I-PHYSICS",
-  "tech": [
-   "왜곡 격자 메쉬",
-   "중력 렌즈 변위",
-   "Canvas2D",
-   "커서 질량 스무딩"
-  ],
-  "desc": "모눈 격자가 커서(와 궤도를 도는 보조 질량) 주변으로 휘어 빨려들며 렌즈처럼 왜곡된다",
-  "use": "가구·인테리어·건축 스튜디오 브랜드 철학 섹션",
-  "thumb": true
- },
- {
-  "id": "089",
-  "title": "능선: 노이즈 지형 조이플롯",
-  "category": "I-PHYSICS",
-  "tech": [
-   "fBm 노이즈 지형",
-   "조이플롯 은면 처리",
-   "Canvas2D",
-   "커서 융기"
-  ],
-  "desc": "겹겹의 등고선 라인이 노이즈로 천천히 흐르며 커서가 닿는 능선이 솟아오른다",
-  "use": "아웃도어·트레일 브랜드 히어로/캠페인",
-  "thumb": true
- },
- {
-  "id": "090",
-  "title": "한강 불꽃 페스타: 스파크 버스트",
-  "category": "I-PHYSICS",
-  "tech": [
-   "파티클 폭죽",
-   "가산 합성(lighter)",
-   "중력·항력 시뮬",
-   "클릭 발사"
-  ],
-  "desc": "로켓이 솟아 터지며 불티가 중력에 휘어 흩어지는 폭죽이 자동으로 이어지고, 클릭하면 그 자리에서 터진다",
-  "use": "페스티벌·이벤트·프로모션 랜딩 히어로",
-  "thumb": true
- },
- {
-  "id": "091",
-  "title": "원두 산지 풀스크린 스냅 내비",
-  "category": "J-UX",
-  "tech": [
-   "Observer",
-   "ScrollTrigger pin",
-   "SplitText",
-   "clip-path"
-  ],
-  "desc": "핀 고정된 풀스크린 슬라이드를 휠/스와이프 한 번에 한 장씩 clip-path 로 덮으며 넘기고 사이드 인덱스 바가 채워짐. 끝에서 스크롤 해제, 방치하면 자동 순환.",
-  "use": "브랜드 스토리·산지·메뉴 소개 풀페이지 섹션",
-  "thumb": true
- },
- {
-  "id": "092",
-  "title": "명도 반전 헤더 + 스크롤 진행 원형 버튼",
-  "category": "J-UX",
-  "tech": [
-   "ScrollTrigger",
-   "CSS 변수 트윈",
-   "SVG stroke 게이지",
-   "sticky"
-  ],
-  "desc": "밴드 배경이 밝음/어두움/컬러로 바뀌는 지점에서 sticky 헤더와 원형 진행 버튼의 색이 반전되고, 버튼은 퍼센트에서 맨위로 화살표로 롤링.",
-  "use": "롱 스크롤 브랜드 페이지의 헤더와 TOP 버튼",
-  "thumb": true
- },
- {
-  "id": "093",
-  "title": "푸터 커튼 리빌 + 마그네틱 CTA",
-  "category": "J-UX",
-  "tech": [
-   "sticky 커튼",
-   "ScrollTrigger scrub",
-   "quickTo 마그네틱",
-   "stagger 로고"
-  ],
-  "desc": "페이지가 커튼처럼 걷히며 뒤에 숨은 푸터가 스케일업, 거대 로고 글자가 아래서 순차 상승하고 원형 CTA가 포인터에 끌려오거나 스스로 부유.",
-  "use": "페이지 하단 푸터·문의 유도 영역",
-  "thumb": true
- },
- {
-  "id": "094",
-  "title": "퍼센트 롤링 로더 + clip-path 줌인",
-  "category": "J-UX",
-  "tech": [
-   "GSAP timeline",
-   "clip-path inset",
-   "CustomEase",
-   "롤링 숫자"
-  ],
-  "desc": "작은 창 속 히어로가 퍼센트가 오르는 동안 서서히 열리고 100%에서 clip-path 로 화면 전체로 확장되며 이미지 줌아웃, 타이틀이 올라오고 다시 닫히며 반복.",
-  "use": "사이트 첫 로딩·인트로 연출",
-  "thumb": true
- },
- {
-  "id": "095",
-  "title": "한옥 문 열림 스플릿 히어로",
-  "category": "J-UX",
-  "tech": [
-   "CSS 3D rotateY",
-   "CustomEase",
-   "SplitText",
-   "timeline loop"
-  ],
-  "desc": "양쪽 목재 대문이 바깥 경첩을 축으로 안쪽으로 열리며 달과 타이틀이 드러나고, 머문 뒤 다시 닫히는 루프. 문이 열릴수록 그림자가 짙어짐.",
-  "use": "브랜드 인트로 히어로",
-  "thumb": true
- },
- {
-  "id": "096",
-  "title": "스티키 쇼케이스 마스크 교체",
-  "category": "J-UX",
-  "tech": [
-   "ScrollTrigger pin",
-   "clip-path 마스크 5종",
-   "리스트 센터링",
-   "자동 스크롤 데모"
-  ],
-  "desc": "핀 고정된 무대에서 스크롤에 따라 좌측 메뉴 리스트가 중앙 정렬로 굴러가고, 중앙 아치 프레임의 이미지가 원·가로·세로·삼각 마스크로 매번 다르게 교체됨.",
-  "use": "메뉴·제품 쇼케이스 리스트",
-  "thumb": true
- },
- {
-  "id": "097",
-  "title": "라벨 모프 문의 폼 + 컨페티",
-  "category": "J-UX",
-  "tech": [
-   "ScrambleText 라벨 모프",
-   "SVG 체크 드로우",
-   "canvas 컨페티",
-   "자동 입력 데모"
-  ],
-  "desc": "포커스되면 큰 질문형 라벨이 짧은 라벨로 스크램블되며 위로 접히고 밑줄이 그려짐. 제출 시 버튼이 원형 로딩→체크→컨페티 폭죽→성공 메시지. 입력부터 제출까지 자동 재생 루프.",
-  "use": "문의·견적·예약 폼",
-  "thumb": true
- },
- {
-  "id": "098",
-  "title": "스와이프 카드 스택 매칭",
-  "category": "J-UX",
-  "tech": [
-   "Draggable",
-   "InertiaPlugin 속도 이어받기",
-   "스택 재배치",
-   "자동 스와이프 데모"
-  ],
-  "desc": "카드를 끌면 회전·스탬프가 따라붙고 속도가 충분하면 던져져 뒤 카드가 즉시 올라옴. 놓으면 엘라스틱 복귀. 방치하면 자동으로 좌우로 넘김.",
-  "use": "메뉴 추천·취향 매칭·온보딩",
-  "thumb": true
- },
- {
-  "id": "099",
-  "title": "컬러 와이프 스토리텔링",
-  "category": "J-UX",
-  "tech": [
-   "ScrollTrigger scrub pin",
-   "clip-path polygon·circle·inset 와이프",
-   "타임라인 텍스트 교체",
-   "자동 스크롤 데모"
-  ],
-  "desc": "핀 고정된 스토리에서 스크롤 진행에 따라 배경 컬러가 사선, 원형 확장, 가로 와이프로 번갈아 덮이고 문구가 챕터별로 교체되며 하단 레일이 채워짐.",
-  "use": "브랜드 스토리·연혁·제작 과정 섹션",
-  "thumb": true
- },
- {
-  "id": "100",
-  "title": "스크롤 방향 반응 헤더·독 + 읽기 진행",
-  "category": "J-UX",
-  "tech": [
-   "ScrollTrigger direction",
-   "CustomEase",
-   "ScrambleText 챕터 라벨",
-   "sticky 독"
-  ],
-  "desc": "내려 읽으면 헤더가 위로 숨고 올리면 헤더와 하단 구독 독이 튀어나옴. 상단 진행바와 챕터 번호가 롤링되고 제목이 스크램블로 교체. 방치하면 자동 읽기 루프.",
-  "use": "매거진·블로그·롱폼 아티클 페이지의 헤더/푸터 동작",
-  "thumb": true
- }
-]
+{
+ "stages": [
+  {
+   "key": "F1",
+   "name": "히어로·첫인상",
+   "q": "첫 3초에 '이 브랜드 되겠다'는 인상을 주는가"
+  },
+  {
+   "key": "F2",
+   "name": "브랜드 신뢰",
+   "q": "연혁·수치·철학으로 본사를 믿게 만드는가"
+  },
+  {
+   "key": "F3",
+   "name": "메뉴·상품 경쟁력",
+   "q": "팔리는 상품이라는 걸 보여주는가"
+  },
+  {
+   "key": "F4",
+   "name": "창업 조건·절차",
+   "q": "비용·지원·진행 단계를 이해시키는가"
+  },
+  {
+   "key": "F5",
+   "name": "성공 증거",
+   "q": "점주 후기·전후 비교·매장 현황으로 증명하는가"
+  },
+  {
+   "key": "F6",
+   "name": "FAQ·불안 해소",
+   "q": "망설임을 풀어주는가"
+  },
+  {
+   "key": "F7",
+   "name": "창업문의 전환",
+   "q": "문의 버튼/폼까지 이어지게 하는가"
+  },
+  {
+   "key": "F8",
+   "name": "사이트 공통 UI",
+   "q": "로더·헤더·내비·전환처럼 전 페이지에 깔리는가"
+  }
+ ],
+ "fit": {
+  "1": "조건부 — 브랜드 톤·업종이 맞을 때만",
+  "2": "추천 — 컨셉이 맞으면 좋음",
+  "3": "핵심 — 창업문의 페이지에 바로 넣을 것"
+ },
+ "axes": {
+  "pt": {
+   "landing": "랜딩 최적(단일 롱스크롤·창업문의 중심)",
+   "brand": "브랜드 전용(서브페이지·내비가 전제)"
+  },
+  "ind": [
+   "한식",
+   "중식",
+   "일식",
+   "양식",
+   "주점",
+   "분식",
+   "포케·샐러드",
+   "카페·디저트",
+   "요식업 외"
+  ],
+  "source": "https://xn--ov3b86nsk.com/bbs/content.php?co_id=project 의 분류 체계(랜딩/브랜드 × 업종)를 그대로 차용"
+ },
+ "flow": [
+  [
+   "F8",
+   "048",
+   "첫 로딩"
+  ],
+  [
+   "F1",
+   "012",
+   "슬로건 히어로"
+  ],
+  [
+   "F2",
+   "061",
+   "신뢰 수치"
+  ],
+  [
+   "F2",
+   "062",
+   "연혁"
+  ],
+  [
+   "F3",
+   "066",
+   "시그니처 메뉴"
+  ],
+  [
+   "F4",
+   "004",
+   "가맹 로드맵"
+  ],
+  [
+   "F4",
+   "065",
+   "창업 패키지"
+  ],
+  [
+   "F5",
+   "064",
+   "전/후 비교"
+  ],
+  [
+   "F5",
+   "067",
+   "후기 월"
+  ],
+  [
+   "F5",
+   "068",
+   "전국 매장"
+  ],
+  [
+   "F6",
+   "069",
+   "FAQ"
+  ],
+  [
+   "F7",
+   "097",
+   "창업문의 폼"
+  ],
+  [
+   "F7",
+   "093",
+   "푸터 CTA"
+  ],
+  [
+   "F8",
+   "092",
+   "헤더/TOP"
+  ]
+ ],
+ "list": [
+  {
+   "id": "001",
+   "title": "결 텀블러 — 회전 프레임 시퀀스",
+   "category": "A-SCROLL",
+   "tech": [
+    "canvas 프로시저럴 렌더",
+    "프레임 시퀀스 스크러빙",
+    "ScrollTrigger",
+    "ImageData"
+   ],
+   "desc": "72프레임을 픽셀 셰이딩으로 미리 구워 스크롤에 맞춰 텀블러를 360도 회전시키는 Apple식 오브젝트 시퀀스",
+   "use": "제품 상세/신제품 런칭 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "002",
+   "title": "오롯 로스터스 — 글자 구멍 줌 마스크",
+   "category": "A-SCROLL",
+   "tech": [
+    "SVG mask",
+    "거리변환 기반 줌 원점 계산",
+    "ScrollTrigger scrub",
+    "로그 스케일 줌"
+   ],
+   "desc": "주황 면에 뚫린 '오롯' 글자 모양 구멍이 스크롤로 로그 스케일 확대되며 구멍 속 로스터리 장면이 전체 화면이 됨",
+   "use": "브랜드 인트로/히어로에서 본문으로 넘어가는 전환",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "로고/글자 구멍으로 줌 인 → 본문 진입, 히어로→본문 전환",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "003",
+   "title": "제철식탁 — 무한 스케일 줌 터널",
+   "category": "A-SCROLL",
+   "tech": [
+    "로그 스케일 순환 줌",
+    "clip-path evenodd 프레임",
+    "ScrollTrigger",
+    "ctx.tick 감쇠"
+   ],
+   "desc": "구멍 뚫린 계절 포스터 프레임 7장이 끝없이 빨려 들어오는 무한 줌 터널. 스크롤은 속도, 마우스는 소실점을 흔듦",
+   "use": "시즌 메뉴·캠페인 소개 섹션",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "무한 줌 터널 — 시즌/신메뉴 소개",
+    "ind": [
+     "한식",
+     "양식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "004",
+   "title": "마루국수 가맹 로드맵 — 가로에서 세로로 꺾이는 핀",
+   "category": "A-SCROLL",
+   "tech": [
+    "sticky 핀",
+    "트랙 90도 회전 + 카드 역회전",
+    "ScrollTrigger",
+    "단일 진행값 구간 분할"
+   ],
+   "desc": "가로로 흐르던 8장의 카드 트랙이 스크롤 중간에 90도 회전하며 세로 스크롤로 전환되는 핀 시퀀스",
+   "use": "가맹 절차·연혁·단계형 소개 섹션",
+   "fran": {
+    "stage": "F4",
+    "fit": 3,
+    "note": "가로로 흐르다 세로로 꺾이는 가맹 로드맵 — 상담→계약→교육→오픈 단계",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "005",
+   "title": "밤도깨비 야시장 — Z축 카드 터널",
+   "category": "A-SCROLL",
+   "tech": [
+    "CSS 3D perspective",
+    "Z축 무한 순환 카메라",
+    "스크롤 속도 연동 스트릭",
+    "마우스 소실점 이동"
+   ],
+   "desc": "나선형으로 배치된 야시장 메뉴 카드 사이를 카메라가 Z축으로 관통하며 날아가는 3D 터널. 스크롤이 속도, 마우스가 시점",
+   "use": "이벤트·페스티벌·메뉴 라인업 소개",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "006",
+   "title": "숲의 방 — CSS3D 룸 카메라 무빙",
+   "category": "A-SCROLL",
+   "tech": [
+    "CSS 3D 룸",
+    "gsap 타임라인 스크럽 카메라",
+    "yaw/dolly 경로",
+    "핸드헬드 idle 흔들림"
+   ],
+   "desc": "스크롤이 곧 카메라. 편집숍 복도를 걸어 들어가며 좌우 벽을 돌아보고 창가 끝까지 이동하는 3D 룸 투어",
+   "use": "오프라인 매장·쇼룸·공간 브랜드 소개",
+   "fran": {
+    "stage": "F5",
+    "fit": 1,
+    "note": "CSS3D 룸 투어 — 매장 인테리어 공간 소개",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "007",
+   "title": "모리 26SS 룩북 — 분할 역방향 스크롤",
+   "category": "A-SCROLL",
+   "tech": [
+    "양방향 반대 translate",
+    "스크롤 속도 기반 skew",
+    "중앙 근접 스케일",
+    "mix-blend-mode difference"
+   ],
+   "desc": "두 컬럼이 스크롤에 맞춰 서로 반대 방향으로 흐르고, 속도에 따라 비틀리며 중앙에서 타일이 커지는 분할 룩북",
+   "use": "패션·라이프스타일 룩북, 컬렉션 갤러리",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "008",
+   "title": "아뜰리에 봉봉 — 스크롤 슬라이스 셔터",
+   "category": "A-SCROLL",
+   "tech": [
+    "N분할 클론 슬라이스",
+    "교대 방향 스태거",
+    "내부 역패럴랙스",
+    "ScrollTrigger scrub"
+   ],
+   "desc": "한 화면이 9개 세로 조각으로 쪼개져 교대로 위아래로 빠지며 다음 장면을 드러내는 셔터식 씬 전환 3연속",
+   "use": "브랜드 스토리·캠페인 챕터 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "009",
+   "title": "한 롤의 여름 — 폴라로이드 던져 쌓기",
+   "category": "A-SCROLL",
+   "tech": [
+    "스크롤 구간별 투척 궤적",
+    "높이 연동 그림자",
+    "마우스 3D 틸트",
+    "프로시저럴 사진"
+   ],
+   "desc": "스크롤할 때마다 폴라로이드 12장이 화면 밖에서 회전하며 날아와 책상 위에 무심하게 쌓이는 투척 시퀀스",
+   "use": "여행·후기·갤러리·UGC 월 소개",
+   "fran": {
+    "stage": "F5",
+    "fit": 2,
+    "note": "폴라로이드 투척 — 매장·후기 사진 월",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "010",
+   "title": "해주당 연혁 — 라인 드로잉 타임라인",
+   "category": "A-SCROLL",
+   "tech": [
+    "SVG path dash 드로잉",
+    "getPointAtLength 헤드 추적",
+    "노드 점등 + 리플",
+    "카메라 추적 translate"
+   ],
+   "desc": "스크롤에 따라 금빛 선이 굽이치며 그려지고, 선이 닿는 순간 연도 노드가 점등되며 사연이 열리는 스티키 연혁",
+   "use": "브랜드 히스토리·연혁·로드맵",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "라인 드로잉 연혁 — 스크롤하며 노드 점등",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "011",
+   "title": "모닝브루: 커서 거리 반응 가변 타이포",
+   "category": "B-TYPE",
+   "tech": [
+    "per-char distance falloff",
+    "skew/scaleY/stroke weight emulation",
+    "asymmetric attack-release smoothing",
+    "ghost cursor idle"
+   ],
+   "desc": "커서가 가까운 글자일수록 굵어지고(스트로크) 세로로 늘어나며 커서 반대쪽으로 기울고 색이 달아오른다. 커서가 멈추면 유령 커서가 이어받는다.",
+   "use": "브랜드 히어로 헤드라인",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "커서에 반응하는 헤드라인 — 인터랙티브한 첫인상",
+    "ind": [
+     "카페·디저트"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "012",
+   "title": "오늘반찬 델리: 글자 큐브 플립 슬로건",
+   "category": "B-TYPE",
+   "tech": [
+    "CSS 3D cube per char",
+    "expo.inOut stagger",
+    "perspective-origin pointer",
+    "slogan rotation"
+   ],
+   "desc": "글자마다 4면 큐브가 한 칸씩 굴러 슬로건이 통째로 교체되고, 커서에 따라 원근 소실점이 따라온다.",
+   "use": "슬로건/가치 제안 롤링 히어로",
+   "fran": {
+    "stage": "F1",
+    "fit": 3,
+    "note": "'월 매출 N 책임' 같은 가치 제안 슬로건을 글자 플립으로 교체하며 첫 화면 각인",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "013",
+   "title": "해풍수산: 곡선 위를 흐르는 글자 리본",
+   "category": "B-TYPE",
+   "tech": [
+    "SVG textPath",
+    "Catmull-Rom 실시간 path 재생성",
+    "scroll velocity 가속",
+    "cursor path deformation"
+   ],
+   "desc": "세 줄 글자 리본이 사인파로 출렁이며 흐르고, 스크롤 속도에 가속되며, 커서가 리본을 눌러 곡선 자체가 휘어진다.",
+   "use": "브랜드 무드/스토리 인터루드",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "014",
+   "title": "탕탕 육개장: 롤링 풀스크린 메뉴",
+   "category": "B-TYPE",
+   "tech": [
+    "clip-path circle wash from pointer entry",
+    "per-char roll stagger",
+    "expo.out",
+    "idle auto-cycle"
+   ],
+   "desc": "메뉴 항목에 닿는 순간 진입 지점에서 컬러 원이 번지며 화면 전체가 물들고, 글자가 한 자씩 위로 굴러 교체된다.",
+   "use": "풀스크린 내비게이션/메뉴 인덱스",
+   "fran": {
+    "stage": "F8",
+    "fit": 1,
+    "note": "롤링 풀스크린 메뉴",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "brand"
+   },
+   "thumb": true
+  },
+  {
+   "id": "015",
+   "title": "달달상회: 떨어져 쌓이는 글자 타일",
+   "category": "B-TYPE",
+   "tech": [
+    "Matter.js rigid bodies",
+    "cursor repulsion force field",
+    "periodic shake impulse",
+    "DOM transform sync"
+   ],
+   "desc": "글자 타일이 위에서 떨어져 바닥에 쌓이고, 커서가 근처 타일을 힘장으로 밀어내며 주기적으로 한 번씩 튀어오른다.",
+   "use": "브랜드 선언문/오픈 안내 히어로",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "글자가 쏟아져 쌓이는 오픈 안내/선언 — 이벤트형 창업 설명회 랜딩",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "016",
+   "title": "삼년장 면옥: 흩어졌다 복귀하는 글자",
+   "category": "B-TYPE",
+   "tech": [
+    "per-char spring physics",
+    "radial repulsion field",
+    "rotation impulse",
+    "ghost cursor idle"
+   ],
+   "desc": "커서가 닿은 글자가 밀려 흩어지고 회전하며 달아오른 색을 띠다가 스프링으로 제자리에 복귀한다.",
+   "use": "브랜드 선언문/소개 문단",
+   "fran": {
+    "stage": "F2",
+    "fit": 1,
+    "note": "글자 흩어짐/복귀 — 브랜드 소개 문단",
+    "ind": [
+     "한식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "017",
+   "title": "심야라멘: 스크램블 + RGB 글리치",
+   "category": "B-TYPE",
+   "tech": [
+    "ScrambleTextPlugin",
+    "RGB channel split (screen blend)",
+    "clip-path slice glitch bursts",
+    "pointer velocity split"
+   ],
+   "desc": "헤드라인이 깨진 문자로 스크램블되며 다음 문구로 바뀌고, 무작위로 R/C 채널이 가로 조각으로 어긋나는 글리치가 터진다.",
+   "use": "야간 영업/이벤트 티저 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "018",
+   "title": "하루한끼 농장: 라인 마스크 + 형광펜 드로잉",
+   "category": "B-TYPE",
+   "tech": [
+    "SplitText mask lines",
+    "CSS var scrubbed marker",
+    "expo.out/expo.in line wipe",
+    "looping master timeline"
+   ],
+   "desc": "문단이 줄 단위 마스크에서 솟아오른 뒤 핵심 구절 위로 형광펜이 비스듬히 그어지고, 잠시 후 거꾸로 닫히며 반복된다.",
+   "use": "브랜드 스토리 문단 / 핵심 메시지 강조",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "라인 마스크 + 형광펜 — 핵심 메시지 강조",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "019",
+   "title": "밀밭제과: 아웃라인에서 채움으로 스크롤 와이프",
+   "category": "B-TYPE",
+   "tech": [
+    "sticky scroll scrub",
+    "skewed clip-path wipe edge",
+    "inertial progress smoothing",
+    "rotating text badge"
+   ],
+   "desc": "거대한 아웃라인 글자가 스크롤에 따라 줄마다 비스듬한 경계로 색이 채워지고, 원형 텍스트 배지가 계속 돈다.",
+   "use": "브랜드 선언 / 스크롤 스토리 핀 섹션",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "아웃라인→채움 스크롤 와이프 — 브랜드 선언문",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "020",
+   "title": "파도커피: 커서 궤적을 따르는 글자 파동",
+   "category": "B-TYPE",
+   "tech": [
+    "1D coupled spring chain",
+    "displacement injected by cursor trajectory",
+    "wave propagation via neighbor coupling",
+    "ghost cursor idle"
+   ],
+   "desc": "커서가 지나간 높이만큼 글자가 끌려 올라가고 이웃 글자로 파동이 번지며 스프링으로 출렁이다 가라앉는다.",
+   "use": "서핑/바다/음료 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "021",
+   "title": "대리석 결 위의 액체 파문",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL",
+    "GLSL fbm",
+    "리플 굴절",
+    "도메인 워핑"
+   ],
+   "desc": "셰이더로 그린 대리석 결 위에 커서가 닿는 곳마다 굴절하는 액체 파문이 일어나고, 가만히 두면 스스로 물방울이 떨어진다.",
+   "use": "카페·라운지·럭셔리 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "022",
+   "title": "스크롤 속도로 휘는 간판",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL",
+    "텍스처 왜곡",
+    "RGB 채널 분리",
+    "스크롤 속도"
+   ],
+   "desc": "거대한 타이포 간판이 스크롤 속도에 비례해 커튼처럼 휘고 RGB 가 갈라진다. 멈추면 관성으로 제자리에 돌아온다.",
+   "use": "브랜드 스토리·캠페인 스크롤 섹션",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "023",
+   "title": "일곱 천 알갱이의 글자 집결",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL gl.POINTS",
+    "버텍스 셰이더 모핑",
+    "픽셀 샘플링 타깃",
+    "커서 반발"
+   ],
+   "desc": "7천 개 입자가 흩어졌다가 BREW·보리·홉·건배 글자 모양으로 차례로 집결한다. 커서는 입자를 밀어내고 클릭하면 다음 모양으로 넘어간다.",
+   "use": "브랜드 인트로·키워드 전환 히어로",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "입자가 키워드(저투자·고수익 등)로 집결하며 키워드 각인",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "024",
+   "title": "먹이 번지는 커서 트레일",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL 핑퐁 FBO",
+    "커얼 노이즈 이류",
+    "잉크 번짐 셰이더",
+    "캡슐 스플랫"
+   ],
+   "desc": "커서가 지나간 자리에 먹이 번졌다가 컬 노이즈 흐름을 따라 천천히 퍼지고 마른다. 가만히 두면 보이지 않는 붓이 스스로 획을 긋는다.",
+   "use": "전통 차·공방·갤러리 인터랙티브 배경",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "025",
+   "title": "젤라또 메타볼 블롭",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL 필드 합성",
+    "메타볼 셰이더",
+    "스프링 커서",
+    "그래디언트 노말 셰이딩"
+   ],
+   "desc": "다섯 빛깔의 젤라또 방울이 서로 궤도를 돌다 닿는 순간 끈적하게 하나로 이어지고, 커서 방울이 스프링으로 끌려다니며 맛을 섞는다.",
+   "use": "디저트·F&B 브랜드 히어로",
+   "fran": {
+    "stage": "F1",
+    "fit": 1,
+    "note": "메타볼 블롭 배경 — 디저트·카페 브랜드",
+    "ind": [
+     "카페·디저트"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "026",
+   "title": "점토 SDF 레이마칭 변형",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL 레이마칭",
+    "SDF smooth-min",
+    "도메인 트위스트",
+    "소프트 섀도"
+   ],
+   "desc": "레이마칭으로 그린 점토 덩어리가 구→상자→고리로 끈적하게 변하며 위성 방울을 삼키고, 커서로 카메라가 궤도를 돈다.",
+   "use": "가구·오브제·제품 스튜디오 쇼케이스",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "027",
+   "title": "VHS 브라운관 글리치",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL 포스트프로세스",
+    "배럴 왜곡",
+    "색수차",
+    "스캔라인·그레인"
+   ],
+   "desc": "캔버스로 그린 레트로 비디오 화면에 브라운관 곡률·색수차·스캔라인·필름 그레인·롤링 노이즈 밴드를 입히고, 커서를 흔들면 트래킹이 무너진다.",
+   "use": "레트로·뮤직·게임·이벤트 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "028",
+   "title": "커서에 솟는 와이어 구체",
+   "category": "C-WEBGL",
+   "tech": [
+    "three.js",
+    "버텍스 변위 셰이더",
+    "와이어프레임",
+    "커서 벌지"
+   ],
+   "desc": "노이즈로 숨 쉬는 이코사헤드론 와이어 구체가 커서 방향으로 부풀어 오르고, 가만히 두면 스스로 호흡하며 천천히 회전한다.",
+   "use": "스포츠·테크·크루 브랜드 히어로 오브젝트",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "029",
+   "title": "스크롤 워프 스타필드",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL gl.LINES",
+    "스크롤 속도 이류",
+    "원근 투영 셰이더",
+    "ScrollTrigger"
+   ],
+   "desc": "2600개의 별이 스크롤 속도에 비례해 빛줄기로 늘어나며 워프하고, 멈추면 관성으로 점으로 되돌아온다. 속도 계기와 카피가 구간별로 바뀐다.",
+   "use": "여행·우주·테크 스토리텔링 스크롤 섹션",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "030",
+   "title": "도트 디더링 현상 리빌",
+   "category": "C-WEBGL",
+   "tech": [
+    "WebGL 픽셀화 셰이더",
+    "Bayer 디더링",
+    "컬러 양자화",
+    "커서 현상 버블"
+   ],
+   "desc": "석양 사진이 소수 색 디더링의 굵은 도트에서 블록 크기와 계조가 단계적으로 풀리며 선명해지고, 커서가 닿는 곳은 먼저 현상된다.",
+   "use": "사진관·스튜디오·이미지 리빌 포트폴리오",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "031",
+   "title": "온기제과 · 커서에 밀려나는 점 격자",
+   "category": "D-CURSOR",
+   "tech": [
+    "Canvas 스프링 물리",
+    "포인터 반발력",
+    "idle 고스트 포인터",
+    "GSAP ticker"
+   ],
+   "desc": "점 격자가 커서에 밀려났다 스프링으로 복귀하며 온기색으로 달아오른다. 입력이 없으면 리사주 궤적의 고스트가 대신 헤집는다",
+   "use": "브랜드 히어로 / 인트로 배경",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "점 격자가 커서에 반응하는 배경 — 심플한 브랜드 히어로",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "032",
+   "title": "마그넷 로스터스 · 커서에 끌리는 칩 군집",
+   "category": "D-CURSOR",
+   "tech": [
+    "거리 기반 마그네틱 스프링",
+    "GSAP ticker",
+    "idle 고스트 커서",
+    "CSS 부유 루프"
+   ],
+   "desc": "여러 메뉴 칩이 커서 반경 안에서 서로 다른 질량으로 끌려오며 커지고 기운다. 입력이 없으면 고스트 커서가 군집을 휘젓는다",
+   "use": "카페/F&B 히어로, 메뉴 카테고리 인트로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "033",
+   "title": "밤도깨비 야시장 · 어둠 속 손전등 리빌",
+   "category": "D-CURSOR",
+   "tech": [
+    "CSS mask radial-gradient",
+    "CSS 변수 구동",
+    "속도 연동 빔 반경",
+    "idle 순회 궤적"
+   ],
+   "desc": "꺼진 야시장 위를 손전등이 훑으면 네온 간판과 메뉴가 켜진다. 빠르게 움직일수록 빔이 퍼지고 입력이 없으면 스스로 야시장을 순찰한다",
+   "use": "이벤트·팝업스토어·야간 프로모션 랜딩",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "034",
+   "title": "카카오 아틀리에 · 커서 돋보기 렌즈",
+   "category": "D-CURSOR",
+   "tech": [
+    "clip-path circle 렌즈",
+    "역보정 transform 확대",
+    "스프링 추종 + 속도 반응 크기",
+    "idle 순회 궤적"
+   ],
+   "desc": "흐릿하게 번진 포스터 위로 돋보기를 대면 2배로 확대된 선명한 어두운 레이어가 렌즈 안에만 드러난다. 입력이 없으면 렌즈가 스스로 문서를 훑는다",
+   "use": "상품 상세/성분·원산지 스토리텔링, 프리미엄 브랜드 소개",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "035",
+   "title": "결 · 호버 대상별로 모프하는 커서 시스템",
+   "category": "D-CURSOR",
+   "tech": [
+    "커서 상태 머신 (원/라벨/화살표/드래그/텍스트바)",
+    "gsap.quickTo 추종",
+    "Draggable + Inertia 스트립",
+    "idle 고스트 투어"
+   ],
+   "desc": "커서가 올라간 요소의 data-cur 에 따라 점→라벨 원→화살표→DRAG 원→I빔 으로 크기·색·형태가 모프한다. 입력이 없으면 고스트 커서가 각 영역을 순회하고 스트립을 밀어 보인다",
+   "use": "가구/라이프스타일 브랜드 메인, 포트폴리오형 사이트",
+   "fran": {
+    "stage": "F8",
+    "fit": 1,
+    "note": "모프 커서 시스템 — 브랜드 인터랙션 사이트",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "brand"
+   },
+   "thumb": true
+  },
+  {
+   "id": "036",
+   "title": "스낵몬 · 3D 틸트 홀로그램 포일 카드",
+   "category": "D-CURSOR",
+   "tech": [
+    "CSS 3D rotateX/Y + perspective",
+    "color-dodge 포일 그라디언트",
+    "포인터 좌표 → CSS 변수",
+    "idle 자동 틸트"
+   ],
+   "desc": "카드 3장이 커서를 따라 기울고, 포인터 위치에 따라 레인보우 포일 무늬와 광택이 흐른다. 커서가 없으면 카드가 스스로 천천히 기울며 포일이 반짝인다",
+   "use": "멤버십/한정판 굿즈/이벤트 카드 소개",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "037",
+   "title": "눈꽃연구소 · 체크 패턴 마스크 호버 리빌",
+   "category": "D-CURSOR",
+   "tech": [
+    "Canvas destination-out 셀 마스크",
+    "체커 패리티 지연",
+    "셀별 expo 성장 / 지연 복구",
+    "idle 고스트 붓"
+   ],
+   "desc": "하얀 눈꽃 커버를 커서가 지나간 자리에 체커보드 셀이 엇갈려 열리며 붉은 딸기 시즌 메뉴가 드러나고, 잠시 뒤 셀이 닫혀 원상복구된다. 입력이 없으면 고스트 붓이 대신 긋는다",
+   "use": "시즌 메뉴/비포-애프터 히어로, 커버→상세 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "038",
+   "title": "바삭당 · 진입 방향을 읽는 리스트 호버 와이프",
+   "category": "D-CURSOR",
+   "tech": [
+    "진입 방향 감지 clip-path inset 와이프",
+    "커서 추종 프리뷰 + 속도 기울기",
+    "위치 기반 히트테스트",
+    "idle 자동 순회"
+   ],
+   "desc": "메뉴 행에 위에서 들어가면 프리뷰가 아래로, 아래서 들어가면 위로 클립 와이프되며 이미지가 교체되고 다른 행은 가라앉는다. 입력이 없으면 가상 커서가 행을 순회한다",
+   "use": "메뉴 리스트, 포트폴리오/작업물 인덱스, 사이트맵",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "리스트 호버 이미지 와이프 — 메뉴 인덱스",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "039",
+   "title": "가맹 상담 CTA · 진입 방향·속도 인식 액체 필 버튼",
+   "category": "D-CURSOR",
+   "tech": [
+    "SVG goo 필터 물방울 분리",
+    "진입/이탈 지점 기반 fill 원점",
+    "속도 비례 skewX + 자석 오프셋",
+    "idle 가상 커서 순회"
+   ],
+   "desc": "버튼에 들어온 지점에서 액체가 번져 채워지고(물방울이 따라붙음) 나간 지점으로 빨려 나간다. 이동 속도만큼 버튼이 기울어지며 입력이 없으면 가상 커서가 버튼을 차례로 훑는다",
+   "use": "가맹/상담/주문 CTA 블록, 푸터 상단 전환 버튼",
+   "fran": {
+    "stage": "F7",
+    "fit": 3,
+    "note": "진입 방향 액체 필 버튼 — 창업문의 CTA 버튼",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "040",
+   "title": "꾸덕젤리연구소 · 던지면 벽에 튕기는 관성 오브젝트",
+   "category": "D-CURSOR",
+   "tech": [
+    "Draggable + InertiaPlugin 속도 추적",
+    "원-원 탄성 충돌 + 벽 반사",
+    "충돌 스쿼시",
+    "idle 영구 표류"
+   ],
+   "desc": "식감 볼 9개를 집어 던지면 던진 속도 그대로 날아가 벽과 서로 튕기며 찌그러진다. 아무도 건드리지 않아도 에너지 하한으로 계속 표류한다",
+   "use": "이벤트/굿즈 소개, 장난기 있는 브랜드 인트로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "041",
+   "title": "다단 커튼 페이지 전환",
+   "category": "E-TRANSITION",
+   "tech": [
+    "GSAP timeline",
+    "CustomEase",
+    "stagger from center/edges",
+    "scaleY 커튼"
+   ],
+   "desc": "8장의 세로 패널이 중앙에서 솟아 화면을 덮고 가장자리부터 걷히며 페이지가 교체되고 카피가 라인 마스크로 올라온다",
+   "use": "브랜드 사이트 서브페이지 간 전환 / 탭형 메인 페이지 이동",
+   "fran": {
+    "stage": "F8",
+    "fit": 2,
+    "note": "다단 커튼 전환 — 서브페이지 이동",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "brand"
+   },
+   "thumb": true
+  },
+  {
+   "id": "042",
+   "title": "플립 그리드↔리스트 모프",
+   "category": "E-TRANSITION",
+   "tech": [
+    "GSAP Flip",
+    "state diff",
+    "stagger",
+    "text re-reveal"
+   ],
+   "desc": "브런치 메뉴 8장이 4열 카드에서 1열 리스트로 하나의 연속된 박스로 변형되고 텍스트가 뒤따라 재등장한다(자동 반복 + 토글)",
+   "use": "메뉴/상품 목록 보기 방식 전환(그리드·리스트)",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "043",
+   "title": "카드→상세 풀스크린 확장 전환",
+   "category": "E-TRANSITION",
+   "tech": [
+    "GSAP Flip",
+    "borderRadius morph",
+    "detail stagger reveal",
+    "auto demo loop"
+   ],
+   "desc": "디저트 카드가 그리드 자리에서 그대로 섹션 전체로 팽창하며 상세 화면이 되고, 닫으면 같은 자리로 되돌아간다",
+   "use": "상품/메뉴 카드 클릭 시 상세 진입 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "044",
+   "title": "사선 폴리곤 와이프 전환",
+   "category": "E-TRANSITION",
+   "tech": [
+    "clip-path polygon 트윈",
+    "accent 스트라이프 리드",
+    "onUpdate 좌표 계산",
+    "라인 마스크 리빌"
+   ],
+   "desc": "사선 경계의 폴리곤이 액센트 띠를 앞세워 화면을 쓸고 지나가며 슬라이드가 교체되고 헤드라인이 가로로 따라 들어온다",
+   "use": "팝업스토어/캠페인 히어로 슬라이드 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "045",
+   "title": "SVG 모프 블롭 오버레이 전환",
+   "category": "E-TRANSITION",
+   "tech": [
+    "MorphSVGPlugin",
+    "절차적 블롭 패스",
+    "evenodd 구멍 리빌",
+    "액센트 링 레이어"
+   ],
+   "desc": "버튼 위치에서 번진 잉크 블롭이 화면 전체를 덮고, 같은 지점에서 구멍이 열리며 새 페이지가 드러난다",
+   "use": "티하우스/카페 브랜드 사이트의 카테고리 페이지 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "046",
+   "title": "탭 크로스 슬라이스 전환",
+   "category": "E-TRANSITION",
+   "tech": [
+    "DOM 슬라이싱(clip-path inset)",
+    "교차 방향 stagger",
+    "expo.inOut",
+    "탭 인디케이터"
+   ],
+   "desc": "탭을 바꾸면 패널이 8개 가로 띠로 쪼개져 홀짝 반대 방향으로 밀려나가고 새 패널의 띠가 반대편에서 맞물려 들어온다",
+   "use": "제품 라인업/카테고리 탭 콘텐츠 교체",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "047",
+   "title": "풀스크린 메뉴 분할 리빌",
+   "category": "E-TRANSITION",
+   "tech": [
+    "GSAP timeline",
+    "상하 분할 패널",
+    "라인 마스크 스태거",
+    "링크 포커스 디밍"
+   ],
+   "desc": "메뉴 버튼을 누르면 좌우 패널이 위·아래에서 맞물려 내려오고 링크가 마스크 아래에서 차례로 솟으며 링크 호버에 따라 우측 비주얼이 교체된다",
+   "use": "브랜드 사이트 글로벌 네비게이션 오버레이",
+   "fran": {
+    "stage": "F8",
+    "fit": 2,
+    "note": "풀스크린 메뉴 분할 리빌 — 글로벌 내비",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "brand"
+   },
+   "thumb": true
+  },
+  {
+   "id": "048",
+   "title": "로더→히어로 인트로 시퀀스",
+   "category": "E-TRANSITION",
+   "tech": [
+    "슬롯 롤링 카운터",
+    "진행률 연동 clip-path 창",
+    "GSAP master timeline",
+    "문자 스태거"
+   ],
+   "desc": "롤링 숫자 카운터가 오르는 동안 중앙 창이 진행률만큼 열리고 100%에서 전체 화면으로 팽창해 히어로가 안착한다(반복 재생)",
+   "use": "사이트 첫 진입 로딩 → 메인 히어로 인트로",
+   "fran": {
+    "stage": "F8",
+    "fit": 3,
+    "note": "로더 → 히어로 인트로 시퀀스 — 첫 진입",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "049",
+   "title": "3D 코버플로우 드래그 관성 슬라이더",
+   "category": "E-TRANSITION",
+   "tech": [
+    "Draggable + InertiaPlugin",
+    "CSS 3D perspective",
+    "연속 위치 기반 transform",
+    "스냅 관성"
+   ],
+   "desc": "포스터 카드가 중앙 기준 거리에 따라 회전·후퇴하는 연속 코버플로우이며, 드래그 후 관성으로 굴러가 가장 가까운 카드에 스냅하고 방치하면 자동으로 넘어간다",
+   "use": "시즌 메뉴/컬렉션 쇼케이스 슬라이더",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "3D 코버플로우 — 메뉴 라인업 드래그 쇼케이스",
+    "ind": [
+     "카페·디저트",
+     "양식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "050",
+   "title": "가로 확장 윈도우 패널 갤러리",
+   "category": "E-TRANSITION",
+   "tech": [
+    "flex-grow 트윈",
+    "창문 시차(패널 위치 기반 art offset)",
+    "vertical label→콘텐츠 리빌",
+    "자동 순환"
+   ],
+   "desc": "다섯 패널 중 하나가 flex로 넓게 확장되며 각 패널의 비주얼이 고정된 창문처럼 위치에 따라 미끄러지고, 접힌 패널은 세로 라벨로 접힌다",
+   "use": "라인업/지점/컬렉션 소개 갤러리",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "가로 확장 패널 — 메뉴/라인업 호버 확장",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "051",
+   "title": "한 그릇의 열네 시간 — 라인아트 드로잉",
+   "category": "F-SVG",
+   "tech": [
+    "DrawSVG",
+    "ScrollTrigger scrub",
+    "sticky pin",
+    "SVG textPath"
+   ],
+   "desc": "스크롤할수록 라멘 한 그릇의 라인아트가 순서대로 그려지고 마지막에 색이 차오른다",
+   "use": "브랜드 스토리 / 메뉴 소개 섹션",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "라인아트 드로잉 — 한 그릇에 담긴 정성(조리 스토리)",
+    "ind": [
+     "한식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "052",
+   "title": "체리에서 한 잔까지 — 모핑 아이콘 시퀀스",
+   "category": "F-SVG",
+   "tech": [
+    "MorphSVG",
+    "GSAP timeline",
+    "컬러 전환",
+    "word wheel"
+   ],
+   "desc": "하나의 도형이 잎→원두→불꽃→물방울→컵으로 변형되며 배경색·카피 휠이 함께 전환된다",
+   "use": "브랜드 프로세스 / 제조 공정 소개",
+   "fran": {
+    "stage": "F3",
+    "fit": 1,
+    "note": "모핑 아이콘 — 원재료→완성 과정",
+    "ind": [
+     "카페·디저트"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "053",
+   "title": "밭에서 식탁까지 — 새벽 배송 스토리",
+   "category": "F-SVG",
+   "tech": [
+    "MotionPath",
+    "autoRotate",
+    "ScrollTrigger scrub",
+    "SVG 일러스트"
+   ],
+   "desc": "스크롤에 맞춰 배달 스쿠터가 굽이진 도로를 따라 달리며 네 정거장의 랜드마크가 차례로 솟아난다",
+   "use": "배송/프로세스 스토리텔링 섹션",
+   "fran": {
+    "stage": "F4",
+    "fit": 2,
+    "note": "스쿠터가 경로를 따라 이동 — 물류·본사 지원 흐름",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "054",
+   "title": "손으로 쓴 약속 — 낙서 어노테이션",
+   "category": "F-SVG",
+   "tech": [
+    "DrawSVG",
+    "ScrollTrigger scrub",
+    "feTurbulence line-boil",
+    "SVG 손그림 path"
+   ],
+   "desc": "카피 위에 취소선·동그라미·밑줄·형광펜·화살표가 스크롤 순서대로 손으로 그어지고 선이 미세하게 떨린다",
+   "use": "브랜드 철학/약속 문구 섹션",
+   "fran": {
+    "stage": "F2",
+    "fit": 3,
+    "note": "손글씨 밑줄·동그라미 — '본사의 약속'(상생·로열티 정책) 문구 강조",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "055",
+   "title": "녹아내리는 젤라또 메뉴 — Gooey + 왜곡",
+   "category": "F-SVG",
+   "tech": [
+    "SVG feGaussianBlur goo",
+    "feTurbulence displacement",
+    "blob lag stretch",
+    "커서 메타볼"
+   ],
+   "desc": "메뉴 선택 블롭이 끈적하게 늘어나며 이동하고 방울이 흘러내리며, 맛이 바뀔 때 헤드라인이 액체처럼 일렁였다 가라앉는다",
+   "use": "메뉴/플레이버 셀렉터, 호버 인터랙션 내비게이션",
+   "fran": {
+    "stage": "F3",
+    "fit": 1,
+    "note": "gooey 플레이버 셀렉터 — 음료/디저트",
+    "ind": [
+     "카페·디저트"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "056",
+   "title": "하루 여섯 정류장 — 푸드트럭 노선도",
+   "category": "F-SVG",
+   "tech": [
+    "DrawSVG + mask",
+    "MotionPath",
+    "CSS dash flow",
+    "핀 드롭 + 리플"
+   ],
+   "desc": "스크롤하면 점선 노선이 도시 지도 위에 이어지고 트럭이 달리며 핀이 하나씩 꽂히고 현재 정류장에 파동이 번진다",
+   "use": "매장 위치/투어 일정/배송 노선 소개",
+   "fran": {
+    "stage": "F4",
+    "fit": 1,
+    "note": "트럭 노선도 — 슈퍼바이저 순회/가맹 지원",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "057",
+   "title": "HANA 로고 리빌 — 스트로크에서 채움으로",
+   "category": "F-SVG",
+   "tech": [
+    "DrawSVG",
+    "clipPath 사선 와이프",
+    "radialGradient 커서 스포트",
+    "timeline 루프"
+   ],
+   "desc": "밀 이삭 엠블럼과 워드마크가 윤곽선으로 그려진 뒤 사선 와이프로 면이 채워지고 커서를 따라 황금빛 광원이 흐른다",
+   "use": "브랜드 인트로/로고 리빌 섹션",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "058",
+   "title": "하루 영양의 궤도 — 오비탈 인포그래픽",
+   "category": "F-SVG",
+   "tech": [
+    "ticker 기반 궤도 시뮬레이션",
+    "커서 중력",
+    "3D 틸트",
+    "SVG 혜성 꼬리"
+   ],
+   "desc": "여섯 개의 영양소 별이 세 겹 궤도를 돌고, 커서가 가까워지면 끌려오며 느려지고 중앙 수치가 바뀌며 전체가 3D로 기운다",
+   "use": "영양/성분/수치 인포그래픽, 서비스 특징 소개",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "오비탈 인포그래픽 — 본사 지원 시스템(교육·물류·마케팅)을 궤도로",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "059",
+   "title": "천천히, 열두 시간 — 액체 게이지",
+   "category": "F-SVG",
+   "tech": [
+    "프레임별 SVG 파형 생성",
+    "스크롤 진행도 → 수위",
+    "Lenis 속도 → 파고",
+    "clipPath 이중 숫자"
+   ],
+   "desc": "스크롤에 따라 잔에 액체가 차오르고 스크롤 속도에 따라 파도가 커지며 숫자가 액체 안에서 색이 반전된다",
+   "use": "진행률/숙성 시간/영양 수치 등 게이지형 스토리 섹션",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "060",
+   "title": "눈 마주친 푸딩들 — 시선 추적 캐릭터",
+   "category": "F-SVG",
+   "tech": [
+    "DrawSVG 인트로",
+    "MorphSVG 입 모양",
+    "커서 시선 추적",
+    "자율 두리번 idle"
+   ],
+   "desc": "라인아트 푸딩 캐릭터 네 마리의 눈동자가 커서를 끝까지 따라가고 가까워지면 입이 놀란 모양으로 바뀌며 커서가 멈추면 스스로 두리번거린다",
+   "use": "메뉴/캐릭터 소개, 마스코트 섹션",
+   "fran": {
+    "stage": "F3",
+    "fit": 1,
+    "note": "시선 추적 마스코트 — 캐릭터 브랜드",
+    "ind": [
+     "카페·디저트",
+     "분식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "061",
+   "title": "모닝브루 숫자로 보는 브랜드 — 오도미터 롤러",
+   "category": "G-STORY",
+   "tech": [
+    "GSAP",
+    "odometer 릴(자릿수별 회전)",
+    "ScrollTrigger",
+    "라이브 카운트"
+   ],
+   "desc": "자릿수마다 0~9 릴이 오른쪽부터 더 많이 회전하며 안착하고, 이후에도 실시간 누적 잔 수가 슬롯머신처럼 굴러간다",
+   "use": "브랜드 소개 / 회사 개요의 핵심 수치 섹션",
+   "fran": {
+    "stage": "F2",
+    "fit": 3,
+    "note": "가맹점 수·누적 판매·재방문율을 슬롯 롤러로 — 신뢰 수치 섹션",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "062",
+   "title": "숲의 연대기 — 관성 드래그 타임라인",
+   "category": "G-STORY",
+   "tech": [
+    "Draggable + InertiaPlugin",
+    "연도 스냅",
+    "거대 연도 패럴랙스",
+    "자동 진행"
+   ],
+   "desc": "가로 타임라인을 던지듯 드래그하면 관성으로 미끄러지다 가장 가까운 연도에 스냅되고, 배경 거대 연도와 카드 스케일이 거리에 따라 연동된다",
+   "use": "브랜드 히스토리 / 연혁 섹션",
+   "fran": {
+    "stage": "F2",
+    "fit": 3,
+    "note": "드래그 가능한 연혁 타임라인 — 본사 성장 스토리",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "063",
+   "title": "한결 베이커리 — 스티키 3막 스토리",
+   "category": "G-STORY",
+   "tech": [
+    "ScrollTrigger scrub 타임라인",
+    "position:sticky 핀",
+    "clip-path 이미지 스왑",
+    "SVG 일러스트 모션"
+   ],
+   "desc": "스크롤하면 반죽→굽기→식탁 3막이 이어지며 일러스트가 아래서 와이프로 교체되고, 텍스트 단계·진행바·배경색이 하나의 타임라인으로 연동된다",
+   "use": "브랜드 스토리 / 제조 공정 소개",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "스티키 3막 — 본사 시스템(원재료→물류→교육) 단계 설명",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "064",
+   "title": "리뉴얼 전·후 비교 슬라이더",
+   "category": "G-STORY",
+   "tech": [
+    "clip-path 마스크 와이프",
+    "Draggable + quickTo 감쇠 추종",
+    "슬라이더 위치 연동 수치 보간",
+    "사인파 자동 스윕"
+   ],
+   "desc": "전/후 매장 일러스트를 손잡이로 가르는 비교 슬라이더. 드래그 시 감쇠로 따라오고, 방치하면 스스로 쓸고 가며, 성과 수치가 마스크 위치에 맞춰 연속 보간된다",
+   "use": "가맹점 리뉴얼 사례 / 인테리어 전후 비교",
+   "fran": {
+    "stage": "F5",
+    "fit": 3,
+    "note": "리뉴얼 전/후 비교 슬라이더 — 가맹점 인테리어·매출 변화",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "065",
+   "title": "창업 패키지 3D 플립 카드",
+   "category": "G-STORY",
+   "tech": [
+    "3D rotationY 플립",
+    "CustomBounce 착지",
+    "포인터 틸트 quickTo",
+    "순차 자동 플립 루프"
+   ],
+   "desc": "창업 패키지 3종 카드가 들려 올라 3D로 뒤집히며 상세 조건을 보여주고 바운스로 착지한다. 방치하면 카드가 차례로 스스로 뒤집힌다",
+   "use": "가맹 안내 / 창업 비용 패키지 비교",
+   "fran": {
+    "stage": "F4",
+    "fit": 3,
+    "note": "창업 패키지 3D 플립 카드 — 비용/구성 비교",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "066",
+   "title": "시그니처 음료 메뉴 보드",
+   "category": "G-STORY",
+   "tech": [
+    "clip-path 원형 확산(포인터 기점)",
+    "SVG 음료 프로시저럴 일러스트",
+    "메뉴 호버 연동 전체 테마 전환",
+    "자동 순환"
+   ],
+   "desc": "메뉴 리스트에 호버하면 커서 위치에서 원형으로 배경색이 번지며 섹션 전체 컬러·메인 음료 비주얼·설명이 한 번에 교체된다. 방치 시 자동 순환",
+   "use": "시그니처 메뉴 소개 / 메뉴 보드",
+   "fran": {
+    "stage": "F3",
+    "fit": 3,
+    "note": "호버 시 배경색·메뉴 비주얼 전체 전환 — 시그니처 메뉴 보드",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "067",
+   "title": "가마치킨 고객 리뷰 월",
+   "category": "G-STORY",
+   "tech": [
+    "3열 역방향 무한 세로 스크롤(ticker 래핑)",
+    "호버 감속 정지",
+    "Lenis 스크롤 속도 연동",
+    "기울어진 월 마스크"
+   ],
+   "desc": "리뷰 카드 3열이 서로 반대 방향으로 끝없이 흐르고, 마우스를 올리면 부드럽게 감속해 멈추며 페이지 스크롤 속도에 따라 가속된다",
+   "use": "고객 후기 / SNS·배달앱 리뷰 모음",
+   "fran": {
+    "stage": "F5",
+    "fit": 3,
+    "note": "3열 역방향 리뷰 월 — 점주/고객 후기 신뢰감",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "068",
+   "title": "전국 매장 지도 — 핀 드롭",
+   "category": "G-STORY",
+   "tech": [
+    "SVG 지도 DrawSVG 윤곽",
+    "CustomBounce 핀 드롭",
+    "리플 무한 확산",
+    "도시 자동 순환 툴팁"
+   ],
+   "desc": "한국 지도 윤곽이 그려진 뒤 매장 핀이 하늘에서 떨어져 바운스로 착지하고 리플이 번진다. 도시가 자동 순환 하이라이트되고 핀 호버 시 매장 수 툴팁",
+   "use": "매장 찾기 / 전국 가맹점 현황",
+   "fran": {
+    "stage": "F5",
+    "fit": 3,
+    "note": "전국 매장 지도 핀 드롭 — 가맹점 현황·지역 선택",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "069",
+   "title": "가맹 FAQ 몰핑 아코디언",
+   "category": "G-STORY",
+   "tech": [
+    "MorphSVG 아이콘(+→−)",
+    "높이 elastic 스프링",
+    "border-radius 알약↔카드 변형",
+    "블롭 몰핑 루프"
+   ],
+   "desc": "질문 알약이 열리며 카드로 변형되고 +가 −로 모핑, 답변 높이는 스프링으로 튀어 오른다. 방치하면 질문이 차례로 자동 개폐되고 옆 블롭이 계속 몰핑한다",
+   "use": "가맹 문의 / 자주 묻는 질문",
+   "fran": {
+    "stage": "F6",
+    "fit": 3,
+    "note": "몰핑 아코디언 FAQ — 창업 비용/계약 자주 묻는 질문",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "070",
+   "title": "모닝브루 사람들 — 부채꼴 팀 카드",
+   "category": "G-STORY",
+   "tech": [
+    "부채꼴 피벗 회전 레이아웃",
+    "포인터 자석(독 확대 + 이웃 밀어내기)",
+    "스크롤 스프레드 연동",
+    "lerp ticker + idle 웨이브"
+   ],
+   "desc": "스택된 팀 카드가 스크롤에 따라 부채꼴로 펼쳐지고, 마우스가 가까워지면 해당 카드가 들려 커지며 이웃이 부드럽게 밀려난다. 방치하면 포커스가 파도처럼 흘러간다",
+   "use": "팀 소개 / 바리스타·점주 인터뷰 카드",
+   "fran": {
+    "stage": "F5",
+    "fit": 3,
+    "note": "부채꼴 카드 — 점주 인터뷰 카드",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "071",
+   "title": "로스터리 큐브 스크롤 회전",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D prism",
+    "ScrollTrigger scrub",
+    "dwell easing",
+    "face shading"
+   ],
+   "desc": "스크롤하면 거대한 4면 프리즘이 X축으로 굴러 면마다 다른 콘텐츠가 정면에 오고, 전환 중 뒤로 물러나며 면 음영이 바뀐다",
+   "use": "브랜드 스토리/메뉴 소개 챕터 전환",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "072",
+   "title": "하루사진관 3D 포토 링",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D ring",
+    "pointer inertia",
+    "scroll velocity coupling",
+    "depth shading"
+   ],
+   "desc": "12장의 인화 카드가 원통 링을 이루며 자동 회전하고, 드래그하면 관성으로 돌며 스크롤 속도에도 링이 반응한다",
+   "use": "갤러리/포트폴리오/후기 컬렉션",
+   "fran": {
+    "stage": "F5",
+    "fit": 2,
+    "note": "3D 포토 링 — 오픈 매장 갤러리",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "073",
+   "title": "빵 다이어리 책장 넘김",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D page flip",
+    "drag + snap",
+    "stacking z-order",
+    "angle-driven shading"
+   ],
+   "desc": "레시피북이 자동으로 한 장씩 넘어가고, 페이지를 끌면 손을 따라 넘어가다 놓으면 가까운 쪽으로 스냅한다",
+   "use": "메뉴북/레시피/브랜드 스토리북",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "074",
+   "title": "버거랩 아이소 레이어 스택",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D isometric",
+    "volumetric slices",
+    "mouse-driven tilt",
+    "explode/focus lift"
+   ],
+   "desc": "슬라이스를 쌓아 부피를 만든 버거 재료 7층이 아이소메트릭으로 떠 있고, 마우스에 따라 기울며 층이 번갈아 솟아올라 분해된다",
+   "use": "제품 구성/원재료 소개",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "075",
+   "title": "멘데이 라멘클럽 웨이브 플립",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D card flip",
+    "GSAP grid stagger",
+    "sliced background mosaic",
+    "pointer-origin wave"
+   ],
+   "desc": "50장의 카드가 한 장의 그림을 나눠 갖고 있다가, 마우스가 닿은 칸을 진원지로 파동처럼 뒤집히며 다른 그림으로 바뀐다(자동 반복)",
+   "use": "이벤트 전환/브랜드 메시지 리빌",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "076",
+   "title": "콜드브루 캔 3D 뷰어",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D cylinder",
+    "36 strip label wrap",
+    "drag inertia",
+    "per-frame lighting"
+   ],
+   "desc": "36조각 스트립으로 만든 원통 캔이 둥둥 떠 자동 회전하고, 드래그하면 관성으로 돌며 회전각에 따라 면마다 조명이 달라진다",
+   "use": "제품 상세/신제품 런칭",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "077",
+   "title": "프레시 입체 타이포 익스트루드",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D layer extrude",
+    "scroll-driven depth",
+    "mouse tilt",
+    "color-ramped slices"
+   ],
+   "desc": "한 단어를 44겹 레이어로 쌓아 두께를 만들고, 스크롤에 따라 두께가 자라며 글자가 굴러가고 마우스에 따라 기울어 옆면 색이 흐른다",
+   "use": "히어로/캠페인 슬로건 섹션",
+   "fran": {
+    "stage": "F1",
+    "fit": 3,
+    "note": "'창업' 대형 입체 타이포 — 스크롤하면 두께가 자라며 압도감, 캠페인형 히어로",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "078",
+   "title": "오로라항공 Z축 비행",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D camera dolly",
+    "scroll-driven Z travel",
+    "depth fade",
+    "star field wrap"
+   ],
+   "desc": "스크롤하는 만큼 카메라가 Z축으로 전진해 목적지 도시 타이포·고리·행성이 차례로 다가와 스쳐 지나가고 마지막 CTA 카드에 도착한다",
+   "use": "여행/항공/캠페인 내러티브 스크롤",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "079",
+   "title": "서울 와인 페스타 틸트 포스터",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D layered poster",
+    "pointer/gyro tilt",
+    "spring damping",
+    "moving glare"
+   ],
+   "desc": "여섯 겹으로 깊이를 나눈 입체 포스터가 마우스(모바일은 자이로)를 따라 기울고, 입력이 없으면 스스로 원을 그리며 눈부심 하이라이트가 표면을 훑는다",
+   "use": "이벤트/페스티벌 포스터, 티켓, 캠페인 키비주얼",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "080",
+   "title": "여름밥상 종이 접힘 메뉴",
+   "category": "H-3D",
+   "tech": [
+    "CSS3D accordion fold",
+    "nested hinge panels",
+    "ScrollTrigger scrub",
+    "angle-based paper shading"
+   ],
+   "desc": "지그재그로 접혀 있던 네 칸짜리 종이 메뉴판이 스크롤에 맞춰 힌지마다 펼쳐지며 한 장의 큰 메뉴로 열리고, 접힘 각도에 따라 면마다 음영이 달라진다",
+   "use": "메뉴판/브로셔/섹션 오프닝 리빌",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "081",
+   "title": "쏟아지는 메뉴 뱃지 파일",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Matter.js",
+    "Canvas2D",
+    "커서 반발력"
+   ],
+   "desc": "메뉴 이름 뱃지가 위에서 쏟아져 바닥에 쌓이고, 커서가 지나가면 밀려 흩어진다(오래된 것부터 순환)",
+   "use": "베이커리·카페 메인 히어로/메뉴 소개",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "메뉴 뱃지가 쏟아져 쌓이는 히어로 — 베이커리·카페 F&B",
+    "ind": [
+     "카페·디저트"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "082",
+   "title": "감귤밭 새떼 보이드",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Boids 군집",
+    "Canvas2D",
+    "커서 반발",
+    "궤적 트레일"
+   ],
+   "desc": "분리·정렬·응집 규칙의 새떼가 하늘을 가르고 커서가 닿으면 갈라져 흩어졌다 다시 모인다",
+   "use": "농장·로컬푸드·여행 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "083",
+   "title": "결: 찻잎이 흐르는 플로우필드",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Perlin 플로우필드",
+    "Canvas2D",
+    "커서 소용돌이",
+    "트레일 페이드"
+   ],
+   "desc": "노이즈 벡터장을 따라 수천 개의 잎맥 라인이 흐르며 커서 주변에 소용돌이가 생긴다",
+   "use": "티·웰니스·프리미엄 브랜드의 브랜드 스토리",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "084",
+   "title": "묵향: 번지는 먹",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Canvas 메타볼 블러+컨트라스트",
+    "잉크 블롭 성장·감쇠",
+    "자동 붓질"
+   ],
+   "desc": "커서를 따라 먹물이 번지며 퍼지고 서서히 마르고, 손을 떼면 붓이 스스로 곡선을 그린다",
+   "use": "전통차·전시·서예 클래스·프리미엄 브랜드 인트로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "085",
+   "title": "별헤는 밤: 별자리 네트워크",
+   "category": "I-PHYSICS",
+   "tech": [
+    "파티클 네트워크",
+    "거리 기반 링크",
+    "Canvas2D",
+    "커서 노드"
+   ],
+   "desc": "떠다니는 별들이 가까워지면 선으로 이어지고 커서가 하나의 밝은 별이 되어 주변 별을 끌어당겨 별자리를 만든다",
+   "use": "루프탑 바·천문대·야간 이벤트 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "086",
+   "title": "말랑 젤리: 베를레 소프트바디",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Verlet 소프트바디",
+    "스프링 제약",
+    "드래그 그랩",
+    "Canvas2D"
+   ],
+   "desc": "스프링으로 엮인 젤리들이 바닥에서 출렁이며 서로 부딪히고, 잡아 늘려 던지면 말랑하게 복원된다",
+   "use": "디저트·젤리·캐릭터 굿즈 브랜드 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "087",
+   "title": "한 상 차림: 스크롤로 쌓이는 반찬",
+   "category": "I-PHYSICS",
+   "tech": [
+    "Matter.js",
+    "ScrollTrigger 진행도",
+    "스티키 스테이지",
+    "물리 적재"
+   ],
+   "desc": "스크롤을 내릴수록 반찬 토큰이 하나씩 떨어져 바닥에 수북이 쌓이고, 올리면 하나씩 걷힌다",
+   "use": "한식당·밀키트 브랜드의 메뉴 구성 소개",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "스크롤로 반찬이 쌓이는 한 상 — 한식 세트 구성",
+    "ind": [
+     "한식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "088",
+   "title": "중력의 중심: 왜곡 그리드",
+   "category": "I-PHYSICS",
+   "tech": [
+    "왜곡 격자 메쉬",
+    "중력 렌즈 변위",
+    "Canvas2D",
+    "커서 질량 스무딩"
+   ],
+   "desc": "모눈 격자가 커서(와 궤도를 도는 보조 질량) 주변으로 휘어 빨려들며 렌즈처럼 왜곡된다",
+   "use": "가구·인테리어·건축 스튜디오 브랜드 철학 섹션",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "089",
+   "title": "능선: 노이즈 지형 조이플롯",
+   "category": "I-PHYSICS",
+   "tech": [
+    "fBm 노이즈 지형",
+    "조이플롯 은면 처리",
+    "Canvas2D",
+    "커서 융기"
+   ],
+   "desc": "겹겹의 등고선 라인이 노이즈로 천천히 흐르며 커서가 닿는 능선이 솟아오른다",
+   "use": "아웃도어·트레일 브랜드 히어로/캠페인",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "090",
+   "title": "한강 불꽃 페스타: 스파크 버스트",
+   "category": "I-PHYSICS",
+   "tech": [
+    "파티클 폭죽",
+    "가산 합성(lighter)",
+    "중력·항력 시뮬",
+    "클릭 발사"
+   ],
+   "desc": "로켓이 솟아 터지며 불티가 중력에 휘어 흩어지는 폭죽이 자동으로 이어지고, 클릭하면 그 자리에서 터진다",
+   "use": "페스티벌·이벤트·프로모션 랜딩 히어로",
+   "fran": null,
+   "thumb": true
+  },
+  {
+   "id": "091",
+   "title": "원두 산지 풀스크린 스냅 내비",
+   "category": "J-UX",
+   "tech": [
+    "Observer",
+    "ScrollTrigger pin",
+    "SplitText",
+    "clip-path"
+   ],
+   "desc": "핀 고정된 풀스크린 슬라이드를 휠/스와이프 한 번에 한 장씩 clip-path 로 덮으며 넘기고 사이드 인덱스 바가 채워짐. 끝에서 스크롤 해제, 방치하면 자동 순환.",
+   "use": "브랜드 스토리·산지·메뉴 소개 풀페이지 섹션",
+   "fran": {
+    "stage": "F4",
+    "fit": 1,
+    "note": "풀스크린 스냅 — 창업 STEP 한 장씩",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "092",
+   "title": "명도 반전 헤더 + 스크롤 진행 원형 버튼",
+   "category": "J-UX",
+   "tech": [
+    "ScrollTrigger",
+    "CSS 변수 트윈",
+    "SVG stroke 게이지",
+    "sticky"
+   ],
+   "desc": "밴드 배경이 밝음/어두움/컬러로 바뀌는 지점에서 sticky 헤더와 원형 진행 버튼의 색이 반전되고, 버튼은 퍼센트에서 맨위로 화살표로 롤링.",
+   "use": "롱 스크롤 브랜드 페이지의 헤더와 TOP 버튼",
+   "fran": {
+    "stage": "F8",
+    "fit": 3,
+    "note": "명도 반전 헤더 + 진행 원형 TOP 버튼 — 롱 스크롤 랜딩",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "093",
+   "title": "푸터 커튼 리빌 + 마그네틱 CTA",
+   "category": "J-UX",
+   "tech": [
+    "sticky 커튼",
+    "ScrollTrigger scrub",
+    "quickTo 마그네틱",
+    "stagger 로고"
+   ],
+   "desc": "페이지가 커튼처럼 걷히며 뒤에 숨은 푸터가 스케일업, 거대 로고 글자가 아래서 순차 상승하고 원형 CTA가 포인터에 끌려오거나 스스로 부유.",
+   "use": "페이지 하단 푸터·문의 유도 영역",
+   "fran": {
+    "stage": "F7",
+    "fit": 3,
+    "note": "푸터 커튼 리빌 + 마그네틱 CTA — 페이지 끝 문의 유도",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "094",
+   "title": "퍼센트 롤링 로더 + clip-path 줌인",
+   "category": "J-UX",
+   "tech": [
+    "GSAP timeline",
+    "clip-path inset",
+    "CustomEase",
+    "롤링 숫자"
+   ],
+   "desc": "작은 창 속 히어로가 퍼센트가 오르는 동안 서서히 열리고 100%에서 clip-path 로 화면 전체로 확장되며 이미지 줌아웃, 타이틀이 올라오고 다시 닫히며 반복.",
+   "use": "사이트 첫 로딩·인트로 연출",
+   "fran": {
+    "stage": "F8",
+    "fit": 2,
+    "note": "퍼센트 롤링 로더 — 첫 로딩창",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "095",
+   "title": "한옥 문 열림 스플릿 히어로",
+   "category": "J-UX",
+   "tech": [
+    "CSS 3D rotateY",
+    "CustomEase",
+    "SplitText",
+    "timeline loop"
+   ],
+   "desc": "양쪽 목재 대문이 바깥 경첩을 축으로 안쪽으로 열리며 달과 타이틀이 드러나고, 머문 뒤 다시 닫히는 루프. 문이 열릴수록 그림자가 짙어짐.",
+   "use": "브랜드 인트로 히어로",
+   "fran": {
+    "stage": "F1",
+    "fit": 2,
+    "note": "문이 열리며 타이틀 노출 — '오픈'의 메타포, 한식·전통 컨셉 브랜드",
+    "ind": [
+     "한식"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "096",
+   "title": "스티키 쇼케이스 마스크 교체",
+   "category": "J-UX",
+   "tech": [
+    "ScrollTrigger pin",
+    "clip-path 마스크 5종",
+    "리스트 센터링",
+    "자동 스크롤 데모"
+   ],
+   "desc": "핀 고정된 무대에서 스크롤에 따라 좌측 메뉴 리스트가 중앙 정렬로 굴러가고, 중앙 아치 프레임의 이미지가 원·가로·세로·삼각 마스크로 매번 다르게 교체됨.",
+   "use": "메뉴·제품 쇼케이스 리스트",
+   "fran": {
+    "stage": "F3",
+    "fit": 2,
+    "note": "스티키 리스트 + 중앙 이미지 마스크 교체 — 메뉴 쇼케이스",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "097",
+   "title": "라벨 모프 문의 폼 + 컨페티",
+   "category": "J-UX",
+   "tech": [
+    "ScrambleText 라벨 모프",
+    "SVG 체크 드로우",
+    "canvas 컨페티",
+    "자동 입력 데모"
+   ],
+   "desc": "포커스되면 큰 질문형 라벨이 짧은 라벨로 스크램블되며 위로 접히고 밑줄이 그려짐. 제출 시 버튼이 원형 로딩→체크→컨페티 폭죽→성공 메시지. 입력부터 제출까지 자동 재생 루프.",
+   "use": "문의·견적·예약 폼",
+   "fran": {
+    "stage": "F7",
+    "fit": 3,
+    "note": "라벨 모프 문의 폼 + 컨페티 — 창업문의 폼 인터랙션",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "098",
+   "title": "스와이프 카드 스택 매칭",
+   "category": "J-UX",
+   "tech": [
+    "Draggable",
+    "InertiaPlugin 속도 이어받기",
+    "스택 재배치",
+    "자동 스와이프 데모"
+   ],
+   "desc": "카드를 끌면 회전·스탬프가 따라붙고 속도가 충분하면 던져져 뒤 카드가 즉시 올라옴. 놓으면 엘라스틱 복귀. 방치하면 자동으로 좌우로 넘김.",
+   "use": "메뉴 추천·취향 매칭·온보딩",
+   "fran": {
+    "stage": "F7",
+    "fit": 2,
+    "note": "스와이프 카드 — '나에게 맞는 창업 유형 찾기' 미니 테스트",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  },
+  {
+   "id": "099",
+   "title": "컬러 와이프 스토리텔링",
+   "category": "J-UX",
+   "tech": [
+    "ScrollTrigger scrub pin",
+    "clip-path polygon·circle·inset 와이프",
+    "타임라인 텍스트 교체",
+    "자동 스크롤 데모"
+   ],
+   "desc": "핀 고정된 스토리에서 스크롤 진행에 따라 배경 컬러가 사선, 원형 확장, 가로 와이프로 번갈아 덮이고 문구가 챕터별로 교체되며 하단 레일이 채워짐.",
+   "use": "브랜드 스토리·연혁·제작 과정 섹션",
+   "fran": {
+    "stage": "F2",
+    "fit": 2,
+    "note": "컬러 와이프 스토리 — 브랜드 철학을 장면 전환으로",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "both"
+   },
+   "thumb": true
+  },
+  {
+   "id": "100",
+   "title": "스크롤 방향 반응 헤더·독 + 읽기 진행",
+   "category": "J-UX",
+   "tech": [
+    "ScrollTrigger direction",
+    "CustomEase",
+    "ScrambleText 챕터 라벨",
+    "sticky 독"
+   ],
+   "desc": "내려 읽으면 헤더가 위로 숨고 올리면 헤더와 하단 구독 독이 튀어나옴. 상단 진행바와 챕터 번호가 롤링되고 제목이 스크램블로 교체. 방치하면 자동 읽기 루프.",
+   "use": "매거진·블로그·롱폼 아티클 페이지의 헤더/푸터 동작",
+   "fran": {
+    "stage": "F7",
+    "fit": 2,
+    "note": "방향 반응 헤더 + 하단 독 — 고정 '창업문의' 독 바",
+    "ind": [
+     "전업종"
+    ],
+    "pt": "landing"
+   },
+   "thumb": true
+  }
+ ]
+}

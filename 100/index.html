@@ -10,43 +10,98 @@ body{background:#0b0b0d;color:#f4f1ea;font-family:'Pretendard','Apple SD Gothic 
 a{color:inherit;text-decoration:none}
 h1{font-size:clamp(36px,6vw,96px);font-weight:900;letter-spacing:-.03em;line-height:1}
 h1 b{color:#ff4d2e}
-.sub{margin:14px 0 28px;color:#8a8a90}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px;position:sticky;top:0;padding:12px 0;background:#0b0b0d;z-index:5}
-.filters button{padding:8px 16px;border-radius:99px;border:1px solid #fff3;background:none;color:#ddd;cursor:pointer;font:inherit;font-size:13px}
-.filters button.on{background:#ff4d2e;border-color:#ff4d2e;color:#fff}
+.sub{margin:14px 0 22px;color:#8a8a90}
+.modes{display:flex;gap:10px;margin-bottom:18px}
+.modes button{padding:12px 22px;border-radius:12px;border:1px solid #fff3;background:#151518;color:#ddd;cursor:pointer;font:inherit;font-weight:700}
+.modes button.on{background:#f4f1ea;color:#111;border-color:#f4f1ea}
+.bar{position:sticky;top:0;background:#0b0b0dee;backdrop-filter:blur(6px);z-index:5;padding:10px 0 12px;margin-bottom:20px}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.row>label{font-size:11px;letter-spacing:.12em;color:#8a8a90;min-width:46px}
+.chip{padding:7px 14px;border-radius:99px;border:1px solid #fff3;background:none;color:#ddd;cursor:pointer;font:inherit;font-size:13px}
+.chip.on{background:#ff4d2e;border-color:#ff4d2e;color:#fff}
+.chip small{opacity:.7;margin-left:4px}
+.flow{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 22px;padding:16px;border-radius:14px;background:#151518;border:1px solid #ffffff14}
+.flow h4{width:100%;font-size:12px;color:#8a8a90;letter-spacing:.1em;margin-bottom:4px}
+.flow a{font-size:12px;padding:6px 10px;border-radius:8px;background:#ffffff10}
+.flow a b{color:#ff4d2e;margin-right:6px;font-family:ui-monospace,monospace}
+.flow i{font-style:normal;color:#555;align-self:center}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.stagehead{grid-column:1/-1;margin-top:18px;padding-bottom:8px;border-bottom:1px solid #ffffff22}
+.stagehead h2{font-size:22px}.stagehead h2 b{color:#ff4d2e;margin-right:8px;font-family:ui-monospace,monospace}
+.stagehead p{font-size:13px;color:#8a8a90;margin-top:4px}
 .card{display:block;border-radius:14px;overflow:hidden;background:#151518;border:1px solid #ffffff14;transition:transform .35s,border-color .3s}
 .card:hover{transform:translateY(-6px);border-color:#ff4d2e}
 .card__img{aspect-ratio:16/9;background:#222 center/cover;position:relative}
 .card__n{position:absolute;left:10px;top:10px;font-size:11px;padding:3px 8px;border-radius:99px;background:#000a;font-family:ui-monospace,monospace}
+.card__s{position:absolute;right:10px;top:10px;font-size:12px;padding:3px 8px;border-radius:99px;background:#ff4d2e;color:#fff;font-weight:700}
 .card__b{padding:14px 16px 18px}
 .card__b h3{font-size:17px;margin-bottom:6px}
 .card__b p{font-size:13px;color:#a0a0a8;line-height:1.5;margin-bottom:10px}
+.card__b .fnote{color:#f4f1ea;background:#ff4d2e1a;border-left:3px solid #ff4d2e;padding:8px 10px;border-radius:0 8px 8px 0}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tags i{font-style:normal;font-size:11px;padding:3px 8px;border-radius:99px;background:#ffffff14;color:#cfcfd4}
+.tags i.ind{background:#3b82f622;color:#9cc2ff}.tags i.pt{background:#22c55e22;color:#86efac}
+.empty{grid-column:1/-1;color:#8a8a90;padding:40px 0}
 </style>
 </head>
 <body>
 <h1>100 <b>SECTIONS</b></h1>
 <p class="sub" id="sub"></p>
-<div class="filters" id="filters"></div>
+<div class="modes" id="modes"></div>
+<div class="bar" id="bar"></div>
+<div id="flow"></div>
 <div class="grid" id="grid"></div>
 <script>
-fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(list=>{
-  document.getElementById('sub').textContent = list.length+'개 섹션 · 클릭하면 단독 뷰어(스크롤·마우스 인터랙션 그대로)로 열려요';
-  const cats=['ALL',...new Set(list.map(s=>s.category))];
-  const f=document.getElementById('filters'), g=document.getElementById('grid');
-  const draw=c=>{
-    g.innerHTML=list.filter(s=>c==='ALL'||s.category===c).map(s=>`
-    <a class="card" href="./view.html?s=${s.id}" target="_blank">
-      <div class="card__img" style="background-image:url(./shots/s${s.id}_a.jpg)"><span class="card__n">s${s.id}</span></div>
-      <div class="card__b"><h3>${s.title}</h3><p>${s.desc}</p><div class="tags">${s.tech.map(t=>`<i>${t}</i>`).join('')}</div></div>
-    </a>`).join('');
-    [...f.children].forEach(b=>b.classList.toggle('on',b.dataset.c===c));
-  };
-  f.innerHTML=cats.map(c=>`<button data-c="${c}">${c}</button>`).join('');
-  f.onclick=e=>{if(e.target.dataset.c)draw(e.target.dataset.c)};
-  draw('ALL');
+const $=id=>document.getElementById(id);
+const stars=n=>'★'.repeat(n);
+fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
+  const list=M.list, fran=list.filter(s=>s.fran);
+  const st={mode:location.hash==='#franchise'?'fran':'all',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
+  $('sub').textContent=`${list.length}개 섹션 · 클릭하면 단독 뷰어로 열려요 (스크롤·마우스 인터랙션 그대로)`;
+  const chip=(on,attr,label,extra='')=>`<button class="chip${on?' on':''}" ${attr}>${label}${extra}</button>`;
+  const cnt=f=>fran.filter(f).length;
+  const card=(s,fr)=>`<a class="card" href="./view.html?s=${s.id}" target="_blank">
+    <div class="card__img" style="background-image:url(./shots/s${s.id}_a.jpg)"><span class="card__n">s${s.id}</span>${fr?`<span class="card__s">${stars(s.fran.fit)}</span>`:''}</div>
+    <div class="card__b"><h3>${s.title}</h3>
+    ${fr?`<p class="fnote">${s.fran.note}</p>`:`<p>${s.desc}</p>`}
+    <div class="tags">${fr?`<i class="ind">${s.fran.ind.join('·')}</i>${s.fran.pt!=='both'?`<i class="pt">${s.fran.pt==='landing'?'랜딩 최적':'브랜드 전용'}</i>`:''}`:''}${s.tech.map(t=>`<i>${t}</i>`).join('')}</div></div></a>`;
+  function draw(){
+    document.querySelectorAll('.modes button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));
+    const grid=$('grid'), bar=$('bar'), flow=$('flow');
+    if(st.mode==='all'){
+      flow.innerHTML='';
+      const cats=['ALL',...new Set(list.map(s=>s.category))];
+      bar.innerHTML=`<div class="row">${cats.map(c=>chip(c===st.cat,`data-cat="${c}"`,c)).join('')}</div>`;
+      grid.innerHTML=list.filter(s=>st.cat==='ALL'||s.category===st.cat).map(s=>card(s,false)).join('');
+      return;
+    }
+    // 창업·프랜차이즈 모드
+    const inds=['ALL',...M.axes.ind];
+    bar.innerHTML=`
+      <div class="row"><label>단계</label>${chip(st.stage==='ALL','data-stage="ALL"','전체',`<small>${fran.length}</small>`)}${M.stages.map(s=>chip(st.stage===s.key,`data-stage="${s.key}"`,s.name,`<small>${cnt(x=>x.fran.stage===s.key)}</small>`)).join('')}</div>
+      <div class="row"><label>업종</label>${inds.map(i=>chip(st.ind===i,`data-ind="${i}"`,i==='ALL'?'전체':i)).join('')}</div>
+      <div class="row"><label>유형</label>${chip(st.pt==='ALL','data-pt="ALL"','전체')}${chip(st.pt==='landing','data-pt="landing"','랜딩 최적')}${chip(st.pt==='brand','data-pt="brand"','브랜드 전용')}
+        <label style="margin-left:14px">등급</label>${chip(st.min===3,'data-min="3"','★★★ 핵심만')}${chip(st.min===1,'data-min="1"','전체')}</div>`;
+    flow.innerHTML=st.stage==='ALL'&&st.ind==='ALL'&&st.pt==='ALL'&&st.min===1?`<div class="flow"><h4>추천 창업문의 랜딩 구성안 (위→아래 순서)</h4>${M.flow.map((f,i)=>`${i?'<i>→</i>':''}<a href="./view.html?s=${f[1]}" target="_blank"><b>${f[1]}</b>${f[2]}</a>`).join('')}</div>`:'';
+    const ok=s=>(st.stage==='ALL'||s.fran.stage===st.stage)&&(st.ind==='ALL'||s.fran.ind.includes(st.ind)||s.fran.ind.includes('전업종'))
+      &&(st.pt==='ALL'||s.fran.pt===st.pt||s.fran.pt==='both')&&s.fran.fit>=st.min;
+    let html='';
+    for(const stg of M.stages){
+      const items=fran.filter(s=>s.fran.stage===stg.key&&ok(s)).sort((a,b)=>b.fran.fit-a.fran.fit||a.id-b.id);
+      if(!items.length) continue;
+      html+=`<div class="stagehead"><h2><b>${stg.key}</b>${stg.name}</h2><p>${stg.q}</p></div>`+items.map(s=>card(s,true)).join('');
+    }
+    grid.innerHTML=html||'<p class="empty">조건에 맞는 섹션이 없어요</p>';
+  }
+  $('modes').innerHTML=`<button data-m="all">100 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button>`;
+  document.addEventListener('click',e=>{
+    const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min]'); if(!t) return;
+    const d=t.dataset;
+    if(d.m){st.mode=d.m;history.replaceState(null,'',d.m==='fran'?'#franchise':location.pathname)}
+    if(d.cat)st.cat=d.cat; if(d.stage)st.stage=d.stage; if(d.ind)st.ind=d.ind; if(d.pt)st.pt=d.pt; if(d.min)st.min=+d.min;
+    draw();
+  });
+  draw();
 });
 </script>
 </body>
