@@ -5,6 +5,10 @@ const root = path.join(__dirname, '..');
 const dir = path.join(root, 'sections');
 const fp = path.join(root, 'franchise.json');
 const fr = fs.existsSync(fp) ? JSON.parse(fs.readFileSync(fp, 'utf8')) : { items: {}, ind: {}, pt: {}, stages: [] };
+const pp = path.join(root, 'picks.json');
+const pk = fs.existsSync(pp) ? JSON.parse(fs.readFileSync(pp, 'utf8')) : null; // 클로드 추천 30선 (패널 토론 결과)
+const pickGroup = {};
+if (pk) pk.groups.forEach(g => g.ids.forEach((id, i) => pickGroup[id] = { g: g.key, i }));
 const list = [];
 for (const d of fs.readdirSync(dir).filter(d => /^s\d{3}$/.test(d)).sort()) {
   const mp = path.join(dir, d, 'meta.json');
@@ -15,8 +19,9 @@ for (const d of fs.readdirSync(dir).filter(d => /^s\d{3}$/.test(d)).sort()) {
   const f = fr.items[id] || m.fran; // 라운드2 섹션은 meta.json 의 fran 필드를 직접 쓴다
   list.push({ id, title: m.title, category: m.category, tech: m.tech || [], desc: m.desc || '', use: m.use || '',
     fran: f ? { ...f, ind: fr.ind[id] || f.ind || ['전업종'], pt: fr.pt[id] || f.pt || 'both' } : null,
+    pick: pk && pk.items[id] ? { ...pk.items[id], ...pickGroup[id] } : null,
     thumb: fs.existsSync(path.join(root, 'shots', d + '_a.jpg')) });
 }
 fs.writeFileSync(path.join(root, 'manifest.json'),
-  JSON.stringify({ stages: fr.stages, fit: fr.fit, axes: fr.axes, flow: fr.flow, list }, null, 1));
-console.log('manifest', list.length, '· franchise', list.filter(s => s.fran).length);
+  JSON.stringify({ stages: fr.stages, fit: fr.fit, axes: fr.axes, flow: fr.flow, picks: pk && { title: pk.title, note: pk.note, process: pk.process, criteria: pk.criteria, groups: pk.groups.map(g => ({ key: g.key, name: g.name })), alternates: pk.alternates }, list }, null, 1));
+console.log('manifest', list.length, '· franchise', list.filter(s => s.fran).length, '· picks', list.filter(s => s.pick).length);

@@ -42,6 +42,14 @@ h1 b{color:#ff4d2e}
 .tags i{font-style:normal;font-size:11px;padding:3px 8px;border-radius:99px;background:#ffffff14;color:#cfcfd4}
 .tags i.ind{background:#3b82f622;color:#9cc2ff}.tags i.pt{background:#22c55e22;color:#86efac}
 .empty{grid-column:1/-1;color:#8a8a90;padding:40px 0}
+.pickbox{margin:0 0 22px;padding:18px 20px;border-radius:14px;background:#151518;border:1px solid #ffffff14;font-size:13px;line-height:1.65;color:#cfcfd4}
+.pickbox h4{font-size:12px;letter-spacing:.1em;color:#ff4d2e;margin:10px 0 4px}.pickbox h4:first-child{margin-top:0}
+.pickbox ol,.pickbox ul{padding-left:18px}.pickbox li{margin:2px 0}
+.card__r{position:absolute;left:10px;bottom:10px;font-size:11px;padding:3px 8px;border-radius:99px;background:#000a;font-family:ui-monospace,monospace}
+.card__b .dis{font-size:12px;color:#f3c98b;margin:-2px 0 10px;line-height:1.5}
+.alt{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px}
+.alt a{display:block;padding:10px 12px;border-radius:10px;background:#151518;border:1px solid #ffffff14;font-size:13px;color:#cfcfd4}
+.alt a:hover{border-color:#ff4d2e}.alt b{color:#ff4d2e;font-family:ui-monospace,monospace;margin-right:6px}
 </style>
 </head>
 <body>
@@ -56,7 +64,7 @@ const $=id=>document.getElementById(id);
 const stars=n=>'★'.repeat(n);
 fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
   const list=M.list, fran=list.filter(s=>s.fran);
-  const st={mode:location.hash==='#franchise'?'fran':'all',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
+  const st={mode:location.hash==='#franchise'?'fran':location.hash==='#picks'?'pick':'all',grp:'ALL',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
   $('n').textContent=list.length; document.title=list.length+' Sections — Animation Lab';
   $('sub').textContent=`${list.length}개 섹션 · 클릭하면 단독 뷰어로 열려요 (스크롤·마우스 인터랙션 그대로)`;
   const chip=(on,attr,label,extra='')=>`<button class="chip${on?' on':''}" ${attr}>${label}${extra}</button>`;
@@ -69,6 +77,26 @@ fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
   function draw(){
     document.querySelectorAll('.modes button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));
     const grid=$('grid'), bar=$('bar'), flow=$('flow');
+    if(st.mode==='pick'){
+      const P=M.picks, picked=list.filter(s=>s.pick), byId={}; list.forEach(s=>byId[s.id]=s);
+      bar.innerHTML=`<div class="row"><label>분류</label>${chip(st.grp==='ALL','data-g="ALL"','전체',`<small>${picked.length}</small>`)}${P.groups.map(g=>chip(st.grp===g.key,`data-g="${g.key}"`,g.name,`<small>${picked.filter(s=>s.pick.g===g.key).length}</small>`)).join('')}</div>`;
+      flow.innerHTML=`<div class="pickbox"><h4>${P.title}</h4><p>${P.note}</p>
+        <details><summary style="cursor:pointer;margin-top:8px;color:#fff">선정 기준 · 토론 과정 보기</summary>
+        <h4>선정 기준</h4><ul>${P.criteria.map(c=>`<li>${c}</li>`).join('')}</ul>
+        <h4>토론 과정</h4><ol>${P.process.map(c=>`<li>${c}</li>`).join('')}</ol></details></div>`;
+      let html='', n=0;
+      for(const g of P.groups){
+        if(st.grp!=='ALL'&&st.grp!==g.key){n+=picked.filter(s=>s.pick.g===g.key).length;continue}
+        const items=picked.filter(s=>s.pick.g===g.key).sort((a,b)=>a.pick.i-b.pick.i);
+        html+=`<div class="stagehead"><h2><b>${g.key}</b>${g.name}</h2></div>`+items.map(s=>`<a class="card" href="./view.html?s=${s.id}" target="_blank">
+          <div class="card__img" style="background-image:url(./shots/s${s.id}_a.jpg)"><span class="card__n">s${s.id}</span><span class="card__r">1R ${s.pick.r1}표 · 2R ${s.pick.r2}표</span></div>
+          <div class="card__b"><h3>${s.title}</h3><p class="fnote">${s.pick.reason}</p>${s.pick.dissent?`<p class="dis">⚠ ${s.pick.dissent}</p>`:''}
+          <div class="tags">${s.tech.map(t=>`<i>${t}</i>`).join('')}</div></div></a>`).join('');
+      }
+      if(st.grp==='ALL') html+=`<div class="stagehead"><h2><b>＋</b>아깝게 탈락·추천 의견</h2><p>토론에서 거론됐지만 30선에 못 든 것과 그 이유</p></div><div class="alt">${P.alternates.map(a=>`<a href="./view.html?s=${a.id}" target="_blank"><b>s${a.id}</b>${(byId[a.id]||{}).title||''}<br><span style="color:#8a8a90">${a.why}</span></a>`).join('')}</div>`;
+      grid.innerHTML=html;
+      return;
+    }
     if(st.mode==='all'){
       flow.innerHTML='';
       const cats=['ALL',...new Set(list.map(s=>s.category))];
@@ -94,11 +122,12 @@ fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
     }
     grid.innerHTML=html||'<p class="empty">조건에 맞는 섹션이 없어요</p>';
   }
-  $('modes').innerHTML=`<button data-m="all">${list.length} 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button>`;
+  $('modes').innerHTML=`<button data-m="all">${list.length} 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button><button data-m="pick">✨ 클로드 추천 30선</button>`;
   document.addEventListener('click',e=>{
-    const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min]'); if(!t) return;
+    const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min],[data-g]'); if(!t) return;
     const d=t.dataset;
-    if(d.m){st.mode=d.m;history.replaceState(null,'',d.m==='fran'?'#franchise':location.pathname)}
+    if(d.g)st.grp=d.g;
+    if(d.m){st.mode=d.m;history.replaceState(null,'',d.m==='fran'?'#franchise':d.m==='pick'?'#picks':location.pathname)}
     if(d.cat)st.cat=d.cat; if(d.stage)st.stage=d.stage; if(d.ind)st.ind=d.ind; if(d.pt)st.pt=d.pt; if(d.min)st.min=+d.min;
     draw();
   });

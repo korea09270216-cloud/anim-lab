@@ -20,7 +20,7 @@ export default function init(root, ctx) {
     const t = gsap.timeline({ paused: true, defaults: { ease: 'expo.out' } });
     // 순서 분리: 라벨이 먼저 사라지고 -> 패널 확장 -> 필드 등장
     t.to(lbl, { opacity: 0, scale: .9, duration: .22, ease: 'power2.in' }, 0)
-      .to(scrim, { opacity: .62, duration: .7, ease: 'power2.out' }, .08)
+      .to(scrim, { opacity: .9, duration: .7, ease: 'power2.out' }, .08)
       .to(panel, { left: tx, top: cy, width: W, height: H, borderRadius: 30, backgroundColor: PAPER, duration: 1, ease: 'expo.inOut' }, .12)
       .set(form, { opacity: 1 }, .62)
       .fromTo(rows, { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: .9, stagger: .075 }, .66)
