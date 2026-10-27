@@ -20,8 +20,9 @@ for (const d of fs.readdirSync(dir).filter(d => /^s\d{3}$/.test(d)).sort()) {
   list.push({ id, title: m.title, category: m.category, tech: m.tech || [], desc: m.desc || '', use: m.use || '',
     fran: f ? { ...f, ind: fr.ind[id] || f.ind || ['전업종'], pt: fr.pt[id] || f.pt || 'both' } : null,
     pick: pk && pk.items[id] ? { ...pk.items[id], ...pickGroup[id] } : null,
+    hard: m.hard || null, // 라운드3 고난이도: { level, why, algo[], refs[] }
     thumb: fs.existsSync(path.join(root, 'shots', d + '_a.jpg')) });
 }
 fs.writeFileSync(path.join(root, 'manifest.json'),
   JSON.stringify({ stages: fr.stages, fit: fr.fit, axes: fr.axes, flow: fr.flow, picks: pk && { title: pk.title, note: pk.note, process: pk.process, criteria: pk.criteria, groups: pk.groups.map(g => ({ key: g.key, name: g.name })), alternates: pk.alternates }, list }, null, 1));
-console.log('manifest', list.length, '· franchise', list.filter(s => s.fran).length, '· picks', list.filter(s => s.pick).length);
+console.log('manifest', list.length, '· franchise', list.filter(s => s.fran).length, '· picks', list.filter(s => s.pick).length, '· hard', list.filter(s => s.hard).length);

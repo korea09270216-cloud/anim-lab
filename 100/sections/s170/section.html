@@ -1,0 +1,64 @@
+<section class="sec" data-sec="s170">
+  <div class="s170__wrap">
+    <header class="s170__head">
+      <div class="s170__tb">
+        <p class="s170__eyebrow"><b>STACKYARD</b><span>스택야드 적재연구소</span><i>낙하 실험 No.<em class="s170__run">01</em></i></p>
+        <h2 class="s170__title">박스는 똑같이 마흔다섯 개.<br>달라진 건 <mark>쌓는 방식</mark>뿐입니다.</h2>
+      </div>
+      <p class="s170__lead">스택야드 연구소는 물류 파렛트 15개를 같은 높이에서 세 번 떨어뜨리고, 어떤 계산이 현장을 끝까지 세워 두는지 매 회차 기록합니다. 아래 수치는 지금 이 화면에서 실제로 계산되는 값입니다.</p>
+    </header>
+
+    <div class="s170__panels">
+      <article class="s170__panel" data-mode="naive">
+        <header class="s170__ph">
+          <span class="s170__idx">A</span>
+          <div class="s170__pt"><h3>눈대중 적재</h3><p>겹친 만큼만 밀어내는 위치 보정</p></div>
+          <span class="s170__chip" data-st="fall"><i></i><b>낙하 중</b></span>
+        </header>
+        <div class="s170__cv"><canvas role="img" aria-label="A 패널: 위치만 보정하는 방식으로 쌓은 박스 피라미드 시뮬레이션"></canvas><p class="s170__fb">이 환경에서는 시뮬레이션을 그릴 수 없습니다.</p></div>
+        <dl class="s170__met">
+          <div><dt>최대 침투</dt><dd><b data-m="pen">0.0</b><u>mm</u></dd></div>
+          <div><dt>높이 손실</dt><dd><b data-m="sag">0</b><u>mm</u></dd></div>
+          <div><dt>무너진 박스</dt><dd><b data-m="col">0</b><u>/ 15</u></dd></div>
+          <div><dt>잔류 에너지</dt><dd><b data-m="ke">0.00</b><u>J</u></dd></div>
+        </dl>
+      </article>
+
+      <article class="s170__panel" data-mode="pgs">
+        <header class="s170__ph">
+          <span class="s170__idx">B</span>
+          <div class="s170__pt"><h3>반복 보정 적재</h3><p>PGS + Baumgarte · 5회 반복, 이월 없음</p></div>
+          <span class="s170__chip" data-st="fall"><i></i><b>낙하 중</b></span>
+        </header>
+        <div class="s170__cv"><canvas role="img" aria-label="B 패널: PGS와 Baumgarte 보정으로 쌓은 박스 피라미드 시뮬레이션"></canvas><p class="s170__fb">이 환경에서는 시뮬레이션을 그릴 수 없습니다.</p></div>
+        <dl class="s170__met">
+          <div><dt>최대 침투</dt><dd><b data-m="pen">0.0</b><u>mm</u></dd></div>
+          <div><dt>높이 손실</dt><dd><b data-m="sag">0</b><u>mm</u></dd></div>
+          <div><dt>무너진 박스</dt><dd><b data-m="col">0</b><u>/ 15</u></dd></div>
+          <div><dt>잔류 에너지</dt><dd><b data-m="ke">0.00</b><u>J</u></dd></div>
+        </dl>
+      </article>
+
+      <article class="s170__panel" data-mode="soft">
+        <header class="s170__ph">
+          <span class="s170__idx">C</span>
+          <div class="s170__pt"><h3>소프트 스텝 적재</h3><p>4 서브스텝 · 워밍스타트 · 소프트 접촉</p></div>
+          <span class="s170__chip" data-st="fall"><i></i><b>낙하 중</b></span>
+        </header>
+        <div class="s170__cv"><canvas role="img" aria-label="C 패널: 소프트 스텝 솔버로 쌓은 박스 피라미드 시뮬레이션"></canvas><p class="s170__fb">이 환경에서는 시뮬레이션을 그릴 수 없습니다.</p></div>
+        <dl class="s170__met">
+          <div><dt>최대 침투</dt><dd><b data-m="pen">0.0</b><u>mm</u></dd></div>
+          <div><dt>높이 손실</dt><dd><b data-m="sag">0</b><u>mm</u></dd></div>
+          <div><dt>무너진 박스</dt><dd><b data-m="col">0</b><u>/ 15</u></dd></div>
+          <div><dt>잔류 에너지</dt><dd><b data-m="ke">0.00</b><u>J</u></dd></div>
+        </dl>
+      </article>
+    </div>
+
+    <footer class="s170__foot">
+      <button class="s170__btn" type="button"><span aria-hidden="true">↻</span>다시 떨어뜨리기</button>
+      <div class="s170__cd"><span class="s170__bar"><i></i></span><span class="s170__cdt">15초 뒤 다시 낙하</span></div>
+      <p class="s170__hint">패널을 클릭하거나 끌어서 놓으면 세 패널에 똑같은 충격체가 날아갑니다.</p>
+    </footer>
+  </div>
+</section>

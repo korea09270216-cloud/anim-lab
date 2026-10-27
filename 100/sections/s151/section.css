@@ -1,0 +1,19 @@
+[data-sec="s151"]{position:relative;min-height:100vh;overflow:hidden;background:#f4eee0;color:#1b1712;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;touch-action:pan-y}
+[data-sec="s151"] .s151__fluid,[data-sec="s151"] .s151__over{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+[data-sec="s151"] .s151__fluid{image-rendering:auto}
+[data-sec="s151"] .s151__card{position:absolute;left:clamp(20px,4.5vw,72px);top:50%;transform:translateY(-50%);width:clamp(280px,29vw,430px);padding:clamp(24px,2.6vw,42px);background:#fbf8f0;border-radius:6px;box-shadow:0 1px 0 #fff inset,0 18px 40px -22px rgba(40,28,10,.45),0 0 0 1px rgba(40,28,10,.08)}
+[data-sec="s151"] .s151__eyebrow{font-size:11px;letter-spacing:.34em;font-weight:700;color:#a8421f}
+[data-sec="s151"] .s151__title{margin-top:1.1em;font-size:clamp(32px,3.5vw,56px);line-height:1.12;letter-spacing:-.045em;font-weight:900}
+[data-sec="s151"] .s151__lede{margin-top:1.3em;font-size:clamp(13px,1vw,15px);line-height:1.75;color:#5d5546;letter-spacing:-.01em;word-break:keep-all}
+[data-sec="s151"] .s151__row{margin-top:1.9em;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+[data-sec="s151"] .s151__sws{display:flex;gap:10px}
+[data-sec="s151"] .s151__sw{width:26px;height:26px;border-radius:50%;background:var(--ink,#333);box-shadow:0 0 0 2px #fbf8f0,0 0 0 3px rgba(40,28,10,.2);transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .4s}
+[data-sec="s151"] .s151__sw:hover{transform:scale(1.14)}
+[data-sec="s151"] .s151__sw.is-on{box-shadow:0 0 0 2px #fbf8f0,0 0 0 4px #1b1712}
+[data-sec="s151"] .s151__cta{font-size:13px;font-weight:700;letter-spacing:-.01em;padding:.85em 1.5em;border-radius:99px;background:#1b1712;color:#f4eee0;transition:background .4s,transform .5s cubic-bezier(.16,1,.3,1)}
+[data-sec="s151"] .s151__cta:hover{background:#a8421f;transform:translateY(-2px)}
+[data-sec="s151"].is-static .s151__fluid{background:radial-gradient(60% 60% at 66% 50%,#243b8c55,transparent)}
+@media (max-width:760px){
+  [data-sec="s151"]{min-height:110vh}
+  [data-sec="s151"] .s151__card{top:auto;bottom:20px;transform:none;width:calc(100% - 40px);left:20px}
+}

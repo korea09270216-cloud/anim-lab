@@ -1,0 +1,25 @@
+[data-sec="s178"]{position:relative;min-height:100vh;background:#e7e0d1;color:#241a10;overflow:hidden;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s178"] .s178__wrap{position:relative;display:grid;grid-template-columns:minmax(300px,.8fr) 1.5fr;min-height:100vh;align-items:center}
+[data-sec="s178"] .s178__copy{position:relative;z-index:2;padding:6vh 0 6vh 5vw}
+[data-sec="s178"] .s178__eyebrow{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800;letter-spacing:.02em;color:#17797a}
+[data-sec="s178"] .s178__eyebrow i{width:26px;height:26px;border-radius:7px;background:#e8553a;clip-path:polygon(0 0,100% 0,100% 100%,38% 100%,0 62%)}
+[data-sec="s178"] .s178__title{margin-top:22px;font-size:clamp(30px,3.5vw,56px);font-weight:900;letter-spacing:-.05em;line-height:1.06}
+[data-sec="s178"] .s178__lead{margin-top:20px;max-width:30em;font-size:15px;line-height:1.7;font-weight:500;color:#4a3b2a}
+[data-sec="s178"] .s178__chips{display:flex;gap:8px;margin-top:26px}
+[data-sec="s178"] .s178__chips button{padding:10px 18px;border-radius:99px;border:1.5px solid #241a10;font-size:13px;font-weight:800;transition:background .25s,color .25s}
+[data-sec="s178"] .s178__chips button.is-on{background:#241a10;color:#f4ecdc}
+[data-sec="s178"] .s178__ctl{display:flex;align-items:center;gap:18px;margin-top:20px;flex-wrap:wrap}
+[data-sec="s178"] .s178__play{padding:10px 18px;border-radius:99px;background:#e8553a;color:#fff;font-size:13px;font-weight:800}
+[data-sec="s178"] .s178__play:not(.is-on){background:#17797a}
+[data-sec="s178"] .s178__slide{display:flex;flex-direction:column;gap:6px;min-width:200px;font-size:12px;font-weight:800;letter-spacing:.04em}
+[data-sec="s178"] .s178__slide output{display:inline-block;min-width:3em;font-variant-numeric:tabular-nums;color:#e8553a}
+[data-sec="s178"] .s178__slide input{width:100%;accent-color:#e8553a;cursor:pointer}
+[data-sec="s178"] .s178__stat{margin-top:22px;font-size:11px;font-weight:700;letter-spacing:.04em;color:#7a6a55;font-variant-numeric:tabular-nums}
+[data-sec="s178"] .s178__stage{position:relative;align-self:stretch;min-height:70vh}
+[data-sec="s178"] .s178__stage::before{content:"";position:absolute;inset:7% 3% 7% 0;border-radius:36px;background:radial-gradient(ellipse at 50% 55%,#f4eee2 0,#eadfca 62%,#dcd0b6 100%)}
+[data-sec="s178"] .s178__cv{position:absolute;inset:0;width:100%;height:100%;display:block;cursor:grab;touch-action:pan-y}
+@media (max-width:760px){
+  [data-sec="s178"] .s178__wrap{grid-template-columns:1fr}
+  [data-sec="s178"] .s178__copy{padding:6vh 6vw 0}
+  [data-sec="s178"] .s178__stage{min-height:60vh}
+}

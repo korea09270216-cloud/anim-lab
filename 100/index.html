@@ -47,6 +47,7 @@ h1 b{color:#ff4d2e}
 .pickbox ol,.pickbox ul{padding-left:18px}.pickbox li{margin:2px 0}
 .card__r{position:absolute;left:10px;bottom:10px;font-size:11px;padding:3px 8px;border-radius:99px;background:#000a;font-family:ui-monospace,monospace}
 .card__b .dis{font-size:12px;color:#f3c98b;margin:-2px 0 10px;line-height:1.5}
+.card__b .why{display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .alt{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px}
 .alt a{display:block;padding:10px 12px;border-radius:10px;background:#151518;border:1px solid #ffffff14;font-size:13px;color:#cfcfd4}
 .alt a:hover{border-color:#ff4d2e}.alt b{color:#ff4d2e;font-family:ui-monospace,monospace;margin-right:6px}
@@ -64,7 +65,7 @@ const $=id=>document.getElementById(id);
 const stars=n=>'★'.repeat(n);
 fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
   const list=M.list, fran=list.filter(s=>s.fran);
-  const st={mode:location.hash==='#franchise'?'fran':location.hash==='#picks'?'pick':'all',grp:'ALL',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
+  const st={mode:location.hash==='#franchise'?'fran':location.hash==='#picks'?'pick':location.hash==='#hard'?'hard':'all',hc:'ALL',hl:1,grp:'ALL',cat:'ALL',stage:'ALL',ind:'ALL',pt:'ALL',min:1};
   $('n').textContent=list.length; document.title=list.length+' Sections — Animation Lab';
   $('sub').textContent=`${list.length}개 섹션 · 클릭하면 단독 뷰어로 열려요 (스크롤·마우스 인터랙션 그대로)`;
   const chip=(on,attr,label,extra='')=>`<button class="chip${on?' on':''}" ${attr}>${label}${extra}</button>`;
@@ -77,6 +78,25 @@ fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
   function draw(){
     document.querySelectorAll('.modes button').forEach(b=>b.classList.toggle('on',b.dataset.m===st.mode));
     const grid=$('grid'), bar=$('bar'), flow=$('flow');
+    if(st.mode==='hard'){
+      const HC={'Q-FLUID':'유체·입자','R-CELL':'셀룰러·생성','S-MATH':'수학·기하','T-PHYS':'물리·메카니즘','U-RENDER':'렌더링·타이포'};
+      const hs=list.filter(s=>s.hard), keys=Object.keys(HC);
+      bar.innerHTML=`<div class="row"><label>분야</label>${chip(st.hc==='ALL','data-hc="ALL"','전체',`<small>${hs.length}</small>`)}${keys.map(k=>chip(st.hc===k,`data-hc="${k}"`,HC[k],`<small>${hs.filter(s=>s.category===k).length}</small>`)).join('')}</div>
+        <div class="row"><label>난이도</label>${chip(st.hl===1,'data-hl="1"','전체')}${chip(st.hl===5,'data-hl="5"','★5 최상만',`<small>${hs.filter(s=>s.hard.level>=5).length}</small>`)}</div>`;
+      flow.innerHTML=`<div class="pickbox"><h4>🧠 고난이도 ${hs.length}선</h4><p>'사람이 직접 구현하기 힘든' 알고리즘·수식·시뮬레이션이 화면을 만드는 섹션들. 라이브러리 호출이 아니라 <b>솔버·셰이더·기하 알고리즘을 직접 구현</b>했고, 각 카드의 "왜 어려운가"에 수치적 함정을 적었다. 렌더 해상도·격자·입자 수는 저사양에서도 돌게 줄여 놨다(GPU 없는 환경 검증 기준).</p></div>`;
+      let html='';
+      for(const k of keys){
+        if(st.hc!=='ALL'&&st.hc!==k) continue;
+        const items=hs.filter(s=>s.category===k&&s.hard.level>=st.hl).sort((a,b)=>b.hard.level-a.hard.level||a.id-b.id);
+        if(!items.length) continue;
+        html+=`<div class="stagehead"><h2><b>${k[0]}</b>${HC[k]}</h2></div>`+items.map(s=>`<a class="card" href="./view.html?s=${s.id}" target="_blank">
+          <div class="card__img" style="background-image:url(./shots/s${s.id}_a.jpg)"><span class="card__n">s${s.id}</span><span class="card__s">${'★'.repeat(s.hard.level)}</span></div>
+          <div class="card__b"><h3>${s.title}</h3><p class="fnote why" title="${String(s.hard.why).replace(/"/g,'&quot;')}">${s.hard.why}</p>
+          <div class="tags">${(s.hard.algo||[]).map(a=>`<i class="ind">${a}</i>`).join('')}</div></div></a>`).join('');
+      }
+      grid.innerHTML=html||'<p class="empty">조건에 맞는 섹션이 없어요</p>';
+      return;
+    }
     if(st.mode==='pick'){
       const P=M.picks, picked=list.filter(s=>s.pick), byId={}; list.forEach(s=>byId[s.id]=s);
       bar.innerHTML=`<div class="row"><label>분류</label>${chip(st.grp==='ALL','data-g="ALL"','전체',`<small>${picked.length}</small>`)}${P.groups.map(g=>chip(st.grp===g.key,`data-g="${g.key}"`,g.name,`<small>${picked.filter(s=>s.pick.g===g.key).length}</small>`)).join('')}</div>`;
@@ -122,12 +142,13 @@ fetch('./manifest.json?'+Date.now()).then(r=>r.json()).then(M=>{
     }
     grid.innerHTML=html||'<p class="empty">조건에 맞는 섹션이 없어요</p>';
   }
-  $('modes').innerHTML=`<button data-m="all">${list.length} 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button><button data-m="pick">✨ 클로드 추천 30선</button>`;
+  $('modes').innerHTML=`<button data-m="all">${list.length} 전체</button><button data-m="fran">🏪 창업·프랜차이즈 추천 <small>${fran.length}</small></button><button data-m="pick">✨ 클로드 추천 30선</button><button data-m="hard">🧠 고난이도 ${list.filter(s=>s.hard).length}선</button>`;
   document.addEventListener('click',e=>{
-    const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min],[data-g]'); if(!t) return;
+    const t=e.target.closest('[data-m],[data-cat],[data-stage],[data-ind],[data-pt],[data-min],[data-g],[data-hc],[data-hl]'); if(!t) return;
     const d=t.dataset;
     if(d.g)st.grp=d.g;
-    if(d.m){st.mode=d.m;history.replaceState(null,'',d.m==='fran'?'#franchise':d.m==='pick'?'#picks':location.pathname)}
+    if(d.hc)st.hc=d.hc; if(d.hl)st.hl=+d.hl;
+    if(d.m){st.mode=d.m;history.replaceState(null,'',d.m==='fran'?'#franchise':d.m==='pick'?'#picks':d.m==='hard'?'#hard':location.pathname)}
     if(d.cat)st.cat=d.cat; if(d.stage)st.stage=d.stage; if(d.ind)st.ind=d.ind; if(d.pt)st.pt=d.pt; if(d.min)st.min=+d.min;
     draw();
   });

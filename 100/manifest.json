@@ -281,6 +281,7 @@
    "use": "제품 상세/신제품 런칭 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -312,6 +313,7 @@
     "g": "G4",
     "i": 0
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -337,6 +339,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -368,6 +371,7 @@
     "g": "G2",
     "i": 4
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -384,6 +388,7 @@
    "use": "이벤트·페스티벌·메뉴 라인업 소개",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -408,6 +413,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -424,6 +430,7 @@
    "use": "패션·라이프스타일 룩북, 컬렉션 갤러리",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -440,6 +447,7 @@
    "use": "브랜드 스토리·캠페인 챕터 전환",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -464,6 +472,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -495,6 +504,7 @@
     "g": "G3",
     "i": 1
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -519,6 +529,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -543,6 +554,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -559,6 +571,7 @@
    "use": "브랜드 무드/스토리 인터루드",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -583,6 +596,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -607,6 +621,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -631,6 +646,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -647,6 +663,7 @@
    "use": "야간 영업/이벤트 티저 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -671,6 +688,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -701,6 +719,7 @@
     "g": "G4",
     "i": 6
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -717,6 +736,7 @@
    "use": "서핑/바다/음료 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -733,6 +753,7 @@
    "use": "카페·라운지·럭셔리 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -749,6 +770,7 @@
    "use": "브랜드 스토리·캠페인 스크롤 섹션",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -773,6 +795,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -789,6 +812,7 @@
    "use": "전통 차·공방·갤러리 인터랙티브 배경",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -820,6 +844,7 @@
     "g": "G4",
     "i": 2
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -836,6 +861,7 @@
    "use": "가구·오브제·제품 스튜디오 쇼케이스",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -852,6 +878,7 @@
    "use": "레트로·뮤직·게임·이벤트 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -868,6 +895,7 @@
    "use": "스포츠·테크·크루 브랜드 히어로 오브젝트",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -884,6 +912,7 @@
    "use": "여행·우주·테크 스토리텔링 스크롤 섹션",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -900,6 +929,7 @@
    "use": "사진관·스튜디오·이미지 리빌 포트폴리오",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -924,6 +954,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -940,6 +971,7 @@
    "use": "카페/F&B 히어로, 메뉴 카테고리 인트로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -956,6 +988,7 @@
    "use": "이벤트·팝업스토어·야간 프로모션 랜딩",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -972,6 +1005,7 @@
    "use": "상품 상세/성분·원산지 스토리텔링, 프리미엄 브랜드 소개",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -996,6 +1030,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1012,6 +1047,7 @@
    "use": "멤버십/한정판 굿즈/이벤트 카드 소개",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1028,6 +1064,7 @@
    "use": "시즌 메뉴/비포-애프터 히어로, 커버→상세 전환",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1058,6 +1095,7 @@
     "g": "G3",
     "i": 4
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1088,6 +1126,7 @@
     "g": "G1",
     "i": 0
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1104,6 +1143,7 @@
    "use": "이벤트/굿즈 소개, 장난기 있는 브랜드 인트로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1134,6 +1174,7 @@
     "g": "G4",
     "i": 5
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1150,6 +1191,7 @@
    "use": "메뉴/상품 목록 보기 방식 전환(그리드·리스트)",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1166,6 +1208,7 @@
    "use": "상품/메뉴 카드 클릭 시 상세 진입 전환",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1188,6 +1231,7 @@
     "g": "G4",
     "i": 4
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1204,6 +1248,7 @@
    "use": "티하우스/카페 브랜드 사이트의 카테고리 페이지 전환",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1220,6 +1265,7 @@
    "use": "제품 라인업/카테고리 탭 콘텐츠 교체",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1244,6 +1290,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1268,6 +1315,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1293,6 +1341,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1317,6 +1366,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1341,6 +1391,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1365,6 +1416,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1395,6 +1447,7 @@
     "g": "G3",
     "i": 3
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1419,6 +1472,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1443,6 +1497,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1467,6 +1522,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1483,6 +1539,7 @@
    "use": "브랜드 인트로/로고 리빌 섹션",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1507,6 +1564,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1523,6 +1581,7 @@
    "use": "진행률/숙성 시간/영양 수치 등 게이지형 스토리 섹션",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1548,6 +1607,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1579,6 +1639,7 @@
     "g": "G2",
     "i": 0
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1603,6 +1664,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1633,6 +1695,7 @@
     "g": "G3",
     "i": 0
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1663,6 +1726,7 @@
     "g": "G2",
     "i": 2
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1693,6 +1757,7 @@
     "g": "G1",
     "i": 7
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1717,6 +1782,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1741,6 +1807,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1771,6 +1838,7 @@
     "g": "G2",
     "i": 1
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1801,6 +1869,7 @@
     "g": "G2",
     "i": 3
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -1825,6 +1894,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1841,6 +1911,7 @@
    "use": "브랜드 스토리/메뉴 소개 챕터 전환",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1865,6 +1936,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1881,6 +1953,7 @@
    "use": "메뉴북/레시피/브랜드 스토리북",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1897,6 +1970,7 @@
    "use": "제품 구성/원재료 소개",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1913,6 +1987,7 @@
    "use": "이벤트 전환/브랜드 메시지 리빌",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1929,6 +2004,7 @@
    "use": "제품 상세/신제품 런칭",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1953,6 +2029,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1969,6 +2046,7 @@
    "use": "여행/항공/캠페인 내러티브 스크롤",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -1985,6 +2063,7 @@
    "use": "이벤트/페스티벌 포스터, 티켓, 캠페인 키비주얼",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2001,6 +2080,7 @@
    "use": "메뉴판/브로셔/섹션 오프닝 리빌",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2024,6 +2104,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2040,6 +2121,7 @@
    "use": "농장·로컬푸드·여행 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2062,6 +2144,7 @@
     "g": "G4",
     "i": 7
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2077,6 +2160,7 @@
    "use": "전통차·전시·서예 클래스·프리미엄 브랜드 인트로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2093,6 +2177,7 @@
    "use": "루프탑 바·천문대·야간 이벤트 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2109,6 +2194,7 @@
    "use": "디저트·젤리·캐릭터 굿즈 브랜드 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2133,6 +2219,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2149,6 +2236,7 @@
    "use": "가구·인테리어·건축 스튜디오 브랜드 철학 섹션",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2165,6 +2253,7 @@
    "use": "아웃도어·트레일 브랜드 히어로/캠페인",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2181,6 +2270,7 @@
    "use": "페스티벌·이벤트·프로모션 랜딩 히어로",
    "fran": null,
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2205,6 +2295,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2235,6 +2326,7 @@
     "g": "G4",
     "i": 8
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2266,6 +2358,7 @@
     "g": "G2",
     "i": 5
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2290,6 +2383,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2320,6 +2414,7 @@
     "g": "G4",
     "i": 3
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2350,6 +2445,7 @@
     "g": "G3",
     "i": 5
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2380,6 +2476,7 @@
     "g": "G1",
     "i": 2
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2404,6 +2501,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2434,6 +2532,7 @@
     "g": "G3",
     "i": 2
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2458,6 +2557,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2488,6 +2588,7 @@
     "g": "G1",
     "i": 6
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2512,6 +2613,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2536,6 +2638,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2560,6 +2663,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2584,6 +2688,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2608,6 +2713,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2633,6 +2739,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2663,6 +2770,7 @@
     "g": "G1",
     "i": 4
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2693,6 +2801,7 @@
     "g": "G1",
     "i": 5
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2718,6 +2827,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2742,6 +2852,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2766,6 +2877,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2790,6 +2902,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2814,6 +2927,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2838,6 +2952,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2870,6 +2985,7 @@
     "g": "G1",
     "i": 3
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2902,6 +3018,7 @@
     "g": "G1",
     "i": 1
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2932,6 +3049,7 @@
     "g": "G1",
     "i": 8
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -2956,6 +3074,7 @@
     ]
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -2983,6 +3102,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3005,6 +3125,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3030,6 +3151,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3052,6 +3174,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3074,6 +3197,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3098,6 +3222,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3123,6 +3248,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3147,6 +3273,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3172,6 +3299,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3198,6 +3326,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3224,6 +3353,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3248,6 +3378,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3273,6 +3404,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3297,6 +3429,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3322,6 +3455,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3347,6 +3481,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3371,6 +3506,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3395,6 +3531,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3419,6 +3556,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3444,6 +3582,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3469,6 +3608,7 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3494,6 +3634,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3520,6 +3661,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3546,6 +3688,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3571,6 +3714,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3602,6 +3746,7 @@
     "g": "G4",
     "i": 1
    },
+   "hard": null,
    "thumb": true
   },
   {
@@ -3627,6 +3772,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3652,6 +3798,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3677,6 +3824,7 @@
     "pt": "both"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3701,6 +3849,7 @@
     "pt": "brand"
    },
    "pick": null,
+   "hard": null,
    "thumb": true
   },
   {
@@ -3727,6 +3876,1617 @@
     "pt": "landing"
    },
    "pick": null,
+   "hard": null,
+   "thumb": true
+  },
+  {
+   "id": "151",
+   "title": "결 잉크 공방: 소용돌이치는 잉크",
+   "category": "Q-FLUID",
+   "tech": [
+    "Stable Fluids",
+    "Jacobi 압력 투영",
+    "Semi-Lagrangian RK2",
+    "와도 구속",
+    "감산 잉크 합성"
+   ],
+   "desc": "128×72 속도장에서 직접 푼 비압축성 유체가 잉크를 소용돌이로 말아 올리고, 글자 '결'과 카피 카드가 장애물로 흐름을 갈라놓는다",
+   "use": "잉크·문구·주류·화장품 등 액체 제품 브랜드 히어로 / 커서 반응 인트로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "압력 푸아송을 20회 Jacobi로만 풀면 비압축성이 덜 풀려 잉크가 뭉치거나 퍼지고, semi-Lagrangian은 수치 확산으로 와류를 뭉개기 때문에 와도 구속을 넣어 소용돌이를 되살려야 한다. 장애물 경계는 압력 Neumann·속도 0으로 다루고, 빠른 포인터는 선분을 따라 splat 하지 않으면 끊기며, 염료를 흡광도로 두어 감산 혼합 색이 나오게 했다.",
+    "algo": [
+     "Stable Fluids (Stam 1999)",
+     "Jacobi 압력 투영 + warm start",
+     "Semi-Lagrangian RK2 이류",
+     "Vorticity confinement",
+     "Beer–Lambert 감산 잉크 합성"
+    ],
+    "refs": [
+     "Stam, Stable Fluids, SIGGRAPH 1999",
+     "GPU Gems ch.38 Fast Fluid Dynamics Simulation on the GPU",
+     "Fedkiw·Stam·Jensen, Visual Simulation of Smoke, SIGGRAPH 2001"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "152",
+   "title": "바람결 공기연구소: 글자가 만드는 카르만 소용돌이",
+   "category": "Q-FLUID",
+   "tech": [
+    "격자 볼츠만 D2Q9 BGK",
+    "bounce-back 장애물",
+    "와도 컬러맵",
+    "추적 입자 연기"
+   ],
+   "desc": "192×108 격자에서 직접 푼 볼츠만 유체가 좌→우로 흐르며 커서 원통과 글자 '바람' 뒤에 카르만 소용돌이 길을 만들고, 와도·속도 컬러맵과 추적 입자로 보여준다",
+   "use": "공조·환기·가전·모빌리티 등 공기 흐름을 다루는 브랜드 히어로 / 기술 신뢰 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "BGK 충돌은 τ가 0.5에 가까울수록 불안정해 τ·유입속도·마하수(격자 음속 한계)를 함께 맞춰야 하고, 글자처럼 얇은 장애물은 bounce-back 경계가 계단형이라 와류 방출이 쉽게 깨진다. 이동 장애물이 지나간 셀은 분포함수를 다시 채워야 하며, 소용돌이 길은 초기 교란 없이는 수천 스텝 동안 대칭 정상류에 머물러 유입 미세 가진으로 시동을 걸었다.",
+    "algo": [
+     "Lattice Boltzmann D2Q9 BGK",
+     "pull-streaming 충돌 융합 루프",
+     "full-way bounce-back",
+     "평형 분포 유입 + 영구배 유출",
+     "RK2 추적 입자 + 와도 컬러맵"
+    ],
+    "refs": [
+     "Succi, The Lattice Boltzmann Equation for Fluid Dynamics and Beyond",
+     "Krüger 외, The Lattice Boltzmann Method: Principles and Practice",
+     "Schroeder, Fluid dynamics simulation (D2Q9 JS demo) 개념 참고",
+     "arXiv 2112.08926 — 카르만 소용돌이 LBM 형식"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "153",
+   "title": "스모크링 BBQ하우스: 와류 연기 고리",
+   "category": "Q-FLUID",
+   "tech": [
+    "Biot–Savart 와류 필라멘트",
+    "RK2 이류",
+    "추적 입자 3천",
+    "소프트웨어 스플랫 렌더"
+   ],
+   "desc": "직접 푼 3D 와류 링 두 개가 서로를 통과하며(leapfrogging) 늘고 줄어들고, 연기 알갱이 수천 개가 그 속도장을 따라 흐르는 훈연 히어로",
+   "use": "F&B·BBQ·훈연 전문점 브랜드 히어로 / 불맛·시간 스토리 인트로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "와류 링은 코어를 정칙화하지 않으면 특이점에서 발산하고, 두 링이 통과하는 순간(코어 간격이 δ 수준)에 시간 스텝·세그먼트 간격이 안 맞으면 필라멘트가 꼬이며 에너지가 폭주한다. 링 길이가 바뀔 때마다 세그먼트를 재분할하고, 정점(Heun 서브스텝)과 추적 입자를 같은 시간 격자 위에서 이류시켜야 leapfrogging 주기가 수치적으로 보존된다. O(N·M) 속도 합산을 프레임당 수백만 번 평가하면서도 20fps 예산에 맞춘다.",
+    "algo": [
+     "정칙화 Biot–Savart (Rosenhead–Moore 커널)",
+     "와류 필라멘트 폐곡선 이산화 + 4점 보간 리메시",
+     "RK2(Heun) 서브스텝 이류 + 추적 입자 시간 보간",
+     "속도 클램프·발산 감지·재시드",
+     "원근 투영 소프트웨어 스플랫 + 톤매핑"
+    ],
+    "refs": [
+     "Pixar Vorticle Fluid Simulation (Pfaff 외) https://graphics.pixar.com/library/VorticleFluidSim/paper.pdf",
+     "Krasny, Lagrangian particle methods for vortex dynamics (UCSD)",
+     "Leapfrogging vortex rings — Borisov 외, 동축 링 상호작용",
+     "Winckelmans·Leonard, regularized vortex filament / vortex blob 방법"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "154",
+   "title": "SDF 입체 유리 글자",
+   "category": "U-RENDER",
+   "tech": [
+    "캔버스 글자 → 정확 거리장(EDT)",
+    "SDF 압출+베벨 레이마칭",
+    "내부 굴절·색분산",
+    "SDF 모핑"
+   ],
+   "desc": "캔버스에서 그린 글자로 거리장을 직접 만들고, 레이마칭으로 두꺼운 유리·크롬 글자를 렌더한다. 커서로 카메라가 돌고 글자는 거리장 보간으로 다른 글자로 녹아 변한다.",
+   "use": "공방·브랜드 히어로의 입체 타이틀, 주문 제작 오브제 소개",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "글자 래스터에서 정확한 부호 거리장을 만들어(2× 오버샘플 EDT + 다운샘플) 레이마칭이 오버스텝 없이 가는 SDF 로 써야 한다. 압출+둥근 베벨을 거리 규약을 깨지 않고 만들고, 유리는 내부로 한 번 더 마칭해 출구 법선에서 채널별 IOR 로 재굴절(전반사 폴백)한다. 두 글자의 SDF 를 보간하는 모핑은 거리 하한이 깨지므로 스텝 계수를 낮춰야 한다.",
+    "algo": [
+     "Felzenszwalb 정확 유클리드 거리변환",
+     "SDF 압출+베벨(IQ opExtrusion 변형)",
+     "내부 레이마칭 + 채널별 굴절 분산",
+     "SDF 텍스처 보간 모핑"
+    ],
+    "refs": [
+     "https://tympanus.net/codrops/?p=89382",
+     "https://cs.brown.edu/people/pfelzens/papers/dt-final.pdf",
+     "https://iquilezles.org/articles/distfunctions/"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "155",
+   "title": "물빛 제과 아틀리에: 번지는 수채화",
+   "category": "Q-FLUID",
+   "tech": [
+    "Curtis 1997 3층 수채 모델",
+    "얕은 물 흐름 + 안료 침전/재용해",
+    "모세관 포화 확산",
+    "Kubelka–Munk 안료 혼색",
+    "프로시저럴 종이 결"
+   ],
+   "desc": "종이 위 물 층의 흐름, 안료의 침전·재용해, 종이 모세관 확산을 직접 풀고 Kubelka–Munk 로 합성해 번짐·가장자리 진해짐·종이 결 입상감·감산 혼색(파랑+노랑=초록)을 그린다",
+   "use": "디저트·티룸·공방·화장품 브랜드 히어로 / 체험형 컬러 팔레트 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "물 깊이가 음수가 되지 않는 보존형 풍상 플럭스와 CFL 한도, 수심 가중 이류로 안료 질량이 새지 않게 해야 하고, 젖은 경계의 압력 처리(η·M·(1−M′))가 있어야 가장자리가 진해진다. 침전·재용해·모세관 확산의 시간 척도를 서로 맞추지 않으면 번짐이 즉시 굳거나 끝없이 번지며, KM 합성은 층 두께가 0에 가까울 때 coth 가 발산하므로 따로 처리했다.",
+    "algo": [
+     "Curtis 1997 3층(흐름·침전·모세관)",
+     "보존형 풍상 플럭스 + 리미터",
+     "수심 가중 semi-Lagrangian 안료 이류",
+     "Kubelka–Munk 반사율 합성",
+     "도메인 워프 업샘플 + 입상감"
+    ],
+    "refs": [
+     "Curtis, Anderson, Seims, Fleischer, Salesin, Computer-Generated Watercolor, SIGGRAPH 1997",
+     "Kubelka & Munk 1931 / Kubelka 1948 — 층 반사율",
+     "Baxter 외, 안료 K·S 측정치 기반 합성 개념"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "156",
+   "title": "몰랑 — 만지면 질감이 변하는 MLS-MPM 유체",
+   "category": "Q-FLUID",
+   "tech": [
+    "MLS-MPM 2D",
+    "Neo-Hookean 탄성",
+    "눈 소성(극분해 클램프)",
+    "P2G/G2P 직접 구현"
+   ],
+   "desc": "격자 64×36·입자 3천여 개의 MLS-MPM 시뮬레이션. 시럽(액체)·푸딩(젤리)·눈꽃(소성) 세 재질이 전환되고, 커서가 입자를 밀고 누른 채 끌었다 놓으면 던진다.",
+   "use": "디저트·F&B 브랜드 메인 히어로 또는 메뉴 질감 소개 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "격자↔입자 전달(P2G/G2P)·변형구배 F 갱신·재질별 구성방정식을 한 루프에 직접 구현해야 한다. 액체는 J 하한/상한 클램프(인장 응집 방지), 젤리는 J≤0.22 반전 복구, 눈은 2×2 극분해로 특이값을 [0.975,1.0045] 로 클램프하고 Jp 경화를 줘야 수치 발산·입자 소실 없이 안정한다. 고정 dt·속도/C 클램프·자가복구로 소프트웨어 렌더 환경에서도 터지지 않게 했다.",
+    "algo": [
+     "MLS-MPM(Hu 2018)",
+     "2차 B-스플라인 P2G/G2P",
+     "Neo-Hookean 탄성",
+     "극분해 기반 눈 소성+경화",
+     "고정 dt·CFL 클램프"
+    ],
+    "refs": [
+     "https://arxiv.org/abs/1802.06546 (MLS-MPM, Hu et al. 2018)",
+     "Stomakhin et al. 2013, A material point method for snow simulation",
+     "https://github.com/taichi-dev/taichi/blob/master/python/taichi/examples/simulation/mpm128.py (개념 참고)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "157",
+   "title": "이음 국수 — 점균류가 글자를 잇는 네트워크",
+   "category": "R-CELL",
+   "tech": [
+    "Physarum 에이전트 5천",
+    "Jones 감지-회전-이동-침적",
+    "트레일 확산·감쇠 격자",
+    "거리변환 먹이점 샘플링"
+   ],
+   "desc": "점균류 에이전트 5천 마리가 글자 골격의 먹이점을 찾아 가장 짧은 연결망을 그려 낸다. 커서는 먹이, 누르면 가위로 길을 끊고 망은 스스로 다시 이어진다. 글자가 바뀌면 망이 재배선된다.",
+   "use": "F&B·로컬 브랜드 히어로 / 브랜드 철학(연결·이음) 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "확산·감쇠·침적·센서 기하가 이루는 파라미터 창이 매우 좁다. 침적 상한(cap) 없이는 양성 피드백으로 에이전트가 굵은 간선 한두 개로 몰려 망이 붕괴하고, 확산이 크면 균일 노이즈가 된다. 스윕으로 (SA 40°, RA 20°, SO 4, dep 5/cap 40, dw 0.2, decay 0.9) 프리셋을 찾아 5천 스텝 이상 붕괴 없이 재배선되게 했다. 글자 마스크는 거리변환으로 획 중심선만 골라 푸아송 샘플링한다.",
+    "algo": [
+     "Jones(2010) Physarum 에이전트 모델",
+     "분리형 3×3 확산+감쇠",
+     "거리변환 골격 샘플링",
+     "침적 상한 포화 제어"
+    ],
+    "refs": [
+     "Jones 2010, The emergence and dynamical evolution of complex transport networks from simple low-level behaviours (UWE)",
+     "https://cargocollective.com/sagejenson/physarum",
+     "https://michaelfogleman.com/projects/physarum/"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "158",
+   "title": "결 베이커리 — 스크롤로 변태하는 반응확산 반죽",
+   "category": "R-CELL",
+   "tech": [
+    "Gray-Scott 반응확산",
+    "Float32 이중 버퍼 192×108",
+    "스크롤→(f,k) 경로",
+    "엠보스 램프 렌더"
+   ],
+   "desc": "Gray-Scott 반응확산을 CPU Float32 로 직접 풀어, 스크롤이 (f,k) 를 점→줄무늬→산호→미로 영역으로 이동시키며 무늬가 분열·성장·재배선된다. 커서가 지나간 자리에서는 새 씨앗이 자란다.",
+   "use": "베이커리·디저트 브랜드 제품 라인업/제조 철학 섹션 (스크롤 스토리텔링)",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "무늬가 존재하는 (f,k) 영역이 초승달 모양의 좁은 띠라 경로가 사멸 영역(예: f=0.062,k=0.061)을 지나면 V 가 0 으로 죽는다. 스윕으로 점→벌레→산호→미로가 모두 살아 있는 웨이포인트 경로를 찾고, 8비트 텍스처 대신 Float32 이중 버퍼·9점 가중 라플라시안(이방성 완화)으로 풀었다. 주기적 씨앗·사멸 감지 재시딩으로 정지/소멸을 복구한다.",
+    "algo": [
+     "Gray-Scott 반응확산(Pearson 클래스)",
+     "9점 가중 라플라시안(0.2/0.05/-1)",
+     "(f,k) 웨이포인트 경로 보간",
+     "엠보스 셰이딩 쌍선형 업샘플"
+    ],
+    "refs": [
+     "https://www.karlsims.com/rdtool-help.html",
+     "https://mrob.com/pub/comp/xmorphia/pearson-classes.html",
+     "Pearson 1993, Complex Patterns in a Simple System, Science 261"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "159",
+   "title": "숨 — 병 속에서 헤엄치는 Lenia 생명체",
+   "category": "R-CELL",
+   "tech": [
+    "Lenia 연속 CA",
+    "링 커널 직접 컨볼루션(432탭)",
+    "성장함수 G(μ=0.15,σ=0.015)",
+    "Orbium 글라이더 8방향 시드"
+   ],
+   "desc": "연속값 격자 위에서 Orbium 글라이더가 스스로 형태를 유지하며 미끄러지는 Lenia 시뮬레이션. 충돌하면 소멸·분열하고, 개체 수를 감시해 빈 자리에 새 개체를 띄우며, 화면을 누르면 커서 위치에 개체가 투입된다.",
+   "use": "발효음료·헬스푸드·바이오 브랜드의 '살아 있는' 컨셉 히어로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "글라이더는 이산화(해상도·R·dt)에 민감해 소멸하기 쉽고 μ,σ 허용창이 0.001 단위로 좁다. 커널(432탭)을 격자 9,216셀 전체에 직접 컨볼루션하므로 래핑 패딩 버퍼와 비제로 탭 목록으로 프레임 비용을 잡았고, 질량 감시로 멸종·폭주를 복구한다. 단일 개체는 3천 스텝 이상 질량 71 을 유지하지만 충돌하면 소멸해 자동 투입이 필요했다(R=9 로 줄이면 개체가 너무 작고, R=10 은 300스텝 뒤 소멸했다).",
+    "algo": [
+     "Lenia(Chan 2019)",
+     "링 커널 exp(4−1/(r(1−r)))",
+     "성장함수 가우시안 G",
+     "래핑 패딩 직접 컨볼루션",
+     "질량 기반 개체 수 감시"
+    ],
+    "refs": [
+     "https://arxiv.org/abs/1812.05433 (Lenia — Biology of Artificial Life, Chan 2019)",
+     "https://arxiv.org/abs/2005.03742 (Lenia and Expanded Universe)",
+     "https://arxiv.org/abs/2401.13111 (이산화 의존 소멸)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "160",
+   "title": "소담 양념 — 뒤집을 때마다 층이 쌓이는 호리병",
+   "category": "Q-FLUID",
+   "tech": [
+    "Margolus 2×2 블록 CA",
+    "회전 중력(블록별 확률적 축 선택)",
+    "밀도 정렬·안식각 미끄러짐",
+    "질량 보존 교환 규칙"
+   ],
+   "desc": "소금·고춧가루·간장·참기름 4종 재료가 호리병 안에서 밀도 순으로 가라앉고 뜬다. 병이 돌면 중력 방향이 g=(sinθ,cosθ)로 회전하며 재료가 목을 지나 쏟아지고 다시 층을 이룬다. 드래그로 직접 돌릴 수 있다.",
+   "use": "양념·소스·조미료 브랜드 제품 소개, 레이어드 상품 스토리",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "격자를 병 좌표계에 고정한 채 중력만 회전시켜야 한다. 임의 각도 중력은 블록마다 ±x/±y 축을 |g|성분 비율로 확률 선택하고 블록을 그 축이 아래가 되게 회전해 같은 낙하 규칙(밀도 정렬→대각 미끄러짐→액체 가로 확산)을 적용해 시간평균으로 구현했다. 모든 규칙이 블록 내 순열이라 재료 수가 정확히 보존되고(Node 검증: 560/380/520/340 불변), 스캔 편향은 블록 분할 교번과 무작위 순서로 제거했다.",
+    "algo": [
+     "Margolus 이웃 블록 CA",
+     "중력 축 확률 선택(회전 중력)",
+     "밀도 기반 침강/부력",
+     "안식각 확률 미끄러짐",
+     "smooth-min 호리병 SDF 마스크"
+    ],
+    "refs": [
+     "https://www.emergentmind.com/margolus-sand",
+     "https://conwaylife.com/wiki/Rule:Sand-Margolus",
+     "https://cis.temple.edu/tagit/publications/TAGIT-TR-18.pdf"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "161",
+   "title": "비 내리는 김 서린 창",
+   "category": "Q-FLUID",
+   "tech": [
+    "CPU 방울 시뮬(병합·스틱슬립·흔적)",
+    "64급 법선맵 RGBA 인코딩",
+    "렌즈 굴절 셰이더",
+    "김서림 마스크 닦기"
+   ],
+   "desc": "창가 카페 유리에 빗방울이 맺혀 합쳐지고 흘러내리며 꼬리를 남긴다. 방울 안에는 뒤집힌 밤 도시가 굴절돼 비치고, 커서로 김서림을 닦으면 창 너머가 드러난다.",
+   "use": "카페·숙박·라이프스타일 브랜드의 시즌/무드 히어로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "방울 병합 시 질량(면적) 보존과 형태 연속성, 스틱-슬립 미끄럼과 꼬리 구슬 생성, 수백 방울의 충돌 판정을 CPU 에서 돌린다. 결과를 법선·크기 맵(RGBA8)으로 인코딩해 셰이더가 방울마다 뒤집힌 렌즈 굴절을 샘플하고, 김서림은 저해상도 마스크가 배경 블러 단계(3레벨)를 고른다.",
+    "algo": [
+     "방울 질량 보존 병합",
+     "stick-slip 중력 미끄럼",
+     "법선맵 렌즈 굴절(역상)",
+     "김서림 마스크 + 블러 피라미드"
+    ],
+    "refs": [
+     "https://github.com/SardineFish/raindrop-fx",
+     "https://tympanus.net/codrops/2015/11/04/rain-water-effect-experiments/",
+     "https://dev.to/_carson_ye_/atmos-fx-040-an-evolution-in-visual-quality-47hj"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "162",
+   "title": "수문 에브루 공방: 닫힌형 종이 마블링",
+   "category": "Q-FLUID",
+   "tech": [
+    "Lu & Jaffer 닫힌형 변위",
+    "면적 보존 역사상 체인",
+    "방울·바늘·빗·휘젓기",
+    "픽셀당 도구 체인 평가"
+   ],
+   "desc": "유체 풀이 없이 방울(√ 확장)·바늘/빗(전단)·휘젓기(비틀기)의 면적 보존 역변환을 픽셀마다 거슬러 올라가 마블링 무늬를 그리고, 트레이를 끌어 직접 빗질한다",
+   "use": "공방·클래스·전통공예·디저트 패키지·텍스타일 브랜드의 시그니처 비주얼 / 체험 예약 랜딩",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "도구마다 변형이 면적을 정확히 보존(det=1)해야 '마블링'이 되고, 래스터는 순변환이 아니라 역사상으로 만들어야 한다. 도구가 쌓일수록 픽셀당 비용이 O(도구 수)라 체인 길이·해상도를 프레임 예산에 맞춰 조절하고, 극단적으로 늘어난 줄무늬의 앨리어싱·방울 반경 0의 0÷0 특이점을 막는 수치 처리가 필요하다.",
+    "algo": [
+     "Lu & Jaffer 닫힌형 마블링 변환",
+     "역사상(inverse mapping) 체인",
+     "면적 보존 전단(det=1)",
+     "비틀기(twist) 변환",
+     "동적 해상도 조절"
+    ],
+    "refs": [
+     "Lu, Jaffer 외, Marbling simulation by closed-form displacement (2012)",
+     "SBGames 2018, Real-time paper marbling simulation",
+     "Aubry, Closed-form marbling"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "163",
+   "title": "숯결 저널: 오브를 피해 갈라져 흐르는 다단 본문",
+   "category": "U-RENDER",
+   "tech": [
+    "자체 줄바꿈 엔진",
+    "슬롯 분할(원·볼록다각형 구간 뺄셈)",
+    "measureText 폭 캐시",
+    "keep-all 어절 배치",
+    "DOM 접근성 미러"
+   ],
+   "desc": "드래그하는 불씨 오브·청록 오브·자동 회전 보석 주위로 헤드라인과 3단 본문이 실시간으로 갈라져 흐르고, 단어들이 관성으로 미끄러져 새 자리를 찾는다",
+   "use": "브랜드 매거진·스토리 페이지 히어로, 에디토리얼 레이아웃",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "줄 밴드마다 원·회전 다각형 장애물의 x-구간을 단 폭에서 빼 여러 조각의 슬롯을 만들고, 어절(keep-all) 단위로 슬롯을 왼쪽부터 채우며 커서를 단·슬롯 사이로 이어가야 한다. 장애물이 움직일 때마다 줄 구성이 바뀌어 글자가 튀므로 단어별 상태를 시간 기반 지수 감쇠로 보간하고, 폭이 어절보다 좁은 슬롯 제거·문단 끝 줄 정렬·단보다 긴 어절의 강제 배치 같은 경계 조건을 처리한다. DOM 리플로우 없이 canvas measureText 캐시만으로 매 프레임 재배치한다.",
+    "algo": [
+     "슬롯 분할 줄바꿈(layoutNextLine류)",
+     "원·볼록 다각형 밴드 교차 구간",
+     "measureText 폭 캐시",
+     "양끝 정렬 틈 분배",
+     "지수 감쇠 단어 보간",
+     "관성+궤도 복귀 스프링"
+    ],
+    "refs": [
+     "https://chenglou.me/pretext/",
+     "https://somnai-dreams.github.io/pretext-demos/ (Editorial Engine)",
+     "100/research/H5.md H5-01"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "164",
+   "title": "스텝 커피: 춤추는 실루엣을 따라 흘러 채워지는 문단",
+   "category": "U-RENDER",
+   "tech": [
+    "실루엣 마스크 래스터",
+    "행별 run-length 슬롯 변환",
+    "자체 줄바꿈 엔진",
+    "줄 이탈 히스테리시스",
+    "절차적 FK 댄서"
+   ],
+   "desc": "코드로 그린 춤추는 인형·커피콩·커서·DOM 박스를 8px 마스크로 래스터화하고, 줄마다 빈 구간을 슬롯으로 바꿔 두 단 문단이 실루엣 모양으로 비워지며 매 프레임 다시 흘러 채워진다",
+   "use": "브랜드 인트로·가맹 소개 히어로, 텍스트 아트 스토리텔링",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "프레임마다 바뀌는 실루엣을 마스크로 래스터하고 텍스트 줄 밴드별로 막힌 구간을 run-length 로 뽑아 단 폭에서 빼 슬롯 목록을 만든 뒤, 어절 단위로 슬롯을 채우며 커서를 이어야 한다. 실루엣이 움직일 때마다 줄 구성이 바뀌어 글자가 깜빡이므로 직전 프레임의 줄·슬롯 식별자를 기억해 공백을 24%까지 수축해 같은 줄에 남기는 히스테리시스와 폭이 어절보다 좁은 슬롯 제거, 줄이 바뀐 어절 순간이동/작은 이동만 미끄러짐 보간이 필요하다. 실루엣 자체도 FK 관절 각도로 매 프레임 생성한다.",
+    "algo": [
+     "마스크 래스터 + 행별 run-length 슬롯",
+     "슬롯 채움 줄바꿈(layoutNextLine류)",
+     "줄 이탈 히스테리시스(공백 수축)",
+     "FK 관절 댄서 절차 생성",
+     "measureText 폭 캐시"
+    ],
+    "refs": [
+     "https://eu.36kr.com/en/p/3745083757068551",
+     "https://gigazine.net/gsc_news/en/20260412-pretext",
+     "100/research/H5.md H5-02"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "165",
+   "title": "비누방울 박막 간섭",
+   "category": "U-RENDER",
+   "tech": [
+    "WebGL 셰이더",
+    "박막 간섭 LUT",
+    "두께장 이류 시뮬",
+    "해석적 구 교차"
+   ],
+   "desc": "비누방울 표면의 두께장이 소용돌이치며 중력에 흘러내려 무지개 간섭색이 변하고, 위쪽이 검게 얇아지면 구면으로 터지며 물방울이 흩어진다.",
+   "use": "수제 비누·바스·뷰티 브랜드 히어로, 제품 컬렉션 인트로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "막 두께 h(nm)를 구면 격자(128×64)에서 가우시안 점소용돌이의 스트림함수 curl(발산 0)로 Catmull-Rom semi-Lagrangian 이류하고, h³ 에 비례하는 보존형 upwind 중력 배수와 위쪽 가중 증발로 위는 얇게·아래는 고이게 만든다. 색은 OPD=2·n·h·cosθt 를 1D LUT(Wyman 멀티로브 CIE → sRGB, 5nm 간격 sin²(π·OPD/λ) 적분)로 조회하고 앞·뒷면 해석 교차에 슈릭 프레넬×절차적 스튜디오 환경광을 가산한다. 터짐은 구면 위 각거리 α 홀이 퍼지며 경계 림에서 두께가 급증해 무지개 띠가 생기고 미스트 입자가 흩어진다.",
+    "algo": [
+     "박막 간섭 OPD=2nd cosθ",
+     "1D 스펙트럼 LUT (Wyman CIE 근사 → sRGB)",
+     "두께장 semi-Lagrangian 이류 (Catmull-Rom)",
+     "점소용돌이 스트림함수 curl 속도장",
+     "보존형 h³ upwind 중력 배수",
+     "레이–구 해석 교차 + Schlick 프레넬",
+     "각거리 홀 확장 터짐 + 입자 미스트"
+    ],
+    "refs": [
+     "https://www.alanzucconi.com/2017/10/27/carpaint-shader-thin-film-interference/",
+     "https://cg.cs.uni-bonn.de/backend/v1/files/publications/HuangEtAl-SoapBubbles-SIGGRAPH2020.pdf",
+     "https://cs.uwaterloo.ca/~thachisu/spthick.pdf",
+     "Wyman, Sloan, Shirley — Simple Analytic Approximations to the CIE XYZ Color Matching Functions (JCGT 2013)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "166",
+   "title": "바람을 입은 한 장의 비단 (XPBD 천)",
+   "category": "T-PHYS",
+   "tech": [
+    "XPBD",
+    "공간 해시 자기충돌",
+    "삼각형 법선 바람",
+    "Canvas2D 법선 조명"
+   ],
+   "desc": "20×20 천이 핀에 걸려 펄럭이고, 커서 구가 밀어 올리면 주름이 지며, 핀을 풀면 바닥에 떨어져 스스로 겹쳐 쌓인다.",
+   "use": "패션·라이프스타일 브랜드 히어로, 소재·질감을 보여주는 제품 소개 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "신축을 compliance 0 으로 두고 굽힘만 부드럽게 푸는 XPBD 의 균형이 어렵다: 서브스텝·반복 수에 따라 같은 천이 고무에서 종이로 바뀌고, 속도 상한이 없으면 구·바닥·자기충돌에서 터널링이 난다. 자기충돌은 공간 해시로 이웃을 찾되 휴지거리 필터와 두께(0.8h)를 잘못 잡으면 접힌 층이 서로 끼어 락(lock)된다.",
+    "algo": [
+     "XPBD 신축(compliance 0)+굽힘(대향 정점 거리) 서브스텝 8",
+     "공간 해시 자기충돌(카운팅 정렬)",
+     "속도 상한 clamp 0.25·thickness/dt",
+     "삼각형 면 법선 바람(상대속도 투영)",
+     "painter 정렬 + 법선 조명 렌더"
+    ],
+    "refs": [
+     "https://matthias-research.github.io/pages/tenMinutePhysics/14-cloth.html",
+     "https://matthias-research.github.io/pages/tenMinutePhysics/15-selfCollision.html",
+     "Macklin et al., Small Steps in Physics Simulation (2019)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "167",
+   "title": "숟가락보다 먼저, 접시가 웃는다 (XPBD 푸딩)",
+   "category": "T-PHYS",
+   "tech": [
+    "XPBD 사면체 부피 제약",
+    "5-tet 격자 분할",
+    "Phong 테셀레이션",
+    "Canvas2D 반투명 젤리 렌더"
+   ],
+   "desc": "64정점·135사면체 푸딩이 접시에 떨어져 찌그러졌다 부피를 되찾고, 숟가락(커서)으로 찌르면 출렁이다 가라앉는다.",
+   "use": "디저트·베이커리 브랜드 히어로, 식감(말랑·쫀득)을 보여주는 제품 소개 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "부피 제약을 compliance 0 으로 두고 엣지만 말랑하게 푸는 XPBD 조합에서 사면체가 반전되면 부피 부호가 뒤집혀 영구 붕괴한다. 외부 에셋 없이 큐브 격자를 5-사면체로 쪼개되 인접 큐브의 면 대각선이 어긋나지 않게 체커 미러링을 해야 하고, 64정점의 거친 메시를 매끈한 젤리로 보이게 Phong 테셀레이션과 뒷면 불투명·앞면 반투명 2패스로 그려야 한다.",
+    "algo": [
+     "XPBD 엣지(compliance>0)+사면체 부피(C=V−V0, compliance 0)",
+     "체커 미러 5-사면체 분할 + 경계면 추출",
+     "바닥 마찰·구 충돌·반전 감시 자가 복구",
+     "Phong 테셀레이션(삼각형 16분할) + 2패스 반투명 음영"
+    ],
+    "refs": [
+     "https://matthias-research.github.io/pages/tenMinutePhysics/10-softBodies.html",
+     "Macklin et al., XPBD: Position-Based Simulation of Compliant Constrained Dynamics (2016)",
+     "Boubekeur & Alexa, Phong Tessellation (2008)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "168",
+   "title": "바람이 먼저 빗어 주는 머릿결 (FTL 헤어)",
+   "category": "T-PHYS",
+   "tech": [
+    "Follow-The-Leader",
+    "형상 복원 스프링",
+    "Kajiya-Kay 접선 음영",
+    "Canvas2D 버킷 배치 렌더"
+   ],
+   "desc": "150가닥×8절 머리카락이 길이를 유지한 채 고개 회전·바람·커서 빗질에 휘날리다 헤어스타일로 돌아온다.",
+   "use": "헤어·뷰티 살롱/샴푸 브랜드 히어로, 머릿결·윤기를 보여주는 소개 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "FTL 은 한 번의 패스로 길이를 보장하지만 형상 기억이 없어 곧은 머리가 풀썩 처진다. 루트에서 끝으로 갈수록 약해지는 목표 형상 스프링과 자식 보정 기반 속도 보정(v −= s·d/dt)을 같이 맞춰야 스타일은 유지되고 끝은 자유롭게 휘날린다. 1,200개 입자를 Kajiya-Kay 접선 음영으로 가닥 질감을 내면서 stroke 호출을 버킷으로 묶어 소프트웨어 렌더에서도 프레임을 지켜야 한다.",
+    "algo": [
+     "FTL(Follow-The-Leader) 1회 반복 + 자식 보정 속도 갱신",
+     "루트→끝 감쇠 형상 복원 스프링",
+     "바람 항력장 + 커서 빗질(원통 밀어내기·속도 끌림)",
+     "머리 구 충돌·회전 관성",
+     "Kajiya-Kay 접선 음영 + 밝기·굵기 버킷 렌더"
+    ],
+    "refs": [
+     "Müller, Kim, Chentanez, Fast Simulation of Inextensible Hair and Fur (VRIPHYS 2012)",
+     "https://diglib.eg.org/items/11db9962-07b8-46a1-ab46-ecc9ee05086d"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "169",
+   "title": "바른활자공방: 어떤 배율에서도 선명한 베지어 글리프",
+   "category": "U-RENDER",
+   "tech": [
+    "Slug식 winding 커버리지",
+    "2차 베지어 근 풀이",
+    "raw WebGL 데이터 텍스처",
+    "카메라 로컬 좌표 정밀도"
+   ],
+   "desc": "비트맵 없이 프래그먼트 셰이더가 베지어 아웃라인의 교차·winding 으로 글자를 직접 래스터화 — ×400 핀홀 줌인과 작은 글자 군집 줌아웃, 원근으로 눕혀도 선명",
+   "use": "서체·브랜드 로고타입 소개, 타이포그래피 쇼케이스 히어로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "글리프를 텍스처가 아니라 곡선 리스트(2차 베지어)로 올려 픽셀마다 수평·수직 두 광선의 교차를 세어 winding number 로 채움 여부와 커버리지를 구한다. 근 공식의 수치 오차로 픽셀이 빠지거나 줄무늬가 생기지 않도록 곡선 제어점 y 부호만으로 근 채택 여부를 정하고(근 값은 위치에만 사용), 극단 줌에서 float 정밀도가 무너지지 않게 카메라 중심을 글리프 로컬 좌표로 두고 곡선 점을 픽셀 기준 상대좌표로 뺀다. 밴드 분할로 픽셀당 곡선 수를 줄이고 원근 기울임에서도 fwidth 로 비등방 풋프린트 AA 를 계산한다.",
+    "algo": [
+     "Slug 방식 winding number 래스터화",
+     "2차 베지어 이차방정식 근 + 부호 기반 근 적격 판정",
+     "수평·수직 광선 커버리지 가중 합성",
+     "밴드(band) 곡선 리스트 데이터 텍스처",
+     "카메라 상대 좌표 정밀도 처리",
+     "평면 호모그래피 + fwidth AA"
+    ],
+    "refs": [
+     "https://terathon.com/blog/decade-slug.html",
+     "Eric Lengyel, GPU-Centered Font Rendering Directly from Glyph Outlines (JCGT 2017)",
+     "100/research/H5.md H5-23"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "170",
+   "title": "스택야드 — 같은 박스 45개, 세 가지 쌓는 방식",
+   "category": "T-PHYS",
+   "tech": [
+    "직접 구현 강체 솔버",
+    "SAT+클리핑 매니폴드",
+    "PGS·Baumgarte",
+    "Soft Step"
+   ],
+   "desc": "같은 박스 피라미드를 위치 보정·PGS+Baumgarte·Soft Step 세 솔버로 동시에 떨어뜨려 안정성 차이와 침투·무너짐 지표를 실시간 계산해 보여준다",
+   "use": "물류·건축·게임 물리 회사 소개 페이지의 기술력 비교 섹션, 안정성 증명 인터랙션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "엔진 없이 박스-박스 SAT 충돌과 참조/입사면 클리핑 접촉 매니폴드(최대 2점), 마찰, 누적 임펄스 클램프를 직접 구현해야 한다. 피라미드 스택은 warm start·서브스텝·soft constraint·relaxation 이 맞물려야만 서 있고, 접촉 feature id 로 임펄스를 프레임 간 이월하거나 앵커 상대 변위로 분리거리를 서브스텝마다 재계산하지 않으면 지터와 침하가 생긴다. 같은 충돌 코드 위에서 솔버만 바꿔 실제 수치 차이(침투 mm·무너진 박스·잔류 에너지)로 안정성이 갈리게 해야 해서 파라미터 튜닝과 시드별 검증이 필수다.",
+    "algo": [
+     "SAT 박스 충돌",
+     "접촉 매니폴드 클리핑",
+     "PGS+Baumgarte",
+     "Soft Step(서브스텝·warm start·soft constraint)"
+    ],
+    "refs": [
+     "https://box2d.org/posts/2024/02/solver2d/",
+     "https://box2d.org/files/ErinCatto_SoftConstraints_GDC2011.pdf"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "171",
+   "title": "팔수라멘: 절차적 거미 보행",
+   "category": "T-PHYS",
+   "tech": [
+    "거리 임계 스텝 트리거",
+    "교대 사지 보행 스케줄러",
+    "3D 2-본 IK(코사인 법칙)",
+    "속도 조절기"
+   ],
+   "desc": "여덟 개의 다리가 몸통 기준 홈 포인트에서 임계 거리를 넘을 때만 스텝을 떼고, 대각선 네 다리씩 번갈아 이륙하며 지면에 닿은 발은 절대 미끄러지지 않은 채 커서(라멘 그릇)를 쫓아 걷는 탑뷰 거미.",
+   "use": "히어로/브랜드 스토리 섹션 — 여덟 손의 정성을 상징하는 마스코트 인터랙션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "발마다 독립적으로 스텝을 판단하면 인접 다리가 동시에 뜨거나 모든 다리가 서로 기다리는 교착, 반대로 위상이 몰려 한 박자에 다 걷는 문제가 생긴다. 이웃 다리 락아웃 + 교대 조(group) 양보 규칙으로 교대 사지 보행(위상차 0.5)을 만들고, 접지한 발의 월드 좌표는 스텝이 끝날 때만 바뀌게 해 미끄러짐을 구조적으로 없앴다. 발이 홈에서 멀어질수록 몸통 속도를 깎는 조절기가 다리 길이 한계(IK 도달 불가)를 막는다.",
+    "algo": [
+     "Distance-threshold step trigger",
+     "Alternating tetrapod gait scheduler",
+     "Analytic 3D two-bone IK",
+     "Stretch governor"
+    ],
+    "refs": [
+     "https://discourse.threejs.org/t/procedural-leg-ik-in-three-js-rapier/91203",
+     "https://courses.cs.ut.ee/2025/cg/fall/Main/Project-ProceduralAnimation",
+     "research/H2.md H2-16"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "172",
+   "title": "팔팔문어 — FABRIK 8팔 문어",
+   "category": "T-PHYS",
+   "tech": [
+    "FABRIK 역운동학",
+    "관절 각도 클램프",
+    "Canvas2D 윤곽 폴리곤",
+    "스프링 감쇠"
+   ],
+   "desc": "8팔×12관절 문어가 커서·새우 먹이를 향해 FABRIK으로 뻗어 감아 쥐고, 흡반이 순서대로 붙은 뒤 입으로 끌어당긴다",
+   "use": "문어/해산물 프랜차이즈 히어로 — 브랜드 마스코트가 방문자 커서를 따라 뻗는 첫 화면",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "FABRIK 은 슬랙이 있는 목표에서 끝 관절 한 곳에 몰려 접히고, 각도 클램프를 걸면 목표 근처에서 두 자세를 오가며 떨린다. 후진·전진 양방향 클램프와 목표 거리에서 푼 균일 호(arc) 사전으로 굴곡을 분배하고, 팔 끝 접선 보정을 닫힌형으로 풀어 말려 감기는 꼬리와 정확히 맞물리게 했다. 윤곽 폴리곤은 곡률 제한 반경으로 급커브의 안/바깥 오프셋 꼬임을 막는다.",
+    "algo": [
+     "FABRIK 후진/전진 패스",
+     "관절 각도 클램프",
+     "절차적 흡반 애니메이션",
+     "테이퍼 윤곽 폴리곤"
+    ],
+    "refs": [
+     "https://www.andreasaristidou.com/FABRIK",
+     "https://barbegenerativediary.com/en/tutorials/fabrik-forward-and-backward-reaching-inverse-kinematics-in-processing/"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "173",
+   "title": "바람걸음 로스터리: 얀센 링크 보행 도면",
+   "category": "T-PHYS",
+   "tech": [
+    "원-원 교점 해석",
+    "분기 연속성 추적",
+    "발 궤적 트레이스",
+    "위상차 다중 레그"
+   ],
+   "desc": "크랭크 각도 하나에서 열한 개 막대의 모든 관절을 원-원 교점으로 풀어 다리 궤적을 그리고, 위상이 90°씩 다른 네 다리가 평평한 발바닥 구간으로 지면을 밀며 구조물을 걷게 하는 블루프린트 도면.",
+   "use": "브랜드 철학/기술 소개 섹션 — 한 바퀴가 한 걸음이 되는 장인정신",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "관절마다 두 원의 교점이 둘이라 프레임 사이에 가지가 뒤집히면 기구가 접혀 버린다. 이전 프레임 해에서 가까운 교점을 고르는 분기 추적과, 막대 길이 비(holy numbers) 가 조금만 틀려도 교점이 사라지는 조립 가능성 검사를 직접 구현했다. 지면 접촉 구간의 속도를 해석적으로 구해 몸통 속도에 연동하고, 정/역회전 후 원위치 복귀로 연속성을 검증했다.",
+    "algo": [
+     "circle-circle intersection",
+     "branch continuity tracking",
+     "Jansen 11-bar linkage",
+     "stance-phase ground speed matching"
+    ],
+    "refs": [
+     "https://www.firgelliauto.com/blogs/mechanisms/theo-jansen-strandbeest-leg",
+     "https://javalab.org/en/theo_jansen_en/",
+     "research/H2.md H2-19"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "174",
+   "title": "정각제과: 시계 탈진기와 기어 트레인",
+   "category": "T-PHYS",
+   "tech": [
+    "인벌류트 톱니 직접 생성",
+    "앵커 탈진기 상태기계",
+    "이벤트 이분법 적분",
+    "정수 박동 카운터 위상 클램프"
+   ],
+   "desc": "압력각 20° 인벌류트 톱니로 6개 기어를 직접 만들어 맞물리게 하고, 앵커 탈진기가 이빨을 풀 때마다 진자가 임펄스를 받아 에너지를 보충하며 초침·분침·시침을 한 칸씩 돌리는 시계 무브먼트. 스크롤하면 시간이 빨리 감긴다.",
+   "use": "브랜드 신뢰/품질 섹션 — 정확한 타이밍을 상징하는 기계식 오븐 타이머",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "탈진기는 이빨-팔레트 접촉이 이산 사건이라 임계 통과 시각을 스텝 단위로 뭉개면 박동이 사라지거나 멈춘다. 임계를 넘는 스텝마다 이분법으로 정확한 시각을 찾아 상태를 바꾸고 남은 시간을 이어 적분하며, 진자가 임펄스 구간에서만 힘을 받는 한계 사이클(진폭 자동 수렴)을 만든다. 기어 열은 각도를 누적하지 않고 정수 박동 수를 모듈로로 먼저 줄여 맞물림 위상식으로 매 프레임 재계산해 수 시간·수 년 뒤에도 톱니가 겹치지 않는다.",
+    "algo": [
+     "Involute gear profile",
+     "Event-driven anchor escapement",
+     "Bisection event location",
+     "Integer-beat phase clamping"
+    ],
+    "refs": [
+     "https://observablehq.com/@roelandschoukens/gears",
+     "https://observablehq.com/@dkirkby/gears",
+     "research/H2.md H2-25/26 (탈진기는 직접 출처 없음 — 자체 모델링)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "175",
+   "title": "나비 커피랩: 이중 진자 뒤집힘 시간 지도",
+   "category": "S-MATH",
+   "tech": [
+    "라그랑주 운동방정식",
+    "RK4 고정 dt",
+    "96² 점진 계산·캐시",
+    "에너지 드리프트 감시"
+   ],
+   "desc": "이중 진자의 출발 각도(θ1,θ2) 격자 9,216개를 직접 적분해 '첫 뒤집힘까지의 시간'을 컬러맵으로 점진 계산하고, 지도를 누르면 그 초기조건으로 진자가 실제로 출발해 예측과 같은 순간에 뒤집힌다.",
+   "use": "브랜드 철학/기술 섹션 — 작은 차이가 결과를 바꾼다는 메시지",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "지도 한 픽셀이 독립된 카오스 시뮬이라 9,216×수백 스텝을 메인스레드 시간 예산(프레임당 10ms)에 맞춰 거친 격자→촘촘한 격자 순으로 쪼개 계산해야 한다. RK4 도 장시간 에너지가 흘러서 dt 를 0.005 로 고정하고 에너지 오차를 실시간 감시하며, 지도와 라이브 진자가 같은 적분 순서를 써야 예측 시간과 실측 시간이 일치한다. 에너지 < -g 인 영역은 해석적으로 뒤집힘 불가라 시뮬을 생략한다.",
+    "algo": [
+     "Lagrangian double pendulum",
+     "RK4",
+     "progressive tile refinement",
+     "analytic flip-energy bound"
+    ],
+    "refs": [
+     "https://nullprogram.com/blog/2018/02/15/",
+     "https://github.com/william-popmie/double-pendulum",
+     "research/H2.md H2-33"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "176",
+   "title": "보로노이 산산조각 페이지 전환",
+   "category": "T-PHYS",
+   "tech": [
+    "Bowyer–Watson Delaunay",
+    "Voronoi 쌍대",
+    "강체 파편 물리",
+    "Canvas2D 비트맵 오려내기"
+   ],
+   "desc": "프로시저럴 페이지를 직접 구현한 Delaunay/보로노이로 44~55개 파편으로 쪼개 충격점에서 충격파·방사 속도·회전·중력으로 흩뿌리며 다음 장면을 드러낸다.",
+   "use": "히어로/섹션 간 페이지 전환, 브랜드 인트로 컷",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "외부 라이브러리 없이 Bowyer–Watson 삼각분할과 외접원 쌍대로 보로노이 셀을 만들고, 무한 셀은 사이트를 4변으로 거울 반사해 유계로 만든다. 충격점 중심으로 밀도가 높아지는 시드(best-candidate)·폴리곤 질량중심/면적 무게중심·셀을 미리 오려낸 비트맵의 AA 이음새 제거(1.3px 팽창)·충격파 전파 지연 이탈이 함정이다.",
+    "algo": [
+     "Bowyer–Watson Delaunay",
+     "Voronoi dual (circumcenter)",
+     "mirror-point boundary closure",
+     "polygon centroid rigid body",
+     "best-candidate radial seeding"
+    ],
+    "refs": [
+     "https://github.com/Biratus/shatter.js",
+     "https://en.wikipedia.org/wiki/Bowyer%E2%80%93Watson_algorithm",
+     "research/H2.md H2-20",
+     "research/H5.md H5-08"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "177",
+   "title": "유리 균열 전파 — 방사 균열과 링 붕괴",
+   "category": "T-PHYS",
+   "tech": [
+    "확률 분기 균열 전파",
+    "방사 쐐기×링 셀 위상",
+    "굴절 오프셋 비트맵",
+    "낙하 붕괴 물리"
+   ],
+   "desc": "충격점에서 방사 균열이 에너지를 잃으며 확률적으로 분기·전파하고 동심원 링이 이를 잇는다. 균열이 만든 사다리꼴 셀이 굴절·하이라이트를 띤 채 순서대로 낙하해 붕괴한다.",
+   "use": "유리·공예·인테리어 브랜드 히어로, 클릭 인터랙션 인트로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "균열 선분이 곧 파편 경계가 되도록 방사선×링 교점으로 평면 분할(셀 폴리곤)을 직접 구성하고, 최외곽 셀은 먼 반경 호로 닫아 모서리 틈을 막아야 한다. 방사선이 서로 교차하지 않게 각도 지터를 제한하고, 균열 도착 시간(arc-length/속도)으로 전파를 동기화하며, 굴절은 셀별 배경 샘플 오프셋을 비트맵에 구워 소프트웨어 렌더에서도 싸게 낸다.",
+    "algo": [
+     "방사 균열 확률 분기 전파",
+     "링×방사 교점 평면 분할",
+     "셀별 굴절 UV 오프셋",
+     "순차 낙하 강체 물리"
+    ],
+    "refs": [
+     "https://pub.dev/packages/broken_glass",
+     "https://godotshaders.com/shader/impact-glass-shader/",
+     "research/H2.md H2-21"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "178",
+   "title": "오리가미 시뮬레이터 — 접기선이 접히는 종이",
+   "category": "T-PHYS",
+   "tech": [
+    "bar-and-hinge 솔버",
+    "명시적 적분(동적 이완)",
+    "이면각 기울기 힌지",
+    "Canvas2D 3D 페인터"
+   ],
+   "desc": "삼각화한 종이의 모든 접기선이 목표 이면각을 향해 동시에 당겨지며 미우라 접기와 십자 전개도→상자가 실제 물리 해로 접힌다. 슬라이더/자동 재생, 면 법선 음영·바닥 그림자·접기선 패턴 인셋.",
+   "use": "포장/패키지/공예 브랜드의 제품 소개, 스크롤·슬라이더 연동 3D 시연",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "질점 노드에 축 스프링(길이)·면 비틀림(평평 유지)·접기선 비틀림(목표 이면각)을 명시적으로 적분한다. 이면각의 해석적 기울기(4노드 힌지 공식)를 직접 유도·유한차분으로 검증했고, 강성비(축≫접기선≥면)에서 dt 안정 한계·질량 비례 감쇠(임계감쇠)를 맞춰야 수 백 스텝 안에 수렴한다. 접기선 M/V 부호는 강체 접힘이 가능한 조합만 에너지가 0 으로 수렴한다(잘못된 조합은 면이 휨). 자기교차는 목표각 점진 증가·각도 상한·먼 노드 쌍 반발력으로 최소 처리.",
+    "algo": [
+     "bar-and-hinge 모델",
+     "이면각 기울기 힌지 스프링",
+     "동적 이완(임계감쇠)",
+     "접기선 M/V 부호 에너지 판별",
+     "노드 반발 자기교차 최소화"
+    ],
+    "refs": [
+     "https://erikdemaine.org/papers/OrigamiSimulator_Origami7/",
+     "https://github.com/amandaghassaei/OrigamiSimulator",
+     "research/H2.md H2-22"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "179",
+   "title": "종이 한 장이 말려 넘어가는 페이지 컬",
+   "category": "T-PHYS",
+   "tech": [
+    "원통 말림 메시 40×30",
+    "Z버퍼 소프트 래스터라이저",
+    "접선각 LUT 램버트+스페큘",
+    "스프링 관성"
+   ],
+   "desc": "드래그한 방향에 수직인 임의 축으로 종이가 원통처럼 말리며 뒷면·음영·접촉 그림자가 생기고, 놓으면 스프링으로 넘어가 다음 면이 드러난다. 입력이 없으면 리사주 식으로 각도를 바꿔가며 스스로 말아 넘긴다.",
+   "use": "매거진·브랜드북·메뉴북 같은 에디토리얼 인트로, 페이지 전환 연출",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "평면 점을 임의 방향 축에 사영해 1D 호장 파라미터(곡률 램프로 C², 나선 반경)로 감고, 뒷면·겹친 감김층의 가림은 Z버퍼 스캔라인 래스터라이저를 직접 짜서 해결해야 한다. 드래그 점이 커서를 정확히 따르도록 손실 함수 Λ(u)=u−X(u)의 역함수를 풀고, 말린 길이에 따라 반경을 키워 감김 수를 제한하며, 접촉 그림자는 높이별 반그림자 폭을 가진 누적 최댓값 테이블로 계산한다. 메시 경계의 균열·뒷면 판정·페이지 밖 UV 컷을 같은 패스에서 처리하는 것이 함정이다.",
+    "algo": [
+     "원통·나선 말림 프로파일 적분(곡률 램프 C²)",
+     "Λ(u)=u−X(u) 역함수로 그랩점 추종",
+     "Z버퍼 스캔라인 삼각형 래스터라이저(아핀 보간)",
+     "접선각 φ 보간 → 픽셀 램버트+블린 스페큘 LUT",
+     "높이 가변 반그림자 누적 맥스 테이블",
+     "반지름 가변(속도) + 감김 수 상한",
+     "스프링-댐퍼 + 놓을 때 완주/복귀 판정"
+    ],
+    "refs": [
+     "https://alvarotrigo.com/fullPage/page-flip-effect/",
+     "https://tympanus.net/codrops/2025/11/27/letting-the-creative-process-shape-a-webgl-portfolio/",
+     "100/research/H2.md H2-24"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "180",
+   "title": "삼미 소스바: 자기 진자 끌개 지도",
+   "category": "S-MATH",
+   "tech": [
+    "Beeman 적분",
+    "3자석 끌개 영역",
+    "128² 점진 계산",
+    "dt/2 민감도 판별"
+   ],
+   "desc": "세 자석 위에서 진자를 놓으면 어느 자석에 정착하는지를 128×128 출발점 전부에 대해 직접 적분해 프랙탈로 칠하고, 눌러서 놓은 진자가 같은 적분기로 실제 궤적을 그리며 지도가 예고한 색의 자석에 멈춘다.",
+   "use": "브랜드 철학/세계관 섹션 — 작은 출발 차이가 결과를 가른다는 메시지",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "경계 근처는 오차 한 줌에 정착 자석이 바뀌는 카오스라, 같은 픽셀을 dt 와 dt/2 로 풀어 결과가 갈리는 '수치적으로 결정 불가' 경계를 따로 판별하고 경계 픽셀만 2×2 부표본으로 재계산한다. 마찰이 크면 구조가 사라지고 작으면 스텝 상한에 걸려서 정지 조건(반경+속도)과 감쇠를 맞춰야 하며, 속도 의존 힘이 있는 Beeman 은 예측 속도로 가속도를 재평가해야 한다.",
+    "algo": [
+     "Beeman integrator",
+     "Basins of attraction",
+     "boundary supersampling",
+     "step-halving sensitivity test"
+    ],
+    "refs": [
+     "https://beltoforion.de/en/magnetic_pendulum",
+     "https://gauss.math.yale.edu/fractals/Labs/MagPendulumLab/MagPendulumLab.html",
+     "research/H2.md H2-34"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "181",
+   "title": "심도 로스터스 · 만델브로 딥줌",
+   "category": "S-MATH",
+   "tech": [
+    "섭동 이론(Perturbation)",
+    "BigInt 고정소수점 참조 궤도",
+    "재기준(rebasing)",
+    "점진 정밀화 + 재투영"
+   ],
+   "desc": "BigInt 로 계산한 참조 궤도와 double 델타 재귀로 10^0→10^30 배까지 자동으로 파고드는 만델브로 딥줌",
+   "use": "원두·향·소재 등 '깊이'를 파는 브랜드 히어로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "float64 만으로는 10^15 근방에서 픽셀이 뭉개지므로 참조점의 궤도 Z_m 을 BigInt 고정소수점(깊이에 따라 96~180비트)으로 직접 계산하고 픽셀은 δ=c−c* 의 델타 재귀 ε'=2Zε+ε²+δ 만 double 로 돈다. 참조 궤도가 일찍 끝나거나 |Z+ε|<|ε| 인 글리치는 ε←Z+ε, m←0 재기준으로 단일 참조에서 정정하고, 이를 깊이 12/20/28/30 에서 BigInt 직접 반복과 대조해 일치함을 확인했다. 목표점은 최대 반복 픽셀로 재중심하는 탐욕 하강을 Node 에서 수행해 36자리 좌표로 고정했다.",
+    "algo": [
+     "섭동 델타 재귀",
+     "BigInt 고정소수점 참조 궤도",
+     "Zhuoran rebasing",
+     "스무스 반복수 ν=n+1−log2 ln|z|",
+     "저해상→고해상 점진 패스 + 줌 재투영"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Plotting_algorithms_for_the_Mandelbrot_set",
+     "https://mrob.com/pub/muency/perturbationmethods.html",
+     "https://www.ultrafractal.com/help/formulas/perturbationcalculations.html"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "182",
+   "title": "번짐 리소 스튜디오 · 프랙탈 플레임",
+   "category": "S-MATH",
+   "tech": [
+    "Fractal Flame IFS",
+    "Variation 17종",
+    "로그 밀도·감마·vibrancy 톤매핑",
+    "Canvas2D"
+   ],
+   "desc": "수식 변환 6~7개가 만드는 불꽃 꽃무늬를 로그 밀도로 누적하고, 변환 계수를 천천히 보간하며 리소 인쇄처럼 겹쳐 찍는 문양",
+   "use": "인쇄·패키지·뷰티·공예 브랜드 소개/포트폴리오",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "Draves 논문이 생략한 세부(로그 밀도 → 감마 → vibrancy 혼합, 색 지표 누적, 회전 대칭 plot)를 직접 복원했고, 변환 계수를 극좌표(θ,스케일,전단)로 두어 키프레임 보간 중 행렬이 찌그러지지 않게 했다. 보간 경로의 점유율/발산을 검증해 화면이 비거나 폭발하지 않는 시드만 쓰고, 경계는 프레임마다 백분위로 재추정해 뷰를 따라가게 한다.",
+    "algo": [
+     "IFS 카오스 게임",
+     "비선형 variation 합성(sinusoidal·spherical·swirl·horseshoe·polar·handkerchief 등)",
+     "로그 밀도 + 감마 + vibrancy",
+     "극좌표 아핀 보간",
+     "회전 대칭 plot",
+     "감쇠 누적"
+    ],
+    "refs": [
+     "https://flam3.com/flame_draves.pdf",
+     "https://en.wikipedia.org/wiki/Fractal_flame"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "183",
+   "title": "장야 천체사진관 · 부처 성운",
+   "category": "S-MATH",
+   "tech": [
+    "Buddhabrot/Nebulabrot",
+    "궤적 밀도 누적",
+    "반복 한도 3종 RGB",
+    "시간 예산 점진 렌더"
+   ],
+   "desc": "탈출한 샘플의 궤적 점들을 장노출처럼 쌓아, 어둠 속에서 앉은 부처 형상이 서서히 떠오르는 성운 이미지",
+   "use": "천체사진·명상·공간 브랜드의 히어로/갤러리",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "보통의 만델브로와 달리 탈출 못 한 샘플은 전부 버리고 탈출한 궤적의 '모든' 점을 누적해야 해서 수천만 샘플이 필요하다. 단일 스레드 JS 에서 프레임당 18ms 예산으로 배치를 쪼개 점진 누적하고, 안개를 걷어내는 분위수 레벨 보정(검은점/흰점)과 한도별 채널 분리로 형상을 끌어낸다. 실수축을 세로로 돌리고 켤레 대칭으로 샘플 효율을 2배로 만든다.",
+    "algo": [
+     "Buddhabrot 궤적 누적",
+     "Nebulabrot 3채널(한도 900/110/14)",
+     "카디오이드·주기2 구근 해석적 제외",
+     "켤레 대칭 plot",
+     "분위수 레벨 + 감마 톤매핑",
+     "색상환 회전(Rodrigues)"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Buddhabrot",
+     "https://paulbourke.net/fractals/buddhabrot/index.html",
+     "https://mrob.com/pub/muency/buddhabrot.html"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "184",
+   "title": "결 타일 공방: 끝나지 않는 가장자리",
+   "category": "S-MATH",
+   "tech": [
+    "푸앵카레 원판 {p,q} 쌍곡 타일링",
+    "삼각군 반사 접기(직선 2·직교 원 1)",
+    "SU(1,1) 뫼비우스 합성+det 정규화",
+    "접기 역재생으로 타일 식별"
+   ],
+   "desc": "원판 픽셀마다 거울 3개로 접어 {7,3}·{5,4}·{3,7}·{4,5} 타일을 그린다. 커서 쪽으로 원판의 중심이 쌍곡 평행이동하며 문양이 흘러오고, 마우스가 없으면 자동 표류한다.",
+   "use": "공방·인테리어 브랜드의 패턴 컬렉션/브랜드 히어로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "{p,q} 의 거울 원(중심 c=u/√(u²−1), 반지름 1/√(u²−1), u=cos(π/q)/sin(π/p))을 직접 유도해 꼭짓점 각이 정확히 π/q 임을 검증했고, 픽셀마다 수십 번 접는 루프를 한 프레임 ≤40ms 로 돌려야 한다. 이동을 매 프레임 합성하면 |α|²−|β|²=1 이 깨져 타일이 일그러지므로 매번 정규화하고, 경계 근처는 쌍곡 픽셀 크기(4/(W(1−r²)))로 선폭·안개를 조절해 AA 한다.",
+    "algo": [
+     "{p,q} 삼각군 반사 접기",
+     "Möbius/SU(1,1) 합성 + 정규화",
+     "접기 역재생으로 타일 중심 복원",
+     "쌍곡거리 sinh 근사 AA"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Hyperbolic_tiling",
+     "https://www.d.umn.edu/~ddunham/subtile13.pdf",
+     "research/H3.md F12"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "185",
+   "title": "오결 패턴 인쇄소: 반복하지 않는 질서",
+   "category": "S-MATH",
+   "tech": [
+    "Robinson 삼각형 인플레이션",
+    "Z[ζ5] 정수 4-벡터 정확 산술",
+    "시야 컬링 재귀 + 세대 보간",
+    "중심 2세대 자기유사 무한 줌"
+   ],
+   "desc": "펜로즈 타일링이 한 세대씩 꽃피듯 분할되며 끝없이 확대된다. 꼭짓점은 정수 격자(Z[ζ5])로 들고 다녀 틈이 없고, 마름모는 변 방향 5종으로 컬러링, 커서 근처가 밝아진다.",
+   "use": "인쇄·패턴 브랜드의 스크롤 연동 핀 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "1/φ 배 분할점을 실수로 구하면 이웃 삼각형이 만든 점이 1ulp 어긋나 틈과 중복 꼭짓점이 생긴다 → 꼭짓점을 a0+a1ζ+a2ζ²+a3ζ³ 정수 4-벡터로 두고 (a1−a0−a3, a2−a3, a1−a0, a2−a0−a3) 로 정확 계산했다. 무한 줌은 중심 패턴이 2세대마다 180° 회전한 자기유사임을 정수 서명 비교로 검증한 뒤 이음매 없이 감았고, 세대 사이는 새 꼭짓점이 부모 변에서 미끄러져 나오게 보간했다.",
+    "algo": [
+     "Robinson 삼각형 분할(황금비 인플레이션)",
+     "Z[ζ5] 정확 산술",
+     "뷰 컬링 재귀 서브디비전",
+     "자기유사 감기(wrap)"
+    ],
+    "refs": [
+     "https://preshing.com/20110831/penrose-tiling-explained/",
+     "https://www.ams.org/featurecolumn/archive/ribbons.html",
+     "research/H3.md F23"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "186",
+   "title": "하이퍼랩: 네 번째 축으로 도는 120셀",
+   "category": "S-MATH",
+   "tech": [
+    "600셀 황금비 좌표 + 쌍대로 120셀 생성",
+    "6평면 4D 회전행렬",
+    "S³ 대원호 slerp + 입체투영",
+    "깊이·4D w 기반 선 굵기·색 버킷"
+   ],
+   "desc": "120셀(꼭짓점 600·모서리 1200)·600셀·초입방체가 4차원 회전하며 입체투영으로 곡선 모서리가 된다. 자동 회전 + 드래그, 모서리 색은 4번째 좌표 w, 굵기는 원근.",
+   "use": "연구소·테크 브랜드 히어로 / 차원 컨셉 전시",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "120셀 꼭짓점 좌표를 외우지 않고 600셀의 정사면체 셀 600개를 클릭으로 찾아 그 중심(쌍대)으로 생성하고, 면 공유 쌍으로 모서리 1200개를 얻어 개수·차수(4)·변 길이 균일을 검증했다. 입체투영 분모 (1−w)→0 은 클램핑하고, 모서리는 직선이 아니라 S³ 대원호를 6~24등분해 투영해야 곡선이 된다.",
+    "algo": [
+     "4D 6평면 회전 합성",
+     "정다포체 쌍대 생성(셀 클릭 탐색)",
+     "S³ slerp + 입체투영",
+     "깊이 버킷 배치 렌더"
+    ],
+    "refs": [
+     "https://4d.pardesco.com/learn/projections",
+     "https://en.wikipedia.org/wiki/120-cell",
+     "research/H3.md F13"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "187",
+   "title": "올실 매듭 공방: 한 올 한 올, 서로 엮인 원",
+   "category": "S-MATH",
+   "tech": [
+    "Hopf 사상 (z0,z1)→S²",
+    "올 매개화 + 입체투영(Villarceau 원)",
+    "투영 배율 기반 선 굵기",
+    "기저점 색 = 올 색 + 기저 구 인셋"
+   ],
+   "desc": "S³ 의 올들이 입체투영되어 서로 한 번씩 엮인 원이 된다. 올의 색은 기저 S² 위의 점 위치로 정해지고, 커서가 고른 기저점 주위 올들이 리본처럼 엮이며 따라 움직인다.",
+   "use": "실·직조·매듭 공예 브랜드 소개 / 수학 전시",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "올 (cos(ϑ/2)e^{iψ}, sin(ϑ/2)e^{i(ψ−ϕ)}) 이 Hopf 사상으로 정확히 (ϑ,ϕ) 로 가는지 유도해 구성했고, 투영점 근처 올은 반경이 발산하므로 1−x4 와 화면 반경으로 클램핑한다. 입체투영의 국소 배율(1/(1−x4))과 원근을 곱해 선 굵기를 보정해야 올의 엮임이 읽힌다.",
+    "algo": [
+     "Hopf 올다발 매개화",
+     "입체투영 + 원근 보정 굵기",
+     "기저 구 색 매핑"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Hopf_fibration",
+     "research/H3.md F14"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "188",
+   "title": "비름 문구점: 한 번 비틀면 면이 하나",
+   "category": "S-MATH",
+   "tech": [
+    "비가향 곡면 매개(v 범위 4π 텍스처)",
+    "직접 구현 소프트웨어 래스터(z-버퍼·구로)",
+    "앞/뒤 법선 판정 텍스처 반전",
+    "8자형 클라인 병 몰입"
+   ],
+   "desc": "뫼비우스 띠 위에 글자가 앉아 있고, 개미가 한 바퀴만 걸어도 반대 면에 닿는다(두 바퀴를 돌아야 글자가 제자리). 클라인 병으로 전환하면 병이 스스로를 지나며 안과 밖이 이어진다.",
+   "use": "문구·출판 브랜드 소개 / 수학 전시",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "비가향 곡면은 전역 UV 가 없어 v 를 4π(이중 덮개)로 잡고 법선 방향(앞/뒤)에 따라 (s,t) 와 (s+½,1−t) 를 읽어야 한 바퀴 뒤 글자가 정확히 이어진다. 클라인 병은 자기교차라 화가 알고리즘이 깨지므로 z-버퍼 소프트웨어 래스터를 직접 짰고, 개미의 가림 판정도 z-버퍼로 한다.",
+    "algo": [
+     "이중 덮개 UV + 법선 부호로 면 선택",
+     "삼각형 래스터 + z-버퍼 + 구로 조명",
+     "수치 법선(중심 차분)",
+     "글자 마스크 쌍선형 샘플"
+    ],
+    "refs": [
+     "https://virtualmathmuseum.org/Surface/moebius_strip/moebius_strip.html",
+     "https://en.wikipedia.org/wiki/Klein_bottle",
+     "research/H3.md F15"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "189",
+   "title": "포개 커피: 에셔 드로스테 무한 줌",
+   "category": "S-MATH",
+   "tech": [
+    "복소 로그/지수 매핑",
+    "Droste 격자 정합",
+    "WebGL2 textureLod + 해석적 LOD",
+    "프로시저럴 일러스트(Canvas2D)"
+   ],
+   "desc": "카페 벽에 걸린 메뉴 액자 속에 같은 가게가 끝없이 들어 있고, 축소와 회전이 하나의 나선 평행이동이 되어 이음매 없이 줌인한다",
+   "use": "브랜드 히어로, 메뉴 소개 인트로, 무한 반복 컨셉 브랜딩",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "w=ln z 로 옮겨 w'=(1-iβ)w+τ, β=ln R/2π 로 선형 사상하면 축소+회전이 평행이동이 되고 (1-iβ)·2πi=2πi+ln R 이 격자 원소라 각도가 한 바퀴 돌아도 이음매가 없다(수치 오차 1e-14 로 검증). 체비셰프 반경으로 사각 고리에 접고 구멍엔 R 배 확대한 같은 그림이 들어가며, 나선 중심에서는 확대율이 무한이라 화소당 해석적 LOD(textureLod)와 이음선 양쪽 샘플 혼합이 없으면 심한 앨리어싱이 생긴다. 재귀할 그림은 외부 에셋 없이 코드로 직접 그렸다.",
+    "algo": [
+     "Complex logarithm lattice (de Smit–Lenstra Droste)",
+     "Spiral similarity w'=(1-iβ)w+τ",
+     "Chebyshev-ring folding",
+     "Analytic LOD + seam-side blending",
+     "Procedural recursive illustration"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Droste_effect",
+     "de Smit & Lenstra, The Mathematical Structure of Escher's Print Gallery (Notices of the AMS, 2003)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "190",
+   "title": "빛결 — Fortune 스윕라인 스테인드글라스",
+   "category": "S-MATH",
+   "tech": [
+    "Fortune sweep line",
+    "Voronoi",
+    "Canvas2D",
+    "ScrollTrigger scrub"
+   ],
+   "desc": "스크롤/시간이 스윕라인이 되어 포물선 해안선과 보로노이 변이 실시간으로 그려지고, 글자 모양으로 샘플링한 사이트가 스테인드글라스 창으로 완성된다",
+   "use": "카페·베이커리·공방 브랜드 사이트의 히어로/브랜드 스토리 (스크롤 핀 구간)",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "Fortune 알고리즘을 라이브러리 없이 직접 구현했다: 사이트·원 이벤트를 이진 힙 우선순위 큐로 처리하고, 해안선의 인접 포물선 쌍의 접점을 실제 포물선 교점(이차방정식, 수치 안정형 근 선택)으로 풀며, 호가 쪼개지거나 이웃이 바뀌면 원 이벤트를 무효화(false alarm)해야 한다. 같은 y의 사이트(퇴화 포물선=수직선), 중복점, 4점 이상 동원(격자·원주 위 점), 열린 변의 캔버스 클리핑 같은 퇴화 입력에서 쉽게 깨지므로 brute force 대조 테스트로 검증했다.",
+    "algo": [
+     "Fortune sweep line",
+     "circle event invalidation",
+     "binary heap event queue",
+     "parabola breakpoint solving",
+     "beach line as doubly linked arcs",
+     "degenerate input handling (equal y, duplicate, cocircular)",
+     "Mitchell best-candidate sampling",
+     "chamfer distance transform"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Fortune%27s_algorithm",
+     "https://www.cs.jhu.edu/~misha/Spring20/11a.pdf",
+     "de Berg et al., Computational Geometry: Algorithms and Applications, ch.7 Voronoi Diagrams"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "191",
+   "title": "DBM 번개 — 라플라스 장 위를 가지치며 내려오는 방전",
+   "category": "R-CELL",
+   "tech": [
+    "유전체 파괴 모델(DBM)",
+    "Laplace red-black SOR",
+    "확률 ∝ φ^η 성장",
+    "하위 노드 수 기반 전류 굵기"
+   ],
+   "desc": "구름에서 지면까지 라플라스 전위장을 풀어가며 한 칸씩 가지를 뻗는 번개. 접지되면 뿌리까지 역추적한 주 채널이 귀환뇌격으로 번쩍이고 화면 전체가 섬광에 휩싸인 뒤 새 번개가 반복된다.",
+   "use": "에너지 음료/전기·모빌리티 브랜드 히어로, 번개 트랜지션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "매 성장 스텝마다 라플라스 방정식을 다시 풀어야 하는 것이 병목이라 이전 해를 초기값으로 한 red-black SOR(ω≈1.86)로 국소 이완만 수행하고, 한 번의 이완마다 후보 2칸을 붙이는 준정적 근사를 쓴다. 후보 격자의 확률은 φ^η(η=1)에 비례하며 8-이웃 연결로 격자 이방성을 줄이고, 접지 후에는 자식→부모 역순 누적으로 가지별 전류량을 구해 굵기·밝기를 정한다. 첨탑·건물이 φ=1 전극이라 피뢰침 효과가 창발한다.",
+    "algo": [
+     "Dielectric Breakdown Model",
+     "Laplace SOR red-black",
+     "확률적 격자 성장(후보 리스트 O(1) 갱신)",
+     "하위 트리 크기 누적(파이프 모델식 굵기)"
+    ],
+    "refs": [
+     "https://arxiv.org/pdf/cond-mat/9811072",
+     "https://en.wikipedia.org/wiki/Dielectric_breakdown_model",
+     "research/H3.md F27"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "192",
+   "title": "공간 식민화 나무 — 스크롤로 자라는 가지",
+   "category": "R-CELL",
+   "tech": [
+    "Space Colonization (Runions 2007)",
+    "공간 해시 근접 질의",
+    "파이프 모델 굵기",
+    "스크롤 스크럽 성장"
+   ],
+   "desc": "수관 모양의 양분 점 군을 향해 가지가 서로 경쟁하며 갈라져 나무가 된다. 스크롤이 성장 회차를 되감고, 가지 굵기는 파이프 모델로 매 프레임 재계산되며 마지막에 잎과 꽃이 터지고 꽃잎이 흩날린다.",
+   "use": "식물·카페·친환경 브랜드의 스토리 섹션, 스크롤 연동 성장 연출",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "각 양분 점은 영향 반경 안의 '가장 가까운 노드 하나'에만 끌림을 주므로 O(점×노드) 근접 질의를 공간 해시(3×3 셀)로 줄이고, 킬 거리 소거·끌림 벡터 정규화 합·줄기가 수관에 닿기 전 영향권 공백(부트스트랩 줄기)을 처리해야 한다. 전체 성장을 미리 시뮬레이션하고 노드별 생성 회차를 저장해 스크롤이 되감게 하며, 굵기는 보이는 가지만으로 파이프 모델(자식 단면적 합, 지수 2.2)을 매 프레임 자식→부모 역순으로 누적한다.",
+    "algo": [
+     "Space Colonization",
+     "공간 해시 근접 질의",
+     "파이프 모델 굵기 누적",
+     "계층적 바람 오프셋 누적"
+    ],
+    "refs": [
+     "https://www.algorithmicbotany.org/papers/colonization.egwnp2007.html",
+     "https://algorithmicbotany.org/papers/runionsa.th2008.html",
+     "research/H3.md F28"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "193",
+   "title": "세대제빵소 · 해시라이프 무한 줌",
+   "category": "R-CELL",
+   "tech": [
+    "Hashlife 쿼드트리",
+    "해시 컨스(오픈 어드레싱)",
+    "2^j 세대 점프",
+    "노드 단위 현재 레벨 렌더"
+   ],
+   "desc": "글라이더 건 8개가 만드는 Conway Life 를 2^47 세대까지 건너뛰며 줌아웃하고, 다시 세포 단위까지 확대하는 해시라이프",
+   "use": "제과·발효·연구소형 브랜드의 기술력/제조 공정 소개",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "같은 내용의 쿼드트리 노드를 해시 테이블로 하나만 두고, 노드마다 '중앙 영역이 2^j 세대 뒤 어떻게 되는지'를 캐시해 반복 구조를 한 번만 계산한다. 9개 겹침 서브노드 분해에서 j=k-2 와 j<k-2 의 시간 분할이 다르고, 패턴이 중앙 1/4 안에 있게 루트를 확장해야 안전하며, 좌표를 double 로 정확히 쓰려고 레벨을 52 로 제한하고 도달 가능한 노드만 복사하는 GC 로 메모리 상한을 지킨다. 나이브 Life 와 j=0..8 에서 셀 집합이 정확히 일치함을 검증했다.",
+    "algo": [
+     "Hashlife(Gosper)",
+     "쿼드트리 hash-consing",
+     "노드 결과 캐시 step(n,j)",
+     "루트 확장 + 중앙 1/4 안전 조건",
+     "compaction GC",
+     "밀도 기반 레벨 렌더"
+    ],
+    "refs": [
+     "https://en.wikipedia.org/wiki/Hashlife",
+     "https://conwaylife.com/wiki/hashlife",
+     "https://jeffe.cs.illinois.edu/teaching/225H/notes/HashLife.pdf"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "194",
+   "title": "결 텍스타일 랩 · 끌개 비단",
+   "category": "S-MATH",
+   "tech": [
+    "Clifford/de Jong 끌개",
+    "Lyapunov 지수",
+    "로그 밀도 누적",
+    "Canvas2D"
+   ],
+   "desc": "카오스 판정을 통과한 파라미터만 골라 이동하며, 수백만 점을 로그 밀도로 쌓아 비단 같은 문양을 짜는 끌개",
+   "use": "텍스타일·패브릭·뷰티 브랜드 히어로/소개",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "임의 파라미터는 대부분 고정점·주기궤도로 붕괴해 화면이 비므로, 두 궤적의 발산률(Benettin 방식 Lyapunov 지수)과 점유율을 직접 측정해 키프레임과 그 사이 보간 경로 14지점이 모두 카오스인 간선만 채택한다. 파라미터가 움직이는 동안은 히스토그램에 감쇠를 걸어 잔상 누적하고 뷰를 경계에 맞춰 부드럽게 추종한다.",
+    "algo": [
+     "Clifford/de Jong 맵",
+     "Lyapunov 지수(Benettin 재정규화)",
+     "로그 밀도 톤매핑",
+     "감쇠 누적 히스토그램"
+    ],
+    "refs": [
+     "https://paulbourke.net/fractals/clifford/",
+     "https://www.nathanselikoff.com/19/strange-attractors/strange-attractors-series",
+     "https://en.wikipedia.org/wiki/Lyapunov_exponent"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "195",
+   "title": "기울여도 눌리는 주문 카드",
+   "category": "U-RENDER",
+   "tech": [
+    "4점 호모그래피(8x8 가우스 소거)",
+    "CSS matrix3d",
+    "스프링 추종",
+    "Pointer Events 히트테스트"
+   ],
+   "desc": "살아 있는 DOM 카드를 네 모서리 드래그로 원근 왜곡. 호모그래피를 직접 풀어 matrix3d 로 걸고, 같은 H 로 투시 그리드와 소실점을 그린다. 입력이 없으면 모서리가 리사주로 움직이며 카드가 3D로 기운다.",
+   "use": "창업문의 페이지의 주문 카드·가맹 상담 폼 카드를 입체감 있게 보여주는 히어로/전환 섹션",
+   "fran": {
+    "stage": "F7",
+    "fit": 2,
+    "note": "가맹 상담 폼이 들어 있는 카드를 기울이며 보여주고, 변형 상태에서도 입력·제출이 그대로 동작해 전환 UI의 신뢰감을 준다.",
+    "ind": [
+     "요식업 외"
+    ],
+    "pt": "both"
+   },
+   "pick": null,
+   "hard": {
+    "level": 4,
+    "why": "단위 사각형에서 임의의 목표 4점으로 가는 사영변환(8자유도)을 8x8 선형계로 세워 부분 피벗 가우스 소거로 직접 풀고 4x4 matrix3d 열 우선 배치(z 통과 행)로 옮겨야 한다. 목표가 비볼록이거나 점이 붙거나 소실선이 카드를 가로지르면(w<0) 변환이 뒤집히므로 외적 부호·최소각·최소면적·네 꼭짓점의 w>0 를 매 스텝 검사하고, 무효한 스프링 스텝은 반씩 줄이며 드래그는 마지막 유효점까지 이분 탐색으로 클램프한다. 변형된 DOM 위에서 링크·버튼·입력·슬라이더 히트테스트와 호버가 브라우저 역변환과 일치해야 한다.",
+    "algo": [
+     "Projective mapping (square to quad) 8x8 선형계",
+     "부분 피벗 가우스 소거",
+     "matrix3d 열 우선 z 통과 변환",
+     "볼록성·w>0 퇴화 판정",
+     "동차좌표 근평면 클리핑 투시 그리드",
+     "소실점·수평선 계산",
+     "감쇠 스프링 + 고정 타임스텝",
+     "이분 탐색 드래그 클램프"
+    ],
+    "refs": [
+     "https://blog.master.dev/the-web-is-fun-again-first-experiments-with-html-in-canvas/ (실험 4: 4점 호모그래피)",
+     "https://github.com/WICG/html-in-canvas",
+     "Paul Heckbert, Fundamentals of Texture Mapping and Image Warping (1989), 사각형-사각형 투영 매핑",
+     "MDN: CSS transform matrix3d()"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "196",
+   "title": "라이트룸 서울 — 빛이 번지는 쇼룸",
+   "category": "U-RENDER",
+   "tech": [
+    "Radiance Cascades",
+    "WebGL 부동소수점 FBO",
+    "SDF 구간 마칭",
+    "CPU 폴백"
+   ],
+   "desc": "발광 카드·커서 조명·회전하는 벽이 만드는 간접광, 소프트 섀도, 색 번짐을 Radiance Cascades 로 실시간 계산한다.",
+   "use": "조명·인테리어·뷰티·공간 브랜드의 히어로, 빛 컨셉의 인트로",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "캐스케이드마다 프로브 간격은 2배, 방향 수는 4배로 늘려 레이 총량을 고정하고, 레이 구간 [t_i, t_i+1] 을 기하급수로 나눠 상위 캐스케이드를 premultiplied alpha(I+β·I')로 병합해야 한다. 프로브 중심 오프셋·방향 인덱싱·쌍선형 보간 때 벽 속 프로브가 새는 누설(링잉)을 가시성 가중치로 막는 것이 핵심이고, float FBO 가 없으면 같은 알고리즘을 CPU 로 시간 분할해 돌린다.",
+    "algo": [
+     "Radiance Cascades",
+     "구간 분할 레이 마칭(SDF 스피어 트레이싱)",
+     "캐스케이드 병합(premultiplied alpha)",
+     "프로브 가시성 가중 쌍선형 보간",
+     "HDR 톤매핑"
+    ],
+    "refs": [
+     "https://arxiv.org/html/2408.14425v1",
+     "https://21st.dev/@vgpu/components/radiance-cascades.md",
+     "https://kornel.ski/radiance",
+     "https://odr.chalmers.se/items/3ee9fb4e-1880-46c2-802a-a660e38dc9ee"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "197",
+   "title": "풀장 코스틱",
+   "category": "U-RENDER",
+   "tech": [
+    "파동방정식 높이장",
+    "굴절 메시 면적비",
+    "CPU 삼각형 래스터",
+    "WebGL 프래그먼트 레이트레이스"
+   ],
+   "desc": "128² 파동 시뮬 수면 위로 커서가 물결을 만들고, 굴절된 빛그물이 풀 바닥 타일 위에서 실시간으로 일렁인다",
+   "use": "리조트·풀빌라·스파·수영장 브랜드의 히어로/시설 소개 섹션",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "수면 격자의 굴절 광선을 바닥에 투영해 삼각형 면적 변화(oldArea/newArea)로 빛의 집중도를 구하고, 접힌(folding) 삼각형·서브픽셀 삼각형까지 에너지 보존하며 래스터해야 한다. 고정 스텝 안정 스킴(k<2)·경계 스펀지·에너지 가드로 파동 시뮬이 발산하지 않게 하면서, dFdx 없이 CPU 에서 코스틱 맵을 매 프레임 재구성하고 슬랩 교차 레이트레이스로 굴절·반사·Beer 흡수를 한 패스에 합성한다.",
+    "algo": [
+     "파동방정식 높이장",
+     "굴절 메시 면적비 코스틱",
+     "삼각형 에너지 보존 래스터/스플랫",
+     "프레넬 + Beer-Lambert 흡수",
+     "레이–박스 슬랩 굴절 트레이스"
+    ],
+    "refs": [
+     "https://madebyevan.com/webgl-water/",
+     "https://github.com/evanw/webgl-water (MIT, 개념 참고)",
+     "Evan Wallace, Rendering Realtime Caustics in WebGL"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "198",
+   "title": "하늘다방: 구름이 익는 시간",
+   "category": "U-RENDER",
+   "tech": [
+    "볼류메트릭 레이마칭",
+    "Beer-Lambert 흡수",
+    "Henyey-Greenstein 위상",
+    "R2 디더 + 시간 누적(FBO)"
+   ],
+   "desc": "노을 위로 떠 있는 구름 바다를 프래그먼트 셰이더 레이마칭으로 그리고, 해가 기울수록 구름 속이 안쪽부터 금빛으로 달아오른다",
+   "use": "루프탑 카페·바·호텔·여행사 히어로, 스크롤 연동 시간대 전환(낮→노을) 연출",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "3D fbm 밀도 장을 픽셀마다 40스텝으로 적분하며 스텝마다 태양 방향 4스텝 광 마칭을 또 돌려 비용이 스텝×광스텝×옥타브로 폭증한다. 스텝을 줄이면 층 밴딩이 생기므로 저불일치 지터와 이전 프레임 누적으로 가리고, 렌더 스케일을 0.3까지 낮춰 소프트웨어 렌더에서도 프레임을 낸다. 노이즈 3D 값을 텍스처 한 번 fetch 로 만드는 레이어 오프셋 트릭, 구간 해석 적분(C+=T(1-e^-σdt)S), 이중 로브 위상, 거리 안개와 하늘 일관성이 핵심이다.",
+    "algo": [
+     "Volumetric raymarching",
+     "fbm 3D value noise (1-fetch trick)",
+     "Beer-Lambert transmittance",
+     "Henyey-Greenstein dual-lobe phase",
+     "4-step light march + multi-scatter fill",
+     "R2 jitter + temporal accumulation"
+    ],
+    "refs": [
+     "https://blog.maximeheckel.com/posts/real-time-cloudscapes-with-volumetric-raymarching/",
+     "Henyey & Greenstein 1941, Diffuse radiation in the Galaxy",
+     "Schneider, Real-Time Volumetric Cloudscapes of Horizon Zero Dawn (SIGGRAPH 2015)",
+     "Wrenninge, Art-Directable Multiple Volumetric Scattering"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "199",
+   "title": "지평선 커피: 블랙홀 중력 렌즈",
+   "category": "U-RENDER",
+   "tech": [
+    "슈바르츠실트 측지선 적분(속도 베를레 64스텝)",
+    "강착원반 다중 통과 합성",
+    "도플러 비밍 + 중력 적색편이",
+    "프로시저럴 별밭/은하수"
+   ],
+   "desc": "픽셀마다 빛의 궤적 u''+u=3Mu² 를 적분해 별밭이 아인슈타인 링으로 휘고 강착원반이 위·아래로 휘어 보이는 블랙홀을 커서로 돌려 본다",
+   "use": "심야 카페·바·브랜드 티저 히어로, 세계관형 랜딩 인트로, 스크롤 연동 우주 연출",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "카메라 위치와 광선 방향이 이루는 평면에서 u=1/r 에 대한 측지선 ODE 를 픽셀마다 64스텝으로 적분하며, 인접 광선이 포획/탈출로 이산적으로 갈려 지평선 가장자리가 계단지기 쉬워 서브픽셀 지터와 이전 프레임 누적으로 가린다. 적도면 통과를 부호 변화로 잡아 한 광선이 원반을 최대 여러 번(직접상·위로 휜 2차상·아래 상) 합성해야 하고, 도플러 D³ 와 중력 적색편이를 광선 방향의 접선에서 유도해야 한다. 케플러 전단이 시간에 따라 원반 무늬를 감아버리는 문제는 두 에포크 크로스페이드로 푼다.",
+    "algo": [
+     "Schwarzschild null geodesic u''+u=3Mu²",
+     "velocity Verlet fixed-φ integration (64 steps)",
+     "equatorial-plane crossing detection + multi-image disk compositing",
+     "relativistic Doppler beaming D³ + gravitational redshift",
+     "Keplerian shear with two-epoch crossfade",
+     "photon-ring glow from dwell time near r=3M"
+    ],
+    "refs": [
+     "https://discourse.threejs.org/t/real-time-schwarzschild-binary-black-hole-lensing-in-webgl-with-an-honest-writeup-of-where-the-two-body-integrator-breaks/94150",
+     "James et al., Gravitational lensing by spinning black holes in astrophysics, and in the movie Interstellar (2015)",
+     "Luminet, Image of a spherical black hole with thin accretion disk (1979)"
+    ]
+   },
+   "thumb": true
+  },
+  {
+   "id": "200",
+   "title": "월요 달항아리: 가우시안 스플랫 디졸브",
+   "category": "U-RENDER",
+   "tech": [
+    "3D Gaussian Splatting(EWA 투영)",
+    "WebGL2 인스턴싱 + Canvas2D 폴백",
+    "깊이 기수 정렬",
+    "curl 노이즈 디졸브"
+   ],
+   "desc": "1만 4천 개의 이방성 가우시안으로 빚은 청화백자 달항아리가 오비트하며 흩어졌다 다시 모이는 스플랫 렌더러",
+   "use": "공방·도자·플라워·디저트 브랜드 히어로, 제품 3D 쇼케이스, 스크롤 연동 상품 리빌",
+   "fran": null,
+   "pick": null,
+   "hard": {
+    "level": 5,
+    "why": "각 스플랫의 3D 공분산 Σ=R·S·Sᵀ·Rᵀ을 뷰 행렬과 원근 야코비안으로 2×2 화면 공분산(Σ'=J·W·Σ·Wᵀ·Jᵀ)에 투영하고, 고유분해로 타원 축을 구해 알파를 계산한다. 반투명 합성은 뒤에서 앞 순서가 정확해야 하므로 1만 4천 개를 16비트 기수 정렬하되, 카메라 방향이 바뀌거나 디졸브 위상이 움직일 때만 재정렬해야 하고, 소프트웨어 GL에서는 오버드로우 때문에 렌더 해상도·쿼드 반경·스플랫 수를 프레임 비용에 맞춰 적응시켜야 한다.",
+    "algo": [
+     "3D Gaussian splatting (EWA 투영)",
+     "depth radix sort with re-sort threshold",
+     "공분산 → 2x2 고유분해 → 타원 쿼드",
+     "premultiplied back-to-front alpha compositing",
+     "curl-noise 디졸브 + 순위 정규화 임계값",
+     "적응형 LOD/해상도"
+    ],
+    "refs": [
+     "https://github.com/antimatter15/splat",
+     "https://github.com/sparkjsdev/spark",
+     "3D Gaussian Splatting for Real-Time Radiance Field Rendering (Kerbl et al. 2023)",
+     "EWA Splatting (Zwicker et al. 2002)"
+    ]
+   },
    "thumb": true
   }
  ]

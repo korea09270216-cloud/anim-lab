@@ -1,0 +1,15 @@
+[data-sec="s163"]{word-break:keep-all;position:relative;min-height:max(100vh,760px);overflow:hidden;color:#17120e;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif;
+  background:radial-gradient(120% 95% at 18% 0%,#f8f2e5 0%,#efe6d3 55%,#e4d8bd 100%)}
+[data-sec="s163"] .s163__stage{position:absolute;inset:0}
+[data-sec="s163"] .s163__cv{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
+[data-sec="s163"] .s163__orb{position:absolute;left:0;top:0;margin:0;padding:0;border:0;border-radius:50%;background:transparent;cursor:grab;touch-action:none;will-change:transform;-webkit-tap-highlight-color:transparent}
+[data-sec="s163"] .s163__orb.is-drag{cursor:grabbing}
+[data-sec="s163"] .s163__orb:focus-visible{outline:2px dashed #d4401f;outline-offset:6px}
+[data-sec="s163"] .s163__sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+/* 캔버스를 못 쓰는 환경: 숨김 미러를 그대로 읽히는 지면으로 노출 */
+[data-sec="s163"].is-static .s163__cv,[data-sec="s163"].is-static .s163__orb{display:none}
+[data-sec="s163"].is-static .s163__stage{position:relative;padding:64px 6vw}
+[data-sec="s163"].is-static .s163__sr{position:static;width:auto;height:auto;clip:auto;clip-path:none;white-space:normal;max-width:720px;line-height:1.75;font-size:17px}
+[data-sec="s163"].is-static .s163__sr h2{font-size:clamp(34px,6vw,76px);line-height:1.1;margin:12px 0 28px}
+[data-sec="s163"].is-static .s163__sr p{margin-bottom:14px}
+@media (max-width:700px){[data-sec="s163"]{min-height:1640px}}

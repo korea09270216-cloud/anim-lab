@@ -1,0 +1,90 @@
+<section class="sec" data-sec="s195">
+  <div class="s195__copy">
+    <p class="s195__eyebrow">소풍김밥 · 멤버십 카드</p>
+    <h2 class="s195__title">삐뚤게 세워도<br>주문은 <em>정확하게.</em></h2>
+    <p class="s195__lead">주문 카드도, 가맹 상담 카드도 한 장짜리 화면입니다. 네 모서리를 쥐고 원하는 각도로 세워 보세요. 기울어진 카드 위에서도 버튼은 그 자리에서 눌리고, 입력은 그대로 이어집니다.</p>
+    <p class="s195__hint"><i></i>모서리를 끌어 보세요. 손을 떼면 카드가 다시 스스로 움직여요.</p>
+
+    <aside class="s195__panel" aria-hidden="true">
+      <strong>VIEW MATRIX</strong>
+      <div class="s195__mat"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <p>소실점 u <em data-vp="u">-</em></p>
+      <p>소실점 v <em data-vp="v">-</em></p>
+      <p class="s195__state">유효한 사각형</p>
+    </aside>
+  </div>
+
+  <div class="s195__stage">
+    <canvas class="s195__grid" aria-hidden="true"></canvas>
+
+    <div class="s195__card" role="group" aria-label="소풍김밥 멤버십 주문 카드">
+      <header class="c-top">
+        <div class="c-logo" aria-hidden="true"></div>
+        <div class="c-brand"><b>소풍김밥</b><span>MEMBERSHIP · NO.0412 8830</span></div>
+        <span class="c-lv">단골 Lv.3</span>
+      </header>
+
+      <div class="c-tabs" role="tablist">
+        <button type="button" role="tab" class="c-tab is-on" data-tab="order" aria-selected="true">메뉴 주문</button>
+        <button type="button" role="tab" class="c-tab" data-tab="franchise" aria-selected="false">가맹 상담</button>
+        <i class="c-ink"></i>
+      </div>
+
+      <div class="c-body">
+        <div class="c-pane is-on" data-pane="order">
+          <ul class="c-menu">
+            <li data-price="4500">
+              <div class="c-name"><b>참치마요 김밥</b><small>밥 한 줌 반, 마요는 가볍게</small></div>
+              <span class="c-price">4,500</span>
+              <div class="c-step"><button type="button" data-d="-1" aria-label="참치마요 김밥 수량 줄이기">−</button><output>1</output><button type="button" data-d="1" aria-label="참치마요 김밥 수량 늘리기">+</button></div>
+            </li>
+            <li data-price="5500">
+              <div class="c-name"><b>치즈 불고기 김밥</b><small>모짜렐라가 늘어나는 한 줄</small></div>
+              <span class="c-price">5,500</span>
+              <div class="c-step"><button type="button" data-d="-1" aria-label="치즈 불고기 김밥 수량 줄이기">−</button><output>0</output><button type="button" data-d="1" aria-label="치즈 불고기 김밥 수량 늘리기">+</button></div>
+            </li>
+            <li data-price="4800">
+              <div class="c-name"><b>꼬마 어묵 우동</b><small>국물은 진하게, 면은 쫄깃하게</small></div>
+              <span class="c-price">4,800</span>
+              <div class="c-step"><button type="button" data-d="-1" aria-label="꼬마 어묵 우동 수량 줄이기">−</button><output>0</output><button type="button" data-d="1" aria-label="꼬마 어묵 우동 수량 늘리기">+</button></div>
+            </li>
+          </ul>
+          <label class="c-spice"><span>맵기</span><input type="range" min="0" max="3" step="1" value="1" aria-label="맵기 단계"><output>보통맛</output></label>
+          <div class="c-total"><span>합계 <b>₩4,500</b></span><button type="button" class="c-cta c-order">주문하기</button></div>
+        </div>
+
+        <form class="c-pane" data-pane="franchise" hidden novalidate>
+          <div class="c-two">
+            <label class="c-field"><span>성함</span><input type="text" name="name" autocomplete="off" placeholder="홍길동"></label>
+            <label class="c-field"><span>연락처</span><input type="tel" name="tel" autocomplete="off" inputmode="numeric" placeholder="010-0000-0000"></label>
+          </div>
+          <fieldset class="c-chips">
+            <legend>희망 지역</legend>
+            <label><input type="radio" name="area" value="seoul" checked><span>서울</span></label>
+            <label><input type="radio" name="area" value="gyeonggi"><span>경기</span></label>
+            <label><input type="radio" name="area" value="busan"><span>부산</span></label>
+            <label><input type="radio" name="area" value="daegu"><span>대구</span></label>
+          </fieldset>
+          <button class="c-cta c-cta--wide" type="submit">가맹 상담 신청하기</button>
+          <p class="c-msg" aria-live="polite">창업 비용·교육·운영 지원을 1:1로 안내해 드려요.</p>
+        </form>
+      </div>
+
+      <footer class="c-foot">
+        <div class="c-timer"><span>오늘 한정 세트 마감까지</span><b class="c-clock">00:14:32</b></div>
+        <a class="c-link" href="#s195-franchise">가맹 안내 보기 →</a>
+        <div class="c-bar"><i></i></div>
+        <small class="c-left">한정 수량 72% 소진</small>
+      </footer>
+    </div>
+
+    <svg class="s195__outline" aria-hidden="true"><polygon points=""/></svg>
+
+    <div class="s195__handles">
+      <button class="s195__h" type="button" data-i="0" aria-label="카드 왼쪽 위 모서리 (방향키로 이동)"></button>
+      <button class="s195__h" type="button" data-i="1" aria-label="카드 오른쪽 위 모서리 (방향키로 이동)"></button>
+      <button class="s195__h" type="button" data-i="2" aria-label="카드 오른쪽 아래 모서리 (방향키로 이동)"></button>
+      <button class="s195__h" type="button" data-i="3" aria-label="카드 왼쪽 아래 모서리 (방향키로 이동)"></button>
+    </div>
+  </div>
+</section>

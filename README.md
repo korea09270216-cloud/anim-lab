@@ -3,8 +3,11 @@
 어워드급 웹 애니메이션 쇼케이스. GSAP · Lenis · WebGL · CSS3D · SVG · Matter.js.
 
 - `index.html` — 첫 데모 (12개 모션을 한 페이지에 이어 붙임)
-- `100/` — **100 SECTIONS** 갤러리 (`100/index.html`, 🏪 창업·프랜차이즈 추천 탭 = `100/#franchise`, 분류 문서 = `100/FRANCHISE.md`, ✨ 클로드 추천 30선 = `100/#picks` — 에이전트 패널 토론 기록은 `100/research/debate/`) + 섹션 단독 뷰어 (`100/view.html?s=NNN`)
-  - 카테고리: A 스크롤 시네마틱 · B 타이포 · C WebGL · D 커서/호버 · E 전환/레이아웃 · F SVG · G 브랜드 컴포지션 · H 3D/CSS · I 물리/캔버스 · J 인트로/UX
+- `100/` — **200 SECTIONS** 갤러리 (`100/index.html`; 폴더 이름은 URL 호환 때문에 100 으로 유지) + 섹션 단독 뷰어 (`100/view.html?s=NNN`)
+  - 🏪 창업·프랜차이즈 추천 탭 = `100/#franchise` (분류 문서 `100/FRANCHISE.md`)
+  - ✨ 클로드 추천 30선 = `100/#picks` (에이전트 패널 토론 기록 `100/research/debate/`)
+  - 🧠 고난이도 50선 = `100/#hard` (s151~s200 — 솔버·셰이더·기하 알고리즘 직접 구현, 조사 기록 `100/research/H1~H5.md`)
+  - 카테고리: A 스크롤 시네마틱 · B 타이포 · C WebGL · D 커서/호버 · E 전환/레이아웃 · F SVG · G 브랜드 컴포지션 · H 3D/CSS · I 물리/캔버스 · J 인트로/UX · K~N 창업 전환 UI · O 순수 CSS · P 어워드 실험 · Q~U 고난이도(유체·셀룰러·수학·물리·렌더링)
   - 섹션 1개 = `100/sections/sNNN/{section.html, section.css, section.js, meta.json}` (자기완결, 외부 네트워크 없음)
   - 계약·품질 기준: `100/BRIEF.md`, 계약 샘플: `100/sections/s000`
 

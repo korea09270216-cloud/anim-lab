@@ -1,0 +1,21 @@
+[data-sec="s154"]{position:relative;min-height:100vh;overflow:hidden;background:#dfe5ec;color:#16202e;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s154"] .s154__gl{position:absolute;inset:0;width:100%;height:100%;display:block}
+[data-sec="s154"].is-fallback .s154__gl{display:none}
+[data-sec="s154"].is-fallback{background:radial-gradient(ellipse 36% 26% at 50% 40%,#fff 0,#b9d5e6 55%,#dfe5ec 100%)}
+[data-sec="s154"] .s154__ui{position:relative;z-index:1;min-height:100vh;display:grid;grid-template-rows:auto 1fr;padding:clamp(20px,3vw,44px);pointer-events:none}
+[data-sec="s154"] .s154__top{display:flex;justify-content:space-between;align-items:center}
+[data-sec="s154"] .s154__top b{font-size:20px;font-weight:900;letter-spacing:-.03em}
+[data-sec="s154"] .s154__top nav{display:flex;gap:28px;font-size:14px;font-weight:700;color:#3a4a60}
+[data-sec="s154"] .s154__bot{align-self:end;display:flex;justify-content:space-between;align-items:flex-end;gap:32px}
+[data-sec="s154"] .s154__copy{max-width:520px}
+[data-sec="s154"] .s154__no{margin:0 0 14px;font-size:12px;letter-spacing:.14em;font-weight:700;color:#3d78a5}
+[data-sec="s154"] .s154__h{margin:0 0 14px;font-size:clamp(28px,3.4vw,52px);line-height:1.14;letter-spacing:-.05em;font-weight:900}
+[data-sec="s154"] .s154__p{margin:0;font-size:14px;line-height:1.7;font-weight:500;color:#41536b}
+[data-sec="s154"] .s154__chips{display:flex;gap:10px;pointer-events:auto}
+[data-sec="s154"] .s154__chips button{font:inherit;font-size:16px;font-weight:800;letter-spacing:-.02em;padding:12px 22px;border-radius:999px;border:1.5px solid #16202e;background:transparent;color:#16202e;cursor:pointer;transition:background .35s cubic-bezier(.16,1,.3,1),color .35s cubic-bezier(.16,1,.3,1)}
+[data-sec="s154"] .s154__chips button:hover{background:rgba(22,32,46,.1)}
+[data-sec="s154"] .s154__chips button.is-on{background:#16202e;color:#eaf1f8}
+@media (max-width:760px){
+  [data-sec="s154"] .s154__bot{flex-direction:column;align-items:flex-start}
+  [data-sec="s154"] .s154__top nav{display:none}
+}

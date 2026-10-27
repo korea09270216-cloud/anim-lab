@@ -1,0 +1,21 @@
+[data-sec="s192"]{position:relative;height:320vh;min-height:320vh;background:#f6eedc;color:#2a2418;font-family:'Pretendard','Apple SD Gothic Neo','Malgun Gothic',system-ui,sans-serif}
+[data-sec="s192"] .s192__pin{position:sticky;top:0;height:100vh;overflow:hidden}
+[data-sec="s192"] .s192__cv{position:absolute;inset:0;width:100%;height:100%;display:block}
+[data-sec="s192"] .s192__bar{position:absolute;left:0;right:0;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:22px 4vw}
+[data-sec="s192"] .s192__logo{display:flex;align-items:center;gap:10px;font-size:26px;font-weight:900;letter-spacing:-.04em}
+[data-sec="s192"] .s192__logo i{display:block;width:22px;height:22px;border-radius:50% 50% 50% 4px;background:#3f8f54;transform:rotate(-45deg)}
+[data-sec="s192"] .s192__logo small{font-size:10px;font-weight:800;letter-spacing:.22em;color:#3f8f54}
+[data-sec="s192"] .s192__nav{display:flex;gap:6px}
+[data-sec="s192"] .s192__nav a{font-size:13px;font-weight:700;padding:8px 16px;border-radius:99px;background:#2a24181a;color:#2a2418}
+[data-sec="s192"] .s192__copy{position:absolute;left:4vw;top:50%;transform:translateY(-50%);z-index:2;width:34vw}
+[data-sec="s192"] .s192__eyebrow{font-size:13px;font-weight:800;letter-spacing:.14em;color:#3f8f54}
+[data-sec="s192"] .s192__title{margin-top:14px;font-size:clamp(38px,5vw,84px);font-weight:900;letter-spacing:-.055em;line-height:1.02}
+[data-sec="s192"] .s192__lead{margin-top:20px;font-size:15px;line-height:1.75;font-weight:500;color:#5a4d36}
+[data-sec="s192"] .s192__meter{margin-top:26px}
+[data-sec="s192"] .s192__bar2{display:block;height:6px;border-radius:99px;background:#2a24181f;overflow:hidden}
+[data-sec="s192"] .s192__bar2 b{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#3f8f54,#ee7fa0)}
+[data-sec="s192"] .s192__meter p{margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.04em;color:#7a6a45;font-variant-numeric:tabular-nums}
+@media (max-width:760px){
+  [data-sec="s192"] .s192__copy{width:88vw;top:auto;bottom:6vh;transform:none}
+  [data-sec="s192"] .s192__nav{display:none}
+}
